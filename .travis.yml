@@ -21,6 +21,6 @@ git:
   depth: 1
 
 script:
-- echo compiling OctEtFHD skin
+- echo compiling RAED modified skins
 - python -m compileall .
 - echo done!
