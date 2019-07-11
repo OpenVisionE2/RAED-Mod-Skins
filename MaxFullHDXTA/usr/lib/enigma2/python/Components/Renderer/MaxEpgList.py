@@ -42,4 +42,3 @@ class MaxEpgList(Renderer, VariableText):
                     break
 
         self.text = text
-

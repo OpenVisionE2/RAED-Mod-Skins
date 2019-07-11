@@ -24,6 +24,3 @@ class MaxVolume(Renderer, VariableText):
     def onHide(self):
         self.suspended = True
         self.vol_timer.stop()
-
-
-
