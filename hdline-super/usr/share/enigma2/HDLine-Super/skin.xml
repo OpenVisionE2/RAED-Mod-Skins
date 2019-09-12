@@ -75,6 +75,9 @@
     <color name="yellow" value="#00bab329" />
     <color name="yellow_tux" value="#00d5a233" />
   </colors>
+  <parameters>
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+  </parameters>
   <!-- Main screen colors (id=0 Framebuffer) -->
   <windowstyle type="skinned" id="0">
     <title offset="30,22" font="Regular;22" />
@@ -193,13 +196,13 @@
     </widget>
     <!-- Time and Date -->
     <widget source="global.CurrentTime" render="Label" position="1063,534" size="120,40" font="Regular;38" valign="top" halign="right" backgroundColor="grey_tux" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1185,536" size="50,22" font="Regular;19" valign="top" halign="left" backgroundColor="grey_tux" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1185,536" size="50,22" font="Regular;19" valign="top" halign="left" backgroundColor="grey_tux" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="930,580" size="280,20" font="Regular;18" valign="top" halign="right" backgroundColor="grey_tux" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <!-- Video size -->
     <widget source="session.Event_Now" render="Label" position="276,617" size="88,28" font="Regular;24" halign="left" backgroundColor="black" transparent="1">
@@ -609,13 +612,13 @@
   <!-- Main menu -->
   <screen name="menu_mainmenu" position="100,120" size="1080,518" title="Main menu">
     <widget source="global.CurrentTime" render="Label" position="807,6" size="180,70" font="Regular;50" valign="top" halign="right" backgroundColor="grey_tux" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="990,6" size="60,40" font="Regular;28" valign="top" halign="left" backgroundColor="grey_tux" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="990,6" size="60,40" font="Regular;28" valign="top" halign="left" backgroundColor="grey_tux" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="740,65" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="white" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="menu" render="Listbox" position="17,10" size="420,502" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -685,13 +688,13 @@
   </screen>
   <screen name="menu_information" position="100,120" size="1080,518" title="Information">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel text="Press OK on your remote control to continue." font="Regular;22" position="395,443" size="336,60" halign="center" foregroundColor="blue_tux" />
     <ePixmap pixmap="HDLine-Super/main/skin-info.png" position="811,413" size="256,100" zPosition="-1" alphatest="on" />
@@ -754,14 +757,14 @@
     </widget>
   </screen>
   <screen name="menu_setup" position="100,120" size="1080,518" title="Setup">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="menu" render="Listbox" position="17,10" size="550,500" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -805,14 +808,14 @@
     </widget>
   </screen>
   <screen name="menu_shutdown" position="100,120" size="1080,518" title="Standby / Restart">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="menu" render="Listbox" position="17,10" size="420,452" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -849,14 +852,14 @@
     </widget>
   </screen>
   <screen name="menu_scan" position="100,120" size="1080,518" title="Service Searching">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/sat1.png" position="747,159" size="200,200" alphatest="on" />
     <widget source="menu" render="Listbox" position="17,10" size="520,362" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
@@ -869,14 +872,14 @@
     </widget>
   </screen>
   <screen name="menu_system" position="100,120" size="1080,530" title="System">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="menu" render="Listbox" position="17,10" size="527,503" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -976,14 +979,14 @@
     </widget>
   </screen>
   <screen name="menu_harddisk" position="100,120" size="1080,518" title=" ">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/hard_doc.png" position="743,171" size="200,200" zPosition="1" alphatest="on" />
     <!-- widget source="title" render="Label"   position="140,5" size="220,50" font="Regular;22" halign="right" zPosition="1" foregroundColor="blue_tux" backgroundColor="blue_tux4" transparent="1" / -->
@@ -998,14 +1001,14 @@
   </screen>
   <!-- Menu screens -->
   <screen name="Menu" position="100,120" size="1080,518" title="Menu">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/main/skin-info.png" position="807,408" size="256,100" alphatest="on" />
     <widget source="menu" render="Listbox" position="17,10" size="454,250" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
@@ -1031,14 +1034,14 @@
   </screen>
   <!-- Audio selection -->
   <screen name="AudioSelection" position="100,120" size="1080,518" title="Audio">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/audio.png" position="733,168" size="256,256" alphatest="on" zPosition="3" />
     <widget name="config" position="42,47" itemHeight="35" font="Regular;25" size="600,142" scrollbarMode="showNever" />
@@ -1098,14 +1101,14 @@
     <widget name="ok" position="0,0" size="0,0" />
   </screen>
   <screen name="PluginBrowser" position="100,120" size="1080,518" title="Plugin browser">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/plugin_brow.png" position="714,168" size="200,200" alphatest="on" zPosition="3" />
     <widget name="list" position="20,10" size="518,502" zPosition="3" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
@@ -1129,14 +1132,14 @@
     <widget name="green" position="843,480" size="220,35" font="Regular;22" valign="top" halign="left" foregroundColor="blue_tux" backgroundColor="blue_tux4" transparent="1" />
   </screen>
   <screen name="PluginDownloadBrowser" position="100,120" size="1080,518" title="Plugin Download Browser">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/plugin_brow.png" position="758,167" size="200,200" alphatest="on" zPosition="3" />
     <widget name="list" position="15,7" size="600,452" enableWrapAround="1" valign="center" zPosition="4" scrollbarMode="showNever" backgroundColor="blue_tux2" transparent="1" />
@@ -1147,14 +1150,14 @@
   </screen>
   <!-- Timer edit list -->
   <screen name="TimerEditList" position="100,120" size="1080,518" title="Timer editor">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/timer_stop.png" position="770,154" size="220,220" alphatest="on" />
@@ -1170,14 +1173,14 @@
   </screen>
   <!-- Timer log -->
   <screen name="TimerLog" position="100,120" size="1080,518" title="Timer log">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <widget name="loglist" position="20,19" size="650,281" itemHeight="35" font="Regular;24" scrollbarMode="showNever" />
@@ -1194,14 +1197,14 @@
   </screen>
   <!-- Timer entry -->
   <screen name="TimerEntry" position="100,120" size="1080,518" title="Timer entry">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/timer_stop.png" position="770,159" size="220,220" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -1212,14 +1215,14 @@
     <eLabel text="ok" position="304,480" size="230,30" font="Regular;25" valign="top" halign="left" foregroundColor="blue_tux" backgroundColor="blue_tux4" transparent="1" />
   </screen>
   <screen name="SleepTimerEdit" position="100,120" size="1080,518" title="Sleep Timer">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/timer_stop.png" position="770,159" size="220,220" alphatest="on" />
@@ -1238,14 +1241,14 @@
   </screen>
   <!-- Service Info -->
   <screen name="ServiceInfo" position="100,120" size="1080,518" title="Serviceinfo">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/info.png" position="821,134" size="128,128" alphatest="on" />
     <widget source="session.FrontendStatus" render="Progress" position="835,368" size="114,7" zPosition="1" pixmap="HDLine-Super/icons/icon_snr.png" transparent="1" borderWidth="1" borderColor="blue_tux2">
@@ -1286,14 +1289,14 @@
   </screen>
   <!-- System ... Setup A/V Settings,Autoresolution, Customize... -->
   <screen name="Setup" position="100,120" size="1080,518" title="Setup">
-    <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Customize.png" position="797,166" size="200,200" zPosition="3" alphatest="on" />
     <widget name="config" position="11,29" size="670,421" itemHeight="35" font="Regular;22" scrollbarMode="showNever" />
@@ -1306,13 +1309,13 @@
   </screen>
   <screen name="RecordPathsSettings" position="100,120" size="1080,518" title="Recording paths">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/rec_path.png" position="769,168" size="200,200" alphatest="on" zPosition="3" />
     <widget name="config" position="20,75" size="630,146" itemHeight="35" font="Regular;22" scrollbarMode="showNever" />
@@ -1328,13 +1331,13 @@
   <screen name="About" position="100,120" size="1080,518" title="About">
     <ePixmap pixmap="HDLine-Super/icon_pro/help.png" position="788,93" size="256,256" alphatest="on" zPosition="3" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="EnigmaVersion" render="Label" position="15,30" size="700,35" font="Regular;26" backgroundColor="background" transparent="1" foregroundColor="unfff000" />
     <widget source="ImageVersion" render="Label" position="15,73" size="700,35" font="Regular;26" backgroundColor="background" transparent="1" />
@@ -1353,13 +1356,13 @@
   <screen name="HarddiskSelection" position="100,120" size="1080,518" title="Select HDD">
     <ePixmap pixmap="HDLine-Super/icon_pro/hard_doc.png" position="750,169" size="200,200" alphatest="on" zPosition="3" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="hddlist" position="20,20" size="600,275" itemHeight="35" font="Regular;24" scrollbarMode="showNever" transparent="1" />
@@ -1368,13 +1371,13 @@
   <screen name="HarddiskSetup" position="100,120" size="1080,518" title="Harddisk Setup">
     <ePixmap pixmap="HDLine-Super/icon_pro/hard_doc.png" position="750,169" size="200,200" alphatest="on" zPosition="3" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="model" position="20,32" size="600,35" font="Regular;25" valign="center" transparent="1" />
@@ -1387,13 +1390,13 @@
   <screen name="HarddiskWait" position="100,120" size="1080,518" title="Harddisk Wait">
     <ePixmap pixmap="HDLine-Super/icon_pro/hard_doc.png" position="750,169" size="200,200" alphatest="on" zPosition="3" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget source="Title" render="Label" position="20,10" size="600,35" font="regular;25" backgroundColor="blue_tux4" transparent="1" />
@@ -1419,13 +1422,13 @@
   <!-- IPTV Player -->
   <screen name="ConfigMenu" position="100,121" size="1080,518" title="IPTV Player - settings">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/display_set.png" position="804,160" size="200,200" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
@@ -1438,13 +1441,13 @@
   </screen>
   <screen name="ConfigHostsMenu" position="100,121" size="1080,518" title="IPTVPlayer services configuration">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/display_set.png" position="804,160" size="200,200" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
@@ -1457,13 +1460,13 @@
   </screen>
   <screen name="ConfigHostMenu" position="100,121" size="1080,518" title=" ">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/display_set.png" position="804,160" size="200,200" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
@@ -1476,13 +1479,13 @@
   </screen>
   <screen name="ConfigExtMoviePlayer" position="100,121" size="1080,518" title="Configuring an external movie player">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/display_set.png" position="804,160" size="200,200" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
@@ -1495,13 +1498,13 @@
   </screen>
   <screen name="IPTVDirectorySelectorWidget" position="100,121" size="1080,518" title="">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/favourites.png" position="744,128" size="256,256" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
@@ -1516,13 +1519,13 @@
   </screen>
   <screen name="IPTVFileSelectorWidget" position="100,121" size="1080,518" title="">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,460" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/subtitle.png" position="766,159" size="200,200" alphatest="blend" />
@@ -1533,13 +1536,13 @@
   </screen>
   <screen name="IPTVUpdateWindow" position="100,121" size="1080,518" title="IPTVPlayer - update">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="755,167" size="200,200" alphatest="blend" />
     <widget name="sub_title" position="20,10" zPosition="2" size="600,35" valign="center" halign="left" font="Regular;26" transparent="1" foregroundColor="white" />
@@ -1548,13 +1551,10 @@
   </screen>
   <screen name="IPTVDMWidget" position="100,121" size="1080,550" title="IPTV Player download manager">
     <widget source="global.CurrentTime" render="Label" position="861,1" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1002,1" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="730,52" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="5,503" zPosition="1" size="1070,4" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,520" size="16,16" alphatest="blend" />
@@ -1570,13 +1570,13 @@
   </screen>
   <screen name="IPTVChoiceBoxWidget" position="100,121" size="1080,518">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="5,467" zPosition="1" size="1070,4" />
     <ePixmap pixmap="HDLine-Super/icon_pro/toolbox.png" position="755,167" size="200,200" alphatest="blend" />
@@ -1609,13 +1609,13 @@
   </screen>
   <screen name="IPTVFavouritesMainWidget" position="100,120" size="1080,518" title="Favourites manager">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/favourites.png" position="730,125" size="256,256" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
@@ -1630,13 +1630,13 @@
   </screen>
   <screen name="IPTVPinWidget" position="100,121" size="1080,518" title="IPTV Player">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="5,467" zPosition="1" size="1070,4" />
     <ePixmap pixmap="HDLine-Super/icon_pro/Parental.png" position="758,172" size="200,200" alphatest="on" />
@@ -1649,13 +1649,13 @@
   </screen>
   <screen name="IPTVSetupMainWidget" position="100,120" size="1080,518" title="IPTVPlayer setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/help.png" position="766,159" size="256,256" alphatest="blend" />
     <widget name="sub_title" position="10,10" zPosition="2" size="620,100" valign="center" halign="center" font="Regular;24" transparent="1" foregroundColor="white" />
@@ -1681,13 +1681,13 @@
   </screen>
   <screen name="IPTVSubDownloaderWidget" position="100,120" size="1080,518" title="">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,460" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/subtitle.png" position="766,159" size="200,200" alphatest="blend" />
@@ -1703,13 +1703,13 @@
   </screen>
   <screen name="IPTVSubSimpleDownloaderWidget" position="100,120" size="1080,518" title="">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,460" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/subtitle.png" position="766,159" size="200,200" alphatest="blend" />
@@ -1725,13 +1725,13 @@
   <screen name="PluginHiderSetup" title="PluginHider Setup" position="100,120" size="1080,518">
     <ePixmap pixmap="HDLine-Super/icon_pro/hideplug.png" position="750,169" size="200,200" alphatest="on" zPosition="3" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/left_key.png" position="481,480" size="35,25" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/right_key.png" position="536,480" size="35,25" alphatest="blend" />
@@ -1782,13 +1782,13 @@
   <!-- TempFanControl -->
   <screen name="TempFanControl" position="100,120" size="1080,518" title="Fan setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Fan.png" position="780,176" size="200,200" alphatest="on" zPosition="3" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="300,485" size="16,16" alphatest="blend" />
@@ -1812,13 +1812,13 @@
   <!-- DeviceManager -->
   <screen name="HddSetup" position="100,120" size="1080,518" title="Hard Drive Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/hdd.png" position="736,148" size="256,256" alphatest="on" zPosition="3" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
@@ -1845,13 +1845,13 @@
   </screen>
   <screen name="HddPartitions" position="100,120" size="1080,518" title="Hard Drive Partitions">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="36,485" size="16,16" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/green.png" position="285,485" size="16,16" alphatest="blend" />
@@ -1879,13 +1879,13 @@
   </screen>
   <screen name="HddMount" position="100,120" size="1080,518" title="Hard Drive Mount">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,470" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/hdd.png" position="696,134" size="256,256" alphatest="on" zPosition="3" />
@@ -1899,13 +1899,13 @@
   </screen>
   <screen name="HddFastRemove" position="100,120" size="1080,518" title="Hard Drive Fast Umount">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/hdd.png" position="736,148" size="256,256" alphatest="on" zPosition="3" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="311,485" size="16,16" alphatest="blend" />
@@ -1928,13 +1928,13 @@
   </screen>
   <screen name="HddInfo" position="100,120" size="1080,518" title="Hard Drive Info">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/hdd.png" position="733,133" size="256,256" alphatest="on" zPosition="3" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="43,485" size="16,16" alphatest="blend" />
@@ -2019,13 +2019,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="dFlash" position="100,120" size="1080,518" title="Flashing">
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="409,139" size="256,256" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="21,490" size="16,16" alphatest="blend" />
@@ -2040,13 +2040,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="dFlashConfiguration" position="100,120" size="1080,518" title="dFlash Configuration">
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="744,135" size="256,256" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="config" position="23,24" size="600,423" scrollbarMode="showNever" enableWrapAround="1" itemHeight="35" font="Regular;25" backgroundColor="background_tux" transparent="1" />
@@ -2062,13 +2062,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="dFlashChecking" position="100,120" size="1080,518" title="choose NAND Flash Check">
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="744,135" size="256,256" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="menu" position="50,50" size="526,241" itemHeight="35" font="Regular;25" valign="center" scrollbarMode="showNever" transparent="1" />
@@ -2085,13 +2085,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
     <ePixmap position="272,11" size="100,100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/dFlash/g3icon_dflash.png" transparent="1" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="744,135" size="256,256" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="about" position="28,137" size="587,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;24" transparent="1" />
@@ -2106,13 +2106,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- RemoveLocale -->
   <screen name="RemoveLocale" position="100,120" size="1080,518" title="Remove Locale">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/lang_sel.png" position="790,154" size="200,200" alphatest="blend" />
@@ -2128,13 +2128,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- VirtualKeyBoard -->
   <screen name="VirtualKeyBoard" zPosition="99" position="100,120" size="1080,518" title="Virtual KeyBoard">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="header" position="20,12" size="700,95" font="Regular;34" halign="center" transparent="1" noWrap="1" />
@@ -2155,13 +2155,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Common interface -->
   <screen name="MMIDialog" position="100,120" size="1080,518">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="748,145" size="256,256" zPosition="2" pixmap="HDLine-Super/icon_pro/unicam.png" transparent="1" alphatest="blend" />
     <widget name="title" position="20,15" size="630,35" font="Regular;25" />
@@ -2173,13 +2173,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Common interface - selection -->
   <screen name="CiSelection" position="100,120" size="1080,518" title="Common Interface">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="748,145" size="256,256" zPosition="2" pixmap="HDLine-Super/icon_pro/unicam.png" transparent="1" alphatest="blend" />
     <widget name="text" position="20,31" size="630,35" font="Regular;25" />
@@ -2189,13 +2189,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- CommonInterface -->
   <screen name="CIselectMainMenu" position="100,120" size="1080,518" title="CI assignment">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="20,485" size="16,16" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/buttons/green.png" position="315,485" size="16,16" alphatest="on" />
@@ -2207,13 +2207,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="CIconfigMenu" position="100,121" size="1080,519" title="CI assignment">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="20,485" size="16,16" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/buttons/green.png" position="205,485" size="16,16" alphatest="on" />
@@ -2235,13 +2235,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="easyCIconfigMenu" position="100,120" size="1080,518" title="CI assignment">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="20,485" size="16,16" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/buttons/green.png" position="228,485" size="16,16" alphatest="on" />
@@ -2257,13 +2257,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="CAidSelect" position="100,120" size="1080,518" title="select CAId\'s">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="20,485" size="16,16" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/buttons/green.png" position="242,485" size="16,16" alphatest="on" />
@@ -2276,13 +2276,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="myProviderSelection" position="100,120" size="1080,518" title="Select provider to add...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="776,485" size="16,16" alphatest="on" />
     <widget source="key_red" render="Label" position="800,480" zPosition="1" size="140,35" font="Regular;25" halign="left" valign="center" backgroundColor="background_tux" transparent="1" />
@@ -2293,13 +2293,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="myChannelSelection" position="100,120" size="1080,518" title="Select service to add...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="25,485" size="16,16" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/buttons/green.png" position="236,485" size="16,16" alphatest="on" />
@@ -2314,13 +2314,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="CiSelection" position="100,120" size="1080,518" title="Common Interface">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="text" position="20,23" size="555,66" font="Regular;45" />
     <ePixmap pixmap="skin_default/div-h.png" position="10,458" zPosition="1" size="1060,2" />
@@ -2330,13 +2330,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Softcam Setup -->
   <screen name="SoftcamSetup" position="100,120" size="1080,518" title="Softcam Setup...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,462" zPosition="1" size="1060,2" />
     <widget name="config" position="20,10" size="630,100" itemHeight="33" font="Regular;25" valign="center" enableWrapAround="1" />
@@ -2354,13 +2354,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Autocam -->
   <screen name="AdditionalAutoCamSetup" position="100,120" size="1080,518" title="Additional Settings">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="793,162" size="200,200" zPosition="2" pixmap="HDLine-Super/icon_pro/key.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="23,485" size="16,16" alphatest="blend" />
@@ -2372,13 +2372,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="AutoCamListSetup" position="100,120" size="1080,518" title="Auto-Camd List Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="729,164" size="200,200" zPosition="2" pixmap="HDLine-Super/icon_pro/key.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="17,485" size="16,16" alphatest="blend" />
@@ -2405,13 +2405,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="AutoCamServiceSetup" position="100,120" size="1080,518" title="Channel Selection">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap position="755,156" size="200,200" zPosition="2" pixmap="HDLine-Super/icon_pro/key.png" transparent="1" alphatest="blend" />
@@ -2427,13 +2427,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="CamSetupScreen" position="100,120" size="1080,518" title="Additional settings">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="21,485" size="16,16" alphatest="blend" />
@@ -2445,13 +2445,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="CamsetupSelection" position="100,120" size="1080,518" title="Softcam Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="801,150" size="200,200" zPosition="2" pixmap="HDLine-Super/icon_pro/key.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="skin_default/div-h.png" position="20,10" zPosition="2" size="700,2" />
@@ -2476,13 +2476,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Audio Sinc -->
   <screen name="AC3LipSyncSetup" position="100,120" size="1080,518" title="AC3 Lip Sync Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/audio.png" position="742,127" size="256,256" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="45,485" size="16,16" alphatest="blend" />
@@ -2497,13 +2497,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Location Box -->
   <screen name="LocationBox" position="100,120" size="1079,518" title="Location Box">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/subtitle.png" position="780,167" size="200,200" alphatest="on" zPosition="3" />
     <widget name="text" position="20,10" size="600,35" font="Regular;25" backgroundColor="background_tux" transparent="1" foregroundColor="unffc435" />
@@ -2524,13 +2524,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Language selection -->
   <screen name="LanguageSelection" position="100,120" size="1080,518" title="Language selection">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/lang_sel.png" position="716,163" size="200,200" alphatest="blend" />
     <widget source="languages" render="Listbox" position="20,31" size="420,451" enableWrapAround="1" scrollbarMode="showNever">
@@ -2548,13 +2548,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Wlan Scan -->
   <screen name="WlanScan" position="100,120" size="1080,518" title="Choose a Wireless Network">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="info" render="Label" position="20,7" size="700,35" font="Regular;25" backgroundColor="background_tux" />
     <eLabel position="10,465" size="1060,2" backgroundColor="grey" />
@@ -2580,13 +2580,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="WlanStatus" position="100,120" size="1080,518" title="Wireless Network State">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="IF" render="Label" position="26,16" size="540,35" font="Regular;25" halign="center" backgroundColor="background_tux" transparent="1" />
     <widget source="Statustext" render="Label" position="285,480" size="200,30" halign="right" font="Regular;25" transparent="1" />
@@ -2624,13 +2624,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Network adapter selection -->
   <screen name="NetworkAdapterSelection" position="100,120" size="1080,518" title="Select a network adapter">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="20,484" size="16,16" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/buttons/green.png" position="231,485" size="16,16" alphatest="on" />
@@ -2657,13 +2657,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Network Configuration -->
   <screen name="AdapterSetupConfiguration" position="100,120" size="1080,518" title="Network Configuration...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icons_menu/pro_network.png" position="800,360" size="128,128" alphatest="on" />
     <eLabel position="20,413" size="600,2" backgroundColor="blue_tux2" />
@@ -2679,13 +2679,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Network Setup -->
   <screen name="AdapterSetup" position="100,120" size="1080,518" title="Network Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="21,238" size="600,2" backgroundColor="blue_tux2" />
     <eLabel position="20,322" size="600,2" backgroundColor="blue_tux2" />
@@ -2721,13 +2721,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Nameserver -->
   <screen name="NameserverSetup" position="100,120" size="1080,518" title="Nameserver Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="744,173" size="200,200" alphatest="on" />
@@ -2743,13 +2743,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Network adapter test Black = "black" Grey = "#8c8c93" Green = "#1cff1c" Red = #f23d21-->
   <screen name="NetworkAdapterTest" position="100,120" size="1080,518" title="Network test...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="802,177" size="200,200" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/main/lan_info1.png" position="20,100" size="200,34" alphatest="on" />
@@ -2793,13 +2793,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="CleanupWizardConfiguration" position="100,120" size="1080,518" title="CleanupWizard settings">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="802,166" size="200,200" alphatest="on" />
     <widget name="config" position="20,15" size="700,374" zPosition="2" scrollbarMode="showNever" transparent="1" />
@@ -2812,13 +2812,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="NetworkBrowser" position="100,120" size="1080,518" title="Network Neighbourhood">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="802,166" size="200,200" alphatest="on" />
     <widget source="list" render="Listbox" position="20,15" size="650,401" zPosition="10" scrollbarMode="showNever">
@@ -2849,13 +2849,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="ScanIP" position="100,120" size="1080,518" title="Scan IP">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="31,485" size="16,16" alphatest="blend" />
@@ -2869,13 +2869,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="AutoMountManager" position="100,120" size="1080,518" title="Auto Mount Manager">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="803,156" size="200,200" alphatest="on" />
     <widget source="config" render="Listbox" position="17,23" size="700,350" enableWrapAround="1" scrollbarMode="showNever">
@@ -2900,13 +2900,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="AutoMountEdit" position="100,120" size="1080,518" title="Mount Edit">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="803,156" size="200,200" alphatest="on" />
     <widget name="config" position="20,7" size="600,402" font="Regular;25" itemHeight="35" enableWrapAround="1" scrollbarMode="showNever" zPosition="1" />
@@ -2922,13 +2922,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="AutoMountView" position="100,120" size="1080,518" title="Mount View">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="803,156" size="200,200" alphatest="on" />
     <widget source="legend1" render="Label" position="70,15" zPosition="1" size="130,40" font="Regular;18" halign="center" valign="center" backgroundColor="dark" transparent="1" />
@@ -2960,13 +2960,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="UserManager" position="100,120" size="1080,518" title="User Manager">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="803,156" size="200,200" alphatest="on" />
     <widget source="config" render="Listbox" position="20,20" size="650,351" enableWrapAround="1" scrollbarMode="showNever">
@@ -2991,13 +2991,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="UserDialog" position="100,120" size="1080,518" title="User Dialog">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="803,156" size="200,200" alphatest="on" />
     <widget name="config" position="20,50" size="650,352" font="Regular;25" itemHeight="35" enableWrapAround="1" zPosition="1" scrollbarMode="showNever" />
@@ -3014,13 +3014,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Input Device -->
   <screen name="InputDeviceSelection" position="100,120" size="1080,518" title="Select input device">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/inp-dev.png" position="755,156" size="200,200" zPosition="3" alphatest="on" />
     <widget source="list" render="Listbox" position="25,19" size="600,352" zPosition="10" scrollbarMode="showNever" enableWrapAround="1">
@@ -3045,13 +3045,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="InputDeviceSetup" position="100,120" size="1080,518" title="Input device setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/inp-dev.png" position="785,159" size="200,200" zPosition="3" alphatest="on" />
@@ -3064,13 +3064,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="UpdatePluginMenu" position="100,120" size="1080,518" title="Software management">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icons_menu/pro_software2.png" position="783,97" size="128,128" alphatest="on" />
@@ -3100,13 +3100,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="SoftwareManagerSetup" position="100,120" size="1080,518" title="SoftwareManager setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/toolbox.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <widget name="config" position="20,20" size="650,351" itemHeight="35" font="Regular;25" scrollbarMode="showNever" />
@@ -3124,13 +3124,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="PluginManager" position="100,120" size="1080,518" title="Extensions management">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <widget source="list" render="Listbox" position="20,14" size="650,352" transparent="1" scrollbarMode="showNever" itemHeight="50">
@@ -3167,13 +3167,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="PluginManagerInfo" position="100,120" size="1080,518" title="Plugin manager activity information">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <widget source="list" render="Listbox" position="20,20" size="650,351" scrollbarMode="showNever">
@@ -3203,13 +3203,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="PluginManagerHelp" position="100,120" size="1080,518" title="Plugin manager help">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <widget source="list" render="Listbox" position="20,20" size="650,351" scrollbarMode="showNever">
@@ -3233,13 +3233,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="PluginDetails" position="100,120" size="1080,518" title="Plugin details">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <widget source="author" render="Label" position="20,15" size="500,35" zPosition="10" font="Regular;25" transparent="1" />
@@ -3260,13 +3260,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="IPKGMenu" position="100,120" size="1080,518" title="Select upgrade source to edit.">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <widget name="filelist" position="20,20" size="650,351" itemHeight="35" font="Regular;25" enableWrapAround="1" scrollbarMode="showNever" />
@@ -3288,13 +3288,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="PacketManager" position="100,120" size="1080,518" title="Packet manager">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <widget source="list" render="Listbox" position="20,20" size="650,401" enableWrapAround="1" scrollbarMode="showNever">
@@ -3318,13 +3318,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="IpkgInstaller" position="100,120" size="1080,518" title="Install extensions">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -3340,13 +3340,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Backup Restore -->
   <screen name="BackupScreen" position="100,120" size="1080,518" title="Backup is running">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="771,162" size="200,200" zPosition="3" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -3354,13 +3354,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="BackupSelection" position="100,120" size="1080,518" title="Select files/folders to backup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="770,152" size="200,200" zPosition="3" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -3375,13 +3375,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="RestoreMenu" position="100,120" size="1080,518" title="Restore backups">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="770,152" size="200,200" zPosition="3" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -3395,13 +3395,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="RestoreScreen" position="100,120" size="1080,518" title="Restore is running...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/softmen.png" position="770,152" size="200,200" zPosition="3" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -3410,13 +3410,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Console -->
   <screen name="Console" position="100,120" size="1080,518" title="Command execution...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="754,144" size="250,250" zPosition="3" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -3425,13 +3425,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Script Executer -->
   <screen name="ScriptExecuter" position="100,120" size="1080,518" title="Script Executer">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="754,144" size="250,250" zPosition="3" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -3460,13 +3460,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="NimSelection" position="100,120" size="1080,518" title="Choose Tuner">
     <ePixmap pixmap="HDLine-Super/icon_pro/sat1.png" position="723,173" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="nimlist" render="Listbox" position="20,20" size="561,289" enableWrapAround="1" scrollbarMode="showNever">
       <convert type="TemplatedMultiContent">
@@ -3484,26 +3484,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="NimSetup" position="100,120" size="1080,518" title="Reception Settings">
     <ePixmap pixmap="HDLine-Super/icon_pro/sat1.png" position="763,159" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="config" position="20,17" size="600,481" itemHeight="30" font="Regular;24" scrollbarMode="showNever" zPosition="2" transparent="1" />
   </screen>
   <!-- Positioner Tune Setup -->
   <screen name="TunerScreen" position="center,center" size="1080,520" title="Tune">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="config" position="20,20" size="600,400" scrollbarMode="showNever" font="Regular;25" itemHeight="35" />
     <widget name="introduction" position="18,475" size="600,35" font="Regular;25" />
@@ -3513,13 +3513,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Positioner Setup -->
   <screen name="PositionerSetup" position="center,center" size="1080,520" title="Positioner setup...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/sat1.png" position="784,168" size="200,200" alphatest="on" />
     <ePixmap pixmap="skin_default/div-h.png" position="20,305" zPosition="1" size="660,2" />
@@ -3553,13 +3553,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="ScanSimple" position="100,120" size="1080,518" title="Service scan">
     <ePixmap pixmap="HDLine-Super/icon_pro/sat1.png" position="763,159" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="header" position="20,15" size="600,30" font="Regular;23" />
     <widget name="config" position="17,66" size="600,382" itemHeight="30" font="Regular;24" scrollbarMode="showNever" />
@@ -3569,13 +3569,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="ScanSetup" position="100,120" size="1080,518" title="Service scan">
     <ePixmap pixmap="HDLine-Super/icon_pro/sat1.png" position="763,159" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="config" position="20,15" size="600,421" itemHeight="30" font="Regular;22" scrollbarMode="showNever" />
     <widget name="introduction" position="20,453" size="600,50" font="Regular;20" halign="center" />
@@ -3584,13 +3584,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="ServiceScan" position="100,120" size="1080,518" title="Service Scan" flags="wfNoborder">
     <ePixmap pixmap="HDLine-Super/icon_pro/sat1.png" position="763,159" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="20,19" size="64,64" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
@@ -3713,13 +3713,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Skin Selector -->
   <screen name="SkinSelector" position="100,120" size="1080,518" title="Choose your Skin">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="Preview" position="613,156" size="353,250" alphatest="on" zPosition="3" />
@@ -3732,13 +3732,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="ParentalControlSetup" position="100,120" size="1080,518" title="Parental control setup">
     <ePixmap pixmap="HDLine-Super/icon_pro/Parental.png" position="763,159" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="config" position="31,16" size="540,442" itemHeight="30" font="Regular;24" scrollbarMode="showNever" />
@@ -3751,13 +3751,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="ParentalControlChangePin" position="100,120" size="1080,518" title="Change pin code">
     <ePixmap pixmap="HDLine-Super/icon_pro/Parental.png" position="763,159" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="config" position="34,52" size="499,391" scrollbarMode="showNever" />
@@ -3766,13 +3766,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="ParentalControlEditor" position="100,120" size="1080,518" title="Parental control services Editor">
     <ePixmap pixmap="HDLine-Super/icon_pro/Parental.png" position="763,159" size="200,200" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <widget name="servicelist" position="27,25" size="543,421" itemHeight="30" font="Regular;24" scrollbarMode="showNever" />
@@ -3943,13 +3943,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Channel context menu -->
   <screen name="ChannelContextMenu" position="100,120" size="1080,518" title="Channellist menu">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icons_menu/context.png" position="780,169" size="200,200" zPosition="1" alphatest="on" />
     <widget name="menu" position="20,20" size="600,351" font="Regular;25" itemHeight="35" enableWrapAround="1" />
@@ -3959,13 +3959,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Choose bouquet -->
   <screen name="BouquetSelector" position="100,120" size="1080,518" title="Choose bouquet">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="683,146" size="256,256" zPosition="1" alphatest="on" />
     <eLabel position="20,426" size="470,2" backgroundColor="blue_tux2" />
@@ -4102,13 +4102,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- GraphMultiEpg Settings -->
   <screen name="GraphMultiEpgSetup" position="center,120" size="1130,518" title="GraphMultiEpg Settings">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/tvguide.png" position="831,152" size="200,200" alphatest="blend" />
     <eLabel position="10,464" size="1110,2" backgroundColor="blue_tux" />
@@ -4250,13 +4250,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- DVD File Browser -->
   <screen name="FileBrowser" position="100,120" size="1080,518" title="DVD File Browser">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/a-v.png" position="784,160" size="200,200" zPosition="1" alphatest="blend" />
@@ -4268,13 +4268,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="picshow" position="100,120" size="1080,518" title="PicturePlayer">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <ePixmap pixmap="HDLine-Super/icons_menu/pro_picshow.png" position="845,200" size="128,128" zPosition="1" alphatest="on" />
@@ -4292,13 +4292,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="Pic_Exif" position="100,120" size="1080,518" title="Info">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <ePixmap pixmap="HDLine-Super/icons_menu/pro_picshow.png" position="825,183" size="128,128" zPosition="1" alphatest="on" />
@@ -4400,13 +4400,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Movie context menu -->
   <screen name="MovieContextMenu" position="100,120" size="1080,518" title="Movielist menu">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Customize.png" position="768,176" size="200,200" alphatest="on" />
     <widget name="menu" position="25,50" size="600,421" font="Regular;25" itemHeight="35" enableWrapAround="1" scrollbarMode="showNever" />
@@ -4414,13 +4414,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- MovieBrowserConfig -->
   <screen name="MovieBrowserConfiguration" position="100,120" size="1080,518" title="Movie Browser Configuration">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="config" position="20,20" size="670,421" itemHeight="30" enableWrapAround="1" font="Regular;22" transparent="1" scrollbarMode="showNever" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="41,485" size="16,16" alphatest="blend" />
@@ -4529,13 +4529,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="WebIfConfigScreen" position="100,120" size="1080,518" title="Webinterface: Main Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="792,165" size="200,200" zPosition="3" alphatest="on" />
     <widget name="config" position="20,20" size="650,421" itemHeight="35" font="Regular;25" scrollbarMode="showNever" zPosition="1" />
@@ -4548,13 +4548,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- OpenWebInterface -->
   <screen name="OpenWebifConfig" position="100,120" size="1080,518" title="OpenWebif Configuration...">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/icon_pro/Web-icon.png" position="792,165" size="200,200" zPosition="3" alphatest="on" />
@@ -4567,13 +4567,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="AspectRatioSwitchSetup" position="100,120" size="1080,518" title="AspectRatioSwitch Setup">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/display_set.png" position="800,163" size="200,200" zPosition="3" alphatest="on" />
     <widget name="config" position="19,11" size="650,354" itemHeight="34" font="Regular;25" enableWrapAround="1" scrollbarMode="showNever" zPosition="1" />
@@ -4588,13 +4588,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <!-- Zap-History Browser -->
   <screen name="ZapHistoryBrowser" position="100,120" size="1080,518" title="Zap-History Browser">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
     <ePixmap pixmap="HDLine-Super/icons_menu/pro_zap-history.png" position="814,199" size="128,128" zPosition="1" alphatest="on" />
@@ -4757,13 +4757,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
     <!--widget name="text" position="20,79" size="650,65" font="Regular;25" halign="center" transparent="1" /-->
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="744,135" size="256,256" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <ePixmap pixmap="HDLine-Super/buttons/red.png" position="20,485" size="16,16" alphatest="on" />
@@ -4812,7 +4812,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="6,44" size="58,20" font="Regular;20" halign="left" valign="top">
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget name="text3" position="0,0" size="0,0" />
     <widget name="text4" position="0,0" size="0,0" />
@@ -4851,13 +4851,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
     <widget name="text" position="26,8" size="583,65" font="Regular;22" halign="center" transparent="1" />
     <ePixmap pixmap="HDLine-Super/icon_pro/Linux1.png" position="744,135" size="256,256" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="skin_default/div-h.png" position="10,465" zPosition="1" size="1060,2" />
     <widget name="list" position="26,84" size="578,373" itemHeight="32" font="Regular;24" scrollbarMode="showNever" enableWrapAround="1" transparent="1" />
@@ -4874,13 +4874,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   <screen name="AboutOE" position="100,120" size="1080,518" title="About">
     <ePixmap pixmap="HDLine-Super/icon_pro/help.png" position="693,78" size="256,256" alphatest="on" zPosition="3" />
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/main/info-image.png" position="835,340" size="225,95" alphatest="on" />
     <ePixmap pixmap="HDLine-Super/RAED/RAEDlog.png" position="691,435" size="385,45" alphatest="on" />
@@ -4920,13 +4920,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="HarddiskDriveSelection" position="100,120" size="1080,518" title="HDD">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/hard_doc.png" position="743,171" size="200,200" zPosition="1" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -4956,13 +4956,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="HarddiskDriveSetup" position="100,120" size="1080,518" title="HDD">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/hard_doc.png" position="743,171" size="200,200" zPosition="1" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />
@@ -4985,13 +4985,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
   </screen>
   <screen name="HarddiskMountpointBrowser" position="100,120" size="1080,518" title="HDD">
     <widget source="global.CurrentTime" render="Label" position="862,4" size="140,50" font="Regular;40" valign="top" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
+    <!--widget source="global.CurrentTime" render="Label" position="1001,5" size="60,35" font="Regular;25" valign="top" halign="left" foregroundColor="grey" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
-    </widget>
+    </widget-->
     <widget source="global.CurrentTime" render="Label" position="736,54" size="309,25" font="Regular;20" zPosition="5" halign="right" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="HDLine-Super/icon_pro/hard_doc.png" position="743,171" size="200,200" zPosition="1" alphatest="on" />
     <eLabel position="10,465" size="1060,2" backgroundColor="blue_tux2" />

@@ -80,6 +80,9 @@
     <font filename="/usr/share/enigma2/BlackTransFullHD/fonts/OpenSans-Regular.ttf" name="Regular" scale="105" />
     <font filename="/usr/share/enigma2/BlackTransFullHD/fonts/DroidSans.ttf" name="RegularLight" scale="105" />
   </fonts>
+  <parameters>
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+  </parameters>
   <subtitles>
     <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#40101010" shadowOffset="3,3" />
     <sub font="Regular;30" foregroundColor="undcdcdc" name="Subtitle_Regular" shadowColor="#40101010" shadowOffset="3,3" />
@@ -146,23 +149,23 @@
       <convert type="VisionCamInfo">Camd</convert>
     </widget>
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1709,872" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1709,872" render="Label" size="100,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1774,872" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1774,872" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1789,872" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 32" halign="center" position="1854,887" size="15,60" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 32" halign="center" position="1869,888" render="Label" size="50,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="red">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 28" foregroundColor="unf0b400" halign="center" position="1704,977" render="Label" size="210,70" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 28" foregroundColor="unf0b400" halign="center" position="1704,977" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="center" position="1704,941" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="center" position="1704,941" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <!-- /* EPG -->
     <widget alphatest="blend" position="3,879" render="Picon" size="290,170" source="session.CurrentService" transparent="1" zPosition="4">
@@ -332,23 +335,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="5,84" size="1910,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="5,945" size="1915,3" transparent="0" zPosition="0" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1634,3" render="Label" size="95,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1634,3" render="Label" size="120,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1728,0" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1728,0" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1737,3" render="Label" size="95,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="orange">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 40" halign="center" position="1829,13" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1844,13" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="red">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,43" render="Label" size="200,70" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,43" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,4" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,4" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <!-- /* EPG  -->
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 25" halign="center" name="Jetzt" noWrap="1" position="5,88" size="60,430" text=" " transparent="0" valign="center" zPosition="-10" />
@@ -513,23 +516,23 @@
     <eLabel backgroundColor="FUllHDBorder" position="4,412" size="595,1" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBorder" position="4,95" size="1915,1" transparent="0" zPosition="-5" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1634,3" render="Label" size="95,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1634,3" render="Label" size="120,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1728,0" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1728,0" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1737,3" render="Label" size="95,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="orange">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 40" halign="center" position="1829,13" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1844,13" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="red">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,43" render="Label" size="200,70" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,43" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,4" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="right" position="1431,4" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <widget backgroundColor="FUllHDBackground" font="Arial; 55" foregroundColor="Accent1" halign="left" position="10,5" render="Label" size="1410,80" source="Title" transparent="1" valign="center" noWrap="1" />
     <widget backgroundColor="FUllHDBackground" colorEventProgressbarBorder="FUllHDSelection" colorEventProgressbarBorderSelected="FUllHDForeground" colorServiceDescription="yellow" colorServiceDescriptionSelected="cyan1" foregroundColorSelected="lime" foregroundColorServiceNotAvail="DeepGrey" itemHeight="50" name="list" position="611,115" scrollbarMode="showOnDemand" serviceInfoFont="Regular;30" serviceItemHeight="40" serviceNameFont="Regular;35" serviceNumberFont="Regular;35" size="1300,885" transparent="1" />
@@ -626,23 +629,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -677,23 +680,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -728,23 +731,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -814,23 +817,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -872,23 +875,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -923,23 +926,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -1058,23 +1061,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -1121,23 +1124,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="35,921" size="1056,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="35,65" size="2,855" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="707,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="806,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="829,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="929,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="707,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="707,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget font="Arial; 40" position="665,85" render="Label" size="400,70" source="title" transparent="1" valign="center" zPosition="1" halign="center" foregroundColor="ciel" />
     <widget enableWrapAround="1" position="50,85" render="Listbox" scrollbarMode="showNever" size="600,820" source="menu" transparent="1">
@@ -1233,23 +1236,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="1307,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="1307,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1401,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1401,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="1427,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="1529,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="1554,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="1305,672" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="1305,672" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="1305,623" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="1305,623" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 50" position="986,65" size="900,60" transparent="1" halign="center" text="BlackTrans FULL HD By RAED" foregroundColor="orange" />
     <widget name="AboutScrollLabel" font="Regular; 40" position="48,130" size="900,900" zPosition="2" halign="left" transparent="1" />
@@ -1350,23 +1353,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="1270,524" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="1270,524" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1371,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="1371,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="1392,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="1493,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="1513,535" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="1268,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="1268,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="1266,620" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="1266,620" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget enableWrapAround="1" itemHeight="35" name="menu" position="322,141" scrollbarMode="showNever" size="590,750" transparent="1" zPosition="3" />
     <ePixmap alphatest="blend" pixmap="BlackTransFullHD/icons/service_info.png" position="1277,197" size="300,300" />
@@ -1665,23 +1668,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,1075" size="1920,5" transparent="0" zPosition="0" />
     <ePixmap alphatest="blend" pixmap="BlackTransFullHD/icons/plus.png" position="1472,900" size="60,50" zPosition="1" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1704,872" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1704,872" render="Label" size="100,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1769,872" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1769,872" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1784,872" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 32" halign="center" position="1849,872" size="15,60" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 32" halign="center" position="1864,873" render="Label" size="50,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="red">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 28" foregroundColor="fresh" halign="center" position="1704,1015" render="Label" size="210,70" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 28" foregroundColor="fresh" halign="center" position="1704,1015" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="center" position="1704,966" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="center" position="1704,966" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 55" noWrap="1" position="298,874" render="Label" size="1190,100" source="session.CurrentService" transparent="1" valign="center" zPosition="1" halign="left">
       <convert type="ServiceName">Name</convert>
@@ -1720,23 +1723,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,98" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1005" size="1920,3" transparent="0" zPosition="0" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" halign="left" noWrap="1" position="5,4" size="859,90" text="EPG - Selection" transparent="1" foregroundColor="Accent1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="7,114" render="Label" size="950,60" source="Service" transparent="1" valign="center">
@@ -1833,23 +1836,23 @@
     <widget source="Title" position="1460,211" render="Picon" size="400,250" zPosition="2" transparent="1" alphatest="blend">
       <convert type="RefString">CurrentRef</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" halign="left" noWrap="1" position="5,4" size="859,90" text="Event View" transparent="1" foregroundColor="Accent1" />
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 40" name="epg_description" position="7,204" size="1380,700" transparent="1" />
@@ -1895,23 +1898,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,98" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1005" size="1920,3" transparent="0" zPosition="0" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" halign="left" noWrap="1" position="5,4" size="859,90" text="EPG - Selection" transparent="1" foregroundColor="Accent1" />
     <widget name="now_button_sel" pixmap="BlackTransFullHD/menu/now.png" position="38,170" size="250,10" zPosition="2" />
@@ -1948,23 +1951,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 50" position="4,5" size="859,90" text="Electronic Program Guide" transparent="1" />
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 45" position="10,110" render="Label" size="1250,50" source="Event" transparent="1">
@@ -2015,23 +2018,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <eLabel text="Electronic Program Guide" position="4,5" size="859,90" font="Arial; 50" transparent="1" />
     <widget source="Event" render="Label" position="10,110" size="1250,50" font="Regular; 45" transparent="1">
       <convert type="EventName">Name</convert>
@@ -2146,23 +2149,23 @@
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <widget name="waitingtext" position="0,0" size="0,0" />
     <widget backgroundColor="FUllHDBackground" font="Arial; 50" position="5,5" render="Label" size="859,90" source="Title" transparent="1" foregroundColor="Accent1" />
@@ -2488,23 +2491,23 @@
     </widget>
     <ePixmap alphatest="blend" pixmap="BlackTransFullHD/buttons/key_menu.png" position="350,867" size="65,40" transparent="1" zPosition="10" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <eLabel backgroundColor="FUllHDBackground" font="RegularLight; 40" position="689,117" size="800,60" text="Media Player" transparent="1" />
   </screen>
@@ -2828,23 +2831,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1100,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="732,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="732,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="831,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="831,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="854,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="979,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="732,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="732,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="732,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="732,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!-- MSNWeather -->
     <widget alphatest="blend" render="MSNWeatherPixmap" position="733,797" size="130,130" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/BlackTransFullHD/WeatherIcon/,png</convert>
@@ -2938,10 +2941,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap alphatest="blend" pixmap="BlackTransFullHD/colors/00ffffff.png" position="364,1050" size="648,20" zPosition="7" />
     <ePixmap alphatest="blend" pixmap="BlackTransFullHD/colors/00ffffff.png" position="364,1050" size="648,20" zPosition="2" />
     <widget backgroundColor="FUllHDBackground" font="RegularLight;26" halign="right" position="1069,1045" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 35" halign="right" position="1516,852" render="Label" size="400,60" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget backgroundColor="FUllHDBackground" font="LCD; 38" position="292,924" render="Label" size="1065,60" source="session.CurrentService" transparent="1" valign="top">
       <convert type="ServiceName">Name</convert>
@@ -3168,23 +3171,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="954,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="1,0" size="2,1080" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="Skin Selection" transparent="1" />
     <widget backgroundColor="FUllHDBackground" enableWrapAround="1" itemHeight="35" name="SkinList" position="153,242" scrollbarMode="showNever" size="789,653" transparent="1" font="Regular; 25">
@@ -3267,23 +3270,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="2,95" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,989" size="1920,3" transparent="0" zPosition="0" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <!--Uhr */-->
     <widget backgroundColor="FUllHDBackground" font="Arial; 45" halign="left" position="5,5" render="Label" size="1000,80" source="Title" transparent="1" foregroundColor="Accent1" />
@@ -4850,12 +4853,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="session.Event_Now" render="Progress" position="16,27" size="100,5" borderWidth="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="6,32" size="90,32" font="RegularLight; 32" halign="right" valign="top">
-      <convert type="ClockToText">Format:%H:%M</convert>
+    <widget source="global.CurrentTime" render="Label" position="6,32" size="100,32" font="RegularLight; 32" halign="right" valign="top">
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="100,34" zPosition="1" size="26,30" font="RegularLight; 16" valign="top">
+    <!--widget source="global.CurrentTime" render="Label" position="100,34" zPosition="1" size="26,30" font="RegularLight; 16" valign="top">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget source="session.RecordState" render="FixedLabel" text=" " position="6,31" zPosition="1" size="126,32" font="RegularLight; 16">
       <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide">Blink</convert>
@@ -4871,7 +4874,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- LCD screen (movieplayer) -->
   <screen name="InfoBarMoviePlayerSummary" position="0,0" size="200,20">
     <widget font="Regular;20" halign="center" position="0,0" render="Label" size="200,20" source="global.CurrentTime" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
   <!-- LCD screen (setup) -->
@@ -4891,11 +4894,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- LCD StandBy-Clock -->
   <screen name="StandbySummary" position="0,0" size="132,64">
     <widget font="RegularLight;22" halign="center" position="6,4" render="Label" size="120,24" source="global.CurrentTime" valign="center">
-      <convert type="ClockToText">Format:%H:%M  </convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <eLabel backgroundColor="FUllHDForeground" position="0,28" size="132,1" />
     <widget font="RegularLight;28" halign="center" position="6,32" render="Label" size="120,32" source="global.CurrentTime" valign="center">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget position="0,0" render="FixedLabel" size="200,20" source="session.RecordState" text=" REC " zPosition="1">
       <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
@@ -5011,23 +5014,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBorder" position="0,94" size="1920,5" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,985" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <eLabel backgroundColor="black" position="1250,114" size="630,335" transparent="0" zPosition="-10" />
     <widget backgroundColor="unff000000" position="1260,124" render="Pig" size="608,315" source="session.VideoPicture" zPosition="3" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 45" foregroundColor="Accent1" position="20,103" render="Label" shadowColor="#00605f5e" size="500,70" source="Service" transparent="1" zPosition="3">
@@ -5069,23 +5072,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="black" position="1250,114" size="630,335" transparent="0" zPosition="-10" />
     <widget backgroundColor="unff000000" position="1260,124" render="Pig" size="608,315" source="session.VideoPicture" zPosition="3" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="FUllHDForeground" halign="right" position="1440,467" size="440,50" transparent="1" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="Accent1" halign="left" position="20,104" render="Label" shadowColor="#000000" size="150,50" source="Event" transparent="1" zPosition="3">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
@@ -5128,23 +5131,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="black" position="1250,114" size="630,335" transparent="0" zPosition="-10" />
     <widget backgroundColor="unff000000" position="1260,124" render="Pig" size="608,315" source="session.VideoPicture" zPosition="3" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 45" foregroundColor="Accent1" halign="left" position="20,108" render="Label" size="890,55" source="Event" transparent="1" zPosition="3">
       <convert type="EventName">Name</convert>
     </widget>
@@ -5173,23 +5176,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="1919,0" size="2,1080" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" foregroundColor="foreground" halign="left" position="4,4" shadowColor="#000000" size="650,60" text="Cool TV  Guide" transparent="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="FUllHDForeground" halign="right" name="date" position="1550,110" size="350,60" transparent="1" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" name="timeline_text" position="20,110" size="1880,60" transparent="1" font="Regular; 28" />
     <widget CoolBackColorSel="FUllHDSelection" CoolCurrentColSel="FUllHDSelection" CoolFontColSel="FUllHDForeground" CoolNowColSel="FUllHDSelection" CoolNowFontColSel="FUllHDForeground" backgroundColor="FUllHDBackground" foregroundColor="FUllHDForeground" name="list" position="20,180" scrollbarMode="showNever" size="1880,530" transparent="1" />
     <widget name="timeline0" pixmap="BlackTransFullHD/colors/pmod/Bar.png" position="0,180" size="0,0" zPosition="1" />
@@ -5233,23 +5236,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="black" position="1250,114" size="630,335" transparent="0" zPosition="-10" />
     <widget backgroundColor="unff000000" position="1260,124" render="Pig" size="608,315" source="session.VideoPicture" zPosition="3" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="FUllHDForeground" halign="right" name="date" position="1063,116" size="180,60" transparent="1" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="left" position="24,116" render="Label" shadowColor="#00605f5e" size="150,60" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
@@ -5283,23 +5286,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="black" position="1250,114" size="630,335" transparent="0" zPosition="-10" />
     <widget backgroundColor="unff000000" position="1260,124" render="Pig" size="608,315" source="session.VideoPicture" zPosition="3" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="FUllHDForeground" halign="right" name="date" position="1600,467" size="300,60" transparent="1" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="left" position="20,108" render="Label" shadowColor="#000000" size="150,50" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
@@ -5342,23 +5345,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="black" position="1250,114" size="630,335" transparent="0" zPosition="-10" />
     <widget backgroundColor="unff000000" position="1260,124" render="Pig" size="608,315" source="session.VideoPicture" zPosition="3" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1250,457" render="Label" shadowColor="#000000" size="630,50" source="Service" transparent="1" zPosition="3">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -5402,23 +5405,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="1919,0" size="2,1080" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" foregroundColor="foreground" halign="left" position="4,4" shadowColor="#000000" size="650,60" text="Cool Tiny Guide" transparent="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 32" foregroundColor="FUllHDForeground" halign="right" name="date" position="1589,110" size="320,60" transparent="1" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" foregroundColor="FUllHDForeground" name="timeline_text" position="20,110" size="1890,60" transparent="1" font="Regular; 28" />
     <widget CoolBackColorSel="FUllHDSelection" CoolCurrentColSel="FUllHDSelection" CoolFontColSel="FUllHDForeground" CoolNowColSel="FUllHDSelection" CoolNowFontColSel="FUllHDForeground" backgroundColor="FUllHDBackground" foregroundColor="FUllHDForeground" name="list" position="20,178" scrollbarMode="showNever" size="1890,580" transparent="1" />
     <widget name="timeline0" pixmap="BlackTransFullHD/colors/pmod/Bar.png" position="0,178" size="0,0" zPosition="1" />
@@ -5461,23 +5464,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="black" position="1250,114" size="630,335" transparent="0" zPosition="-10" />
     <widget backgroundColor="unff000000" position="1260,124" render="Pig" size="608,315" source="session.VideoPicture" zPosition="3" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="right" position="1250,455" render="Label" shadowColor="#00605f5e" size="150,60" source="Event" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
@@ -5553,23 +5556,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBorder" position="0,1078" size="1920,3" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1075" size="1920,5" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1704,872" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1704,872" render="Label" size="100,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1769,872" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1769,872" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 43" halign="center" position="1784,872" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="cyan1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 32" halign="center" position="1849,872" size="15,60" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 32" halign="center" position="1864,873" render="Label" size="50,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="red">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 28" foregroundColor="fresh" halign="center" position="1704,1015" render="Label" size="210,70" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 28" foregroundColor="fresh" halign="center" position="1704,980" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="center" position="1704,941" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 30" foregroundColor="fresh" halign="center" position="1704,966" render="Label" size="210,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhrzeit/Datum */-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 45" noWrap="1" position="300,875" render="Label" size="1390,70" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="ServiceName">Name</convert>
@@ -5641,23 +5644,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,98" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1005" size="1920,3" transparent="0" zPosition="0" />
     <!-- /*Uhr-->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!--Uhr */-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" foregroundColor="foreground" halign="left" position="4,4" shadowColor="#000000" size="750,60" text="EMC Selection" transparent="1" />
     <widget name="list" position="729,173" size="1155,810" itemHeight="32" CoolFont="Regular;23" CoolSelectFont="Regular;23" CoolDateFont="Regular;23" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="150" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="Accent1" UnwatchedColor="Accent1" WatchingColor="FUllHDGreen" FinishedColor="Accent1" RecordingColor="red" BackColorSel="FUllHDSelection" backgroundColor="FUllHDBackground" foregroundColorSelected="FUllHDForeground" scrollbarMode="showNever" transparent="1" />
@@ -5816,23 +5819,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1100,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <!-- /* Uhrzeit/Datum -->
-    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="732,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="732,522" render="Label" size="130,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="831,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 50" halign="center" position="831,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 60" halign="center" position="854,522" render="Label" size="100,100" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="Accent1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="954,522" size="25,100" text=":" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 42" halign="center" position="979,533" render="Label" size="80,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="undcaaaa">
       <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="732,673" render="Label" size="330,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="un56c856" halign="center" position="732,673" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
-    </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="732,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 40" foregroundColor="fresh" halign="center" position="732,621" render="Label" size="330,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <!-- MSNWeather -->
     <widget alphatest="blend" render="MSNWeatherPixmap" position="733,797" size="130,130" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/BlackTransFullHD/WeatherIcon/,png</convert>
@@ -5975,23 +5978,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBorder" position="0,94" size="1920,5" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <eLabel backgroundColor="background" font="Arial; 45" foregroundColor="cyan1" halign="left" position="20,5" size="1100,60" text="Gemini Panel (GP3)" transparent="1" />
     <ePixmap alphatest="blend" pixmap="BlackTransFullHD/icons/paket.png" position="1408,558" size="300,300" />
     <ePixmap pixmap="Gemini_default/gp3.png" position="1464,264" size="130,130" alphatest="blend" zPosition="1" transparent="1" />
@@ -6047,23 +6050,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBorder" position="0,94" size="1920,5" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget name="AboutScrollLabel" font="Regular; 40" position="48,130" size="1820,900" zPosition="2" halign="left" transparent="1" />
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="SCommit Info ....." transparent="1" />
   </screen>
@@ -6124,23 +6127,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBorder" position="0,94" size="1920,5" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,985" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget alphatest="blend" pixmap="BlackTransFullHD/buttons/key_red.png" position="10,1019" render="Pixmap" size="60,50" source="key_red">
       <convert type="ConditionalShowHide" />
     </widget>
@@ -6254,23 +6257,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBorder" position="0,94" size="1920,5" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="Config WeatherMSN" transparent="1" />
     <widget alphatest="blend" name="arrowdown" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
     <widget alphatest="blend" name="arrowdown2" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
@@ -6299,23 +6302,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="5,1014" size="1918,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBorder" position="0,1013" size="1920,3" transparent="0" zPosition="-5" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,9" size="1400,60" text="Full HD 1920x1080 WeatherMSN" transparent="1" />
     <eLabel position="900,100" size="3,912" backgroundColor="foreground" zPosition="1" />
     <eLabel position="20,491" size="880,3" backgroundColor="foreground" zPosition="1" />
@@ -6412,10 +6415,10 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1774,6" size="140,60" font="Regular; 35" halign="right" backgroundColor="FUllHDBackground" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1716,72" size="200,60" font="Regular; 35" halign="right" backgroundColor="FUllHDBackground" foregroundColor="white" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="293,105" size="100,40" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/plugin.png" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="179,155" size="200,40" font="Regular; 35" halign="right" valign="center" backgroundColor="FUllHDBackground" shadowColor="FUllHDBackground" shadowOffset="-1,-1" transparent="1">
@@ -6446,23 +6449,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBackground" position="5,1014" size="1918,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBorder" position="0,1013" size="1920,3" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,9" size="1400,60" text="My TubePlayer" transparent="1" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <ePixmap position="1454,366" size="300,300" zPosition="2" pixmap="BlackTransFullHD/icons/youtubetv.png" transparent="1" alphatest="blend" />
     <widget backgroundColor="background" name="config" position="20,107" scrollbarMode="showNever" size="1200,40" transparent="1" />
     <widget backgroundColor="background" position="20,200" render="Listbox" scrollbarMode="showOnDemand" size="1200,800" source="feedlist" transparent="1">
@@ -6536,23 +6539,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBorder" position="0,94" size="1920,5" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" name="title" transparent="1" />
     <widget alphatest="blend" name="arrowdown" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
     <widget alphatest="blend" name="arrowdown2" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
@@ -6585,23 +6588,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBorder" position="0,94" size="1920,5" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBackground" position="0,95" size="1920,3" transparent="0" zPosition="0" />
-    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%H</convert>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
     </widget>
-    <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
     <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %B</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
-    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
-    </widget>
+    </widget-->
     <widget backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" name="title" transparent="1" />
     <widget alphatest="blend" name="arrowdown" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
     <widget alphatest="blend" name="arrowdown2" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
@@ -6622,23 +6625,23 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
   <eLabel backgroundColor="FUllHDBackground" position="0,0" size="1920,2" transparent="0" zPosition="0" />
   <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
   <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
-  <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-    <convert type="ClockToText">Format:%H</convert>
-  </widget>
-  <eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
-  <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-    <convert type="ClockToText">Format:%M</convert>
-  </widget>
-  <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
-  <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-    <convert type="ClockToText">Format:%S</convert>
-  </widget>
-  <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%e. %B</convert>
-  </widget>
-  <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%A</convert>
-  </widget>
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1623,10" render="Label" size="130,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText"></convert>
+    </widget>
+    <!--eLabel backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1714,10" size="15,80" text=":" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="FUllHDBackground" font="Regular; 55" halign="center" position="1730,10" render="Label" size="90,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1820,18" size="15,60" text=":" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="FUllHDBackground" font="Regular; 35" halign="center" position="1838,18" render="Label" size="70,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+    <widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,52" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">FullDate</convert>
+    </widget>
+    <!--widget backgroundColor="FUllHDBackground" font="Regular; 35" foregroundColor="Accent1" halign="right" position="1387,12" render="Label" size="235,38" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget-->
   <widget backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" name="title" transparent="1" />
   <!--widget alphatest="blend" name="arrowdown" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
   <widget alphatest="blend" name="arrowdown2" pixmap="BlackTransFullHD/skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />

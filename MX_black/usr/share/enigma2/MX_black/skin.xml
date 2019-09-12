@@ -54,6 +54,9 @@ The publication of the skin is not permitted without permission of the author - 
     <font filename="tuxtxt.ttf" name="Console" scale="100" />
     <font filename="LiberationSans-Regular.ttf" name="titles" scale="136" />
   </fonts>
+  <parameters>
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+  </parameters>
   <windowstyle type="skinned" id="0">
     <title offset="30,15" font="Regular;30" />
     <color name="Background" color="transpBlack" />
@@ -108,10 +111,7 @@ The publication of the skin is not permitted without permission of the author - 
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1080,22" size="95,30" font="Regular;28" valign="top" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1177,25" size="45,22" font="Regular;19" valign="top" halign="left" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap pixmap="MX_black/ico_dolby_off.png" position="810,28" size="57,20" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="MX_black/ico_dolby_on.png" position="810,28" size="57,20" zPosition="2" alphatest="blend">
@@ -1416,13 +1416,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="1093,61" size="130,67" zPosition="10" pixmap="MX_black/camera.png" alphatest="on" />
     <eLabel position="225,94" size="833,1" zPosition="1" backgroundColor="grey" />
     <widget source="global.CurrentTime" render="Label" position="1073,22" size="95,30" font="Regular;28" valign="top" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1170,25" size="45,22" font="Regular;19" valign="top" halign="left" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="900,101" size="160,30" font="Regular;21" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="220,22" size="730,30" font="Regular;26" backgroundColor="transpBlack" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -1618,13 +1615,10 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
       <convert type="ServiceName">Provider</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="880,7" size="80,25" font="Regular;24" valign="top" halign="right" backgroundColor="un333333" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="962,9" size="30,30" font="Regular;18" valign="top" halign="left" backgroundColor="un333333" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="880,35" size="110,20" font="Regular;18" halign="right" backgroundColor="transpBlack" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="MX_black/rec.png" position="1020,38" size="12,13" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
@@ -1944,11 +1938,11 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
   </screen>
   <screen name="MediaPlayer" position="0,0" size="1280,720" title="M e d i a  P l a y e r" backgroundColor="black" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="80,40" size="200,30" zPosition="1" font="Regular;28" halign="left" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="MX_black/icons/clock.png" position="1090,45" size="18,18" zPosition="1" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1100,40" size="100,30" zPosition="1" font="Regular;28" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Title" render="Label" position="0,40" size="1280,42" zPosition="1" halign="center" font="Regular;36" foregroundColor="blue" backgroundColor="transpBlack" transparent="1" />
     <ePixmap position="70,100" size="560,365" pixmap="MX_black/mp.png" zPosition="-1" alphatest="on" />
@@ -2000,13 +1994,10 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
     <ePixmap position="1093,61" size="130,67" zPosition="10" pixmap="MX_black/camera.png" alphatest="on" />
     <eLabel position="225,94" size="833,1" zPosition="1" backgroundColor="grey" />
     <widget source="global.CurrentTime" render="Label" position="1073,22" size="95,30" font="Regular;28" valign="top" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1170,25" size="45,22" font="Regular;19" valign="top" halign="left" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="900,101" size="160,30" font="Regular;21" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="220,22" size="730,30" font="Regular;26" backgroundColor="transpBlack" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -2520,13 +2511,10 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (640, 2), png = 3), # ind
     <ePixmap position="1093,61" size="130,67" zPosition="10" pixmap="MX_black/you_tube.png" alphatest="blend" />
     <eLabel position="225,94" size="833,1" zPosition="1" backgroundColor="grey" />
     <widget source="global.CurrentTime" render="Label" position="1073,22" size="95,30" font="Regular;28" valign="top" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1170,25" size="45,22" font="Regular;19" valign="top" halign="left" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="900,101" size="160,30" font="Regular;21" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="220,22" size="730,30" font="Regular;26" backgroundColor="transpBlack" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -3170,7 +3158,7 @@ MultiContentEntryText(pos = (65, 6), size = (450, 54), font=0, flags = RT_HALIGN
   </screen>
   <screen name="StandbySummary" position="0,0" size="132,64">
     <widget source="global.CurrentTime" render="Label" position="0,0" size="132,64" font="Regular;30" halign="center" valign="center">
-      <convert type="ClockToText">Format:%H:%M-%h.%d</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
   </screen>
   <screen name="Bh_Bpersonal_main" position="230,150" size="820,435" title="Black Hole Personal Backup">
@@ -3378,13 +3366,10 @@ MultiContentEntryText(pos = (65, 6), size = (450, 54), font=0, flags = RT_HALIGN
     <ePixmap position="77,25" size="130,24" zPosition="10" pixmap="MX_black/ster.png" alphatest="on" />
     <ePixmap position="1093,61" size="130,67" zPosition="10" pixmap="MX_black/camera.png" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="1073,22" size="95,30" font="Regular;28" valign="top" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1170,25" size="45,22" font="Regular;19" valign="top" halign="left" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="900,104" size="160,30" font="Regular;21" halign="right" backgroundColor="transpBlack" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Progress" position="225,92" size="833,5" zPosition="2" transparent="1">
       <convert type="ServicePosition">Position</convert>

@@ -74,6 +74,9 @@
     <font filename="/usr/share/enigma2/Turbo/fonts/verdana_r.ttf" name="Regular" scale="100" />
     <font filename="/usr/share/enigma2/Turbo/fonts/venus.ttf" name="PG" scale="100" />
   </fonts>
+  <parameters>
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+  </parameters>
   <!-- Window -->
   <windowstyle type="skinned" id="0">
     <title offset="40,24" font="Regular;22" />
@@ -152,11 +155,8 @@
     <widget source="session.Event_Now" render="Label" position="334,546" size="674,30" zPosition="2" halign="left" font="Regular; 24" backgroundColor="background" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="26,606" size="100,70" font="Regular; 60" valign="center" halign="right" backgroundColor="background_tux" transparent="1" text="22" foregroundColor="gold">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="122,626" size="90,40" font="Regular; 40" valign="center" halign="left" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Format::%M</convert>
+    <widget source="global.CurrentTime" render="Label" position="26,606" size="160,70" font="Regular; 60" valign="center" halign="right" backgroundColor="background_tux" transparent="1" text="22" foregroundColor="gold">
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="156,520" size="150,20" backgroundColor="background_tux" foregroundColor="fresh" zPosition="4" valign="top" halign="center" font="Regular; 18" transparent="1">
       <convert type="ServiceInfoEX">avtype</convert>
@@ -210,7 +210,7 @@
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1100,496" size="130,22" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <eLabel name="new eLabel" position="154,580" size="970,6" backgroundColor="background_tux" />
     <widget source="session.Event_Now" render="Progress" pixmap="Turbo/buttons/progress.png" position="156,582" size="968,4" zPosition="2" transparent="1">
@@ -334,7 +334,7 @@
       <convert type="ServiceInfoEX">avtype</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1100,496" size="130,22" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="156,546" size="280,22" font="Regular; 20" valign="top" backgroundColor="background_tux" foregroundColor="ciel" transparent="1" zPosition="4">
       <convert type="ServiceName2">Satellite</convert>
@@ -345,11 +345,8 @@
     <widget source="session.Event_Now" render="Label" zPosition="4" position="0,36" size="1280,120" font="Regular; 26" halign="center" backgroundColor="background_tux" foregroundColor="ciel" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="26,606" size="100,70" font="Regular; 60" valign="center" halign="right" backgroundColor="background_tux" transparent="1" text="22" foregroundColor="gold">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="122,626" size="90,40" font="Regular; 40" valign="center" halign="left" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Format::%M</convert>
+    <widget source="global.CurrentTime" render="Label" position="26,606" size="160,70" font="Regular; 60" valign="center" halign="right" backgroundColor="background_tux" transparent="1" text="22" foregroundColor="gold">
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Picon" position="50,546" size="100,60" zPosition="10" transparent="1" alphatest="on">
       <convert type="ServiceName">Reference</convert>
@@ -536,14 +533,11 @@
     <widget noWrap="1" backgroundColor="background_tux" font="Regular; 35" foregroundColor="unf23d21" render="Label" position="500,385" size="100,60" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="493,130" size="175,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
-      <convert type="ClockToText">Format: %A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="518,164" size="148,29" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600">
-      <convert type="ClockToText">Format: %e. %B</convert>
+    <widget source="global.CurrentTime" render="Label" position="493,130" size="225,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="498,48" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap pixmap="Turbo/buttons/select1.png" position="19,4" size="647,50" alphatest="off" zPosition="-1" transparent="0" />
     <widget source="session.CurrentService" render="Label" position="89,11" size="494,34" font="Regular; 24" backgroundColor="background_tux" transparent="1" halign="center" foregroundColor="unff6600" zPosition="3" valign="center">
@@ -665,13 +659,10 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="498,48" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="493,130" size="175,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
-      <convert type="ClockToText">Format: %A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="518,164" size="148,29" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600">
-      <convert type="ClockToText">Format: %e. %B</convert>
+    <widget source="global.CurrentTime" render="Label" position="493,130" size="230,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="Turbo/buttons/select1.png" position="19,4" size="647,50" alphatest="off" zPosition="-1" transparent="0" />
     <widget source="session.CurrentService" render="Label" position="89,11" size="494,34" font="Regular; 24" backgroundColor="background_tux" transparent="1" halign="center" foregroundColor="unff6600" zPosition="3" valign="center">
@@ -724,13 +715,10 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="498,48" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="493,130" size="175,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
-      <convert type="ClockToText">Format: %A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="518,164" size="148,29" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600">
-      <convert type="ClockToText">Format: %e. %B</convert>
+    <widget source="global.CurrentTime" render="Label" position="493,130" size="230,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="Turbo/buttons/select1.png" position="19,4" size="647,50" alphatest="off" zPosition="-1" transparent="0" />
     <widget source="session.CurrentService" render="Label" position="89,11" size="494,34" font="Regular; 24" backgroundColor="background_tux" transparent="1" halign="center" foregroundColor="unff6600" zPosition="3" valign="center">
@@ -778,13 +766,10 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="498,48" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="493,130" size="175,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
-      <convert type="ClockToText">Format: %A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="518,164" size="148,29" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600">
-      <convert type="ClockToText">Format: %e. %B</convert>
+    <widget source="global.CurrentTime" render="Label" position="493,130" size="230,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="Turbo/buttons/select1.png" position="19,4" size="647,50" alphatest="off" zPosition="-1" transparent="0" />
     <widget source="session.CurrentService" render="Label" position="89,11" size="494,34" font="Regular; 24" backgroundColor="background_tux" transparent="1" halign="center" foregroundColor="unff6600" zPosition="3" valign="center">
@@ -890,13 +875,10 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="498,48" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="493,130" size="175,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
-      <convert type="ClockToText">Format: %A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="518,164" size="148,29" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600">
-      <convert type="ClockToText">Format: %e. %B</convert>
+    <widget source="global.CurrentTime" render="Label" position="493,130" size="230,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="Turbo/buttons/select1.png" position="19,4" size="647,50" alphatest="off" zPosition="-1" transparent="0" />
     <widget source="session.CurrentService" render="Label" position="89,11" size="494,34" font="Regular; 24" backgroundColor="background_tux" transparent="1" halign="center" foregroundColor="unff6600" zPosition="3" valign="center">
@@ -926,13 +908,10 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="498,48" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="493,130" size="175,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
-      <convert type="ClockToText">Format: %A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="518,164" size="148,29" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600">
-      <convert type="ClockToText">Format: %e. %B</convert>
+    <widget source="global.CurrentTime" render="Label" position="493,130" size="230,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="Turbo/buttons/select1.png" position="19,4" size="647,50" alphatest="off" zPosition="-1" transparent="0" />
     <widget source="session.CurrentService" render="Label" position="89,11" size="494,34" font="Regular; 24" backgroundColor="background_tux" transparent="1" halign="center" foregroundColor="unff6600" zPosition="3" valign="center">
@@ -1275,11 +1254,8 @@
     <widget source="ServiceEvent" render="Label" position="7,160" zPosition="1" size="430,210" font="Regular; 22" transparent="1" backgroundColor="background_tux" foregroundColor="ciel">
       <convert type="EventName2">FullDescription</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="-8,556" size="100,70" font="Regular; 60" valign="center" halign="right" backgroundColor="background_tux" transparent="1" text="22" foregroundColor="gold">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="94,576" size="90,44" font="Regular; 40" valign="center" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Format::%M</convert>
+    <widget source="global.CurrentTime" render="Label" position="-8,556" size="160,70" font="Regular; 60" valign="center" halign="right" backgroundColor="background_tux" transparent="1" text="22" foregroundColor="gold">
+      <convert type="ClockToText"></convert>
     </widget>
     <widget render="VideoSize" source="session.CurrentService" position="677,530" size="110,20" backgroundColor="transpBlack" font="Regular;19" foregroundColor="gold" halign="center" valign="center" transparent="1" zPosition="1" />
     <widget source="session.CurrentService" render="Label" position="950,530" size="100,20" backgroundColor="background" foregroundColor="gold" zPosition="4" valign="top" halign="center" font="Regular; 18" transparent="1">
@@ -1442,7 +1418,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="830,47" size="170,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
   <!-- EPG Selection Multi -->
@@ -1469,7 +1445,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
   <screen name="EventView" position="center,center" size="1130,520" title="Eventview">
     <widget name="channel" position="20,30" size="400,30" font="Regular; 26" foregroundColor="unff6600" backgroundColor="background" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="376,3" size="388,24" font="Regular; 20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" zPosition="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="528,35" zPosition="1" size="67,30" pixmap="Turbo/menu/hd.png" alphatest="on" transparent="1" />
     <widget name="duration" position="700,30" size="400,30" font="Regular; 26" halign="right" foregroundColor="unff6600" backgroundColor="background" transparent="1" />
@@ -1517,7 +1493,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="921,6" size="110,37" zPosition="1" font="Regular;32" valign="top" halign="left" backgroundColor="background" transparent="1" foregroundColor="grey">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap position="18,475" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
     <ePixmap position="320,475" size="200,40" pixmap="Turbo/buttons/green25.png" alphatest="blend" zPosition="1" />
@@ -1559,7 +1535,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <ePixmap alphatest="blend" pixmap="Turbo/menu/language.png" position="620,51" size="128,128" zPosition="-1" />
     <eLabel position="544,0" size="1,378" backgroundColor="gold" />
     <widget source="global.CurrentTime" render="Label" position="549,308" size="220,68" font="Regular;60" zPosition="5" halign="right" foregroundColor="gold" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="languages" render="Listbox" position="27,7" size="500,360" scrollbarMode="showNever" selectionPixmap="Turbo/buttons/select4.png" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -1613,7 +1589,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="MoviePlayer" position="center,center" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
     <ePixmap position="28,544" zPosition="-1" size="1220,160" pixmap="Turbo/menu/movie-player.png" alphatest="off" />
     <widget source="global.CurrentTime" render="Label" position="1089,652" size="140,40" zPosition="2" font="Regular; 32" valign="top" halign="right" foregroundColor="3rdFG" backgroundColor="background_tux" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap position="61,567" zPosition="1" size="110,110" pixmap="Turbo/menu/media.png" alphatest="on" />
     <widget source="session.CurrentService" render="Label" position="300,565" size="700,26" zPosition="2" font="Regular; 24" halign="center" noWrap="1" foregroundColor="grey" transparent="1" backgroundColor="background_tux">
@@ -1660,7 +1636,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="869,90" size="128,128" pixmap="Turbo/menu/13.png" alphatest="blend" />
     <eLabel position="20,42" size="20,27" backgroundColor="darkgrey" />
     <widget source="global.CurrentTime" render="Label" position="843,7" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget name="target" position="40,42" size="800,27" valign="center" font="Regular;24" foregroundColor="grey" backgroundColor="background_tux" transparent="1" />
     <widget name="filelist" position="20,70" zPosition="1" size="800,180" scrollbarMode="showNever" selectionPixmap="Turbo/buttons/select3.png" selectionDisabled="1" transparent="1" />
@@ -1687,7 +1663,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <ePixmap position="25,290" size="0,0" zPosition="1" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="745,407" size="180,60" zPosition="1" font="Regular; 50" valign="center" halign="center" foregroundColor="3rdFG" backgroundColor="background_tux" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap pixmap="Turbo/menu/usb_1.png" position="19,414" size="65,65" alphatest="blend" />
     <ePixmap pixmap="Turbo/menu/hdd_1.png" position="19,348" size="65,65" alphatest="blend" />
@@ -1988,7 +1964,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="Turbo/menu/wlan.png" position="816,155" zPosition="0" size="128,128" transparent="1" alphatest="on" />
     <ePixmap alphatest="on" pixmap="Turbo/menu/image.png" position="767,327" size="225,95" zPosition="-1" />
     <widget source="global.CurrentTime" render="Label" position="792,25" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget name="infolist" position="8,13" size="750,380" selectionDisabled="1" scrollbarMode="showNever" transparent="1" />
     <ePixmap position="12,436" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
@@ -2019,10 +1995,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_red" render="Label" position="53,482" zPosition="2" size="200,25" font="Regular; 20" halign="center" valign="center" backgroundColor="background_tux" transparent="1" />
     <widget source="key_green" render="Label" position="370,482" zPosition="2" size="200,25" font="Regular; 20" halign="center" valign="center" backgroundColor="background_tux" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="145,7" size="376,24" font="Regular; 20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" zPosition="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="685,9" size="180,60" font="Regular; 52" halign="center" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
   <!-- Simple Channel Selection -->
@@ -2188,14 +2164,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget noWrap="1" backgroundColor="background_tux" font="Regular; 35" foregroundColor="unf23d21" render="Label" position="500,385" size="100,60" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="493,130" size="175,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
-      <convert type="ClockToText">Format: %A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="518,164" size="148,29" font="Regular; 20" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600">
-      <convert type="ClockToText">Format: %e. %B</convert>
-    </widget>
     <widget source="global.CurrentTime" render="Label" position="498,48" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="493,130" size="230,30" font="Regular; 20" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="unff6600" valign="bottom">
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="Turbo/buttons/select1.png" position="19,4" size="647,50" alphatest="off" zPosition="-1" transparent="0" />
     <widget source="session.CurrentService" render="Label" position="89,11" size="494,34" font="Regular; 24" backgroundColor="background_tux" transparent="1" halign="center" foregroundColor="unff6600" zPosition="3" valign="center">
@@ -2523,10 +2496,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="DVDPlayer" position="center,center" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="28,540" zPosition="-1" size="1220,160" pixmap="Turbo/menu/movie-player.png" />
     <widget source="global.CurrentTime" render="Label" position="923,640" size="140,34" zPosition="2" font="Regular;30" valign="top" halign="right" foregroundColor="white" backgroundColor="background_tux" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1098,643" size="140,25" font="Regular;22" halign="right" backgroundColor="background_tux" foregroundColor="grey" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="237,567" size="750,32" zPosition="2" font="Regular; 22" halign="left" noWrap="1" foregroundColor="grey" transparent="1" backgroundColor="background_tux">
       <convert type="ServiceName">Name</convert>
@@ -2668,13 +2641,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_yellow" render="Label" position="455,355" size="150,22" font="Regular;18" valign="top" halign="left" foregroundColor="grey" backgroundColor="background_tux" transparent="1" />
     <widget source="key_blue" render="Label" position="655,355" size="150,22" font="Regular;18" valign="top" halign="left" foregroundColor="grey" backgroundColor="background_tux" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
   <!-- PluginManagerInfo (Plugin manager activity information) -->
   <screen name="PluginManagerInfo" position="center,204" size="830,380" title="Plugin manager activity information" flags="wfBorder">
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="status" render="Label" position="15,330" zPosition="10" size="810,20" halign="center" valign="center" font="Regular; 18" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
     <widget source="key_red" render="Label" position="110,355" zPosition="2" size="200,25" font="Regular; 18" halign="left" valign="top" backgroundColor="background_tux" transparent="1" />
@@ -2702,7 +2675,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="PluginDetails" position="center,204" size="830,380" title="Plugin details" flags="wfBorder">
     <ePixmap alphatest="blend" pixmap="Turbo/menu/18.png" position="317,193" size="128,128" zPosition="-1" />
     <widget source="global.CurrentTime" render="Label" position="321,47" size="110,37" zPosition="1" font="Regular; 32" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap position="21,356" size="16,16" pixmap="Turbo/buttons/button_red.png" alphatest="blend" zPosition="1" />
     <ePixmap position="260,356" size="16,16" pixmap="Turbo/buttons/button_green.png" alphatest="blend" zPosition="1" />
@@ -2733,7 +2706,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="0,338" size="828,1" backgroundColor="gold" />
     <eLabel position="152,0" size="1,336" backgroundColor="gold" />
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="Turbo/menu/18.png" position="22,178" size="128,128" zPosition="-1" />
     <ePixmap position="10,356" size="16,16" pixmap="Turbo/buttons/button_red.png" alphatest="blend" zPosition="1" />
@@ -2753,7 +2726,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- PacketManager -->
   <screen name="PacketManager" position="center,204" size="830,380" title="Packet manager" flags="wfBorder">
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <eLabel position="196,0" size="1,344" backgroundColor="gold" />
     <eLabel position="0,346" size="828,1" backgroundColor="gold" />
@@ -2779,7 +2752,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- IpkgInstaller -->
   <screen name="IpkgInstaller" position="center,204" size="830,380" title="Install extensions">
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <eLabel position="196,0" size="1,320" backgroundColor="gold" />
     <eLabel position="0,320" size="828,1" backgroundColor="gold" />
@@ -2809,7 +2782,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_yellow" render="Label" position="455,355" size="150,22" font="Regular;18" valign="top" halign="left" foregroundColor="grey" backgroundColor="background_tux" transparent="1" />
     <widget source="key_blue" render="Label" position="655,355" size="150,22" font="Regular;18" valign="top" halign="left" foregroundColor="grey" backgroundColor="background_tux" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget name="checkList" position="180,9" size="640,320" transparent="1" scrollbarMode="showNever" />
   </screen>
@@ -2825,7 +2798,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_green" render="Label" position="255,355" size="150,22" font="Regular;18" valign="top" halign="left" foregroundColor="grey" backgroundColor="background_tux" transparent="1" />
     <widget source="key_yellow" render="Label" position="455,355" size="150,22" font="Regular;18" valign="top" halign="left" foregroundColor="grey" backgroundColor="background_tux" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget name="filelist" position="186,7" size="640,320" scrollbarMode="showNever" transparent="1" />
   </screen>
@@ -2955,7 +2928,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- Positioner setup -->
   <screen name="PositionerSetup" position="center,center" size="1030,520" title="Positioner setup..." flags="wfBorder">
     <widget source="global.CurrentTime" render="Label" position="316,6" size="388,24" font="Regular; 20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" zPosition="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="12,9" zPosition="0" size="67,30" pixmap="Turbo/menu/hd.png" alphatest="blend" transparent="1" />
     <ePixmap pixmap="Turbo/menu/posizioner.png" position="38,137" zPosition="-3" size="256,256" alphatest="on" transparent="1" />
@@ -3069,10 +3042,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="VideoSetup" position="center,center" size="900,520" title="VideoSetup" flags="wfBorder">
     <ePixmap alphatest="on" pixmap="Turbo/menu/image.png" position="668,422" size="225,95" zPosition="-1" />
     <widget source="global.CurrentTime" render="Label" position="122,3" size="376,24" font="Regular; 20" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center" zPosition="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="694,4" size="180,60" zPosition="1" font="Regular; 52" valign="center" halign="center" backgroundColor="background_tux" transparent="1" foregroundColor="3rdFG">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap position="52,475" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
     <ePixmap position="400,475" size="200,40" pixmap="Turbo/buttons/green25.png" alphatest="blend" zPosition="1" />
@@ -3089,11 +3062,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="parent.ServiceEvent" render="Progress" position="16,27" size="100,5">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="6,32" size="90,32" font="Display;30" halign="right" valign="top">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="100,34" zPosition="1" size="26,30" font="Display;14" valign="top">
-      <convert type="ClockToText">Format:%S</convert>
+    <widget source="global.CurrentTime" render="Label" position="6,32" size="150,32" font="Display;30" halign="right" valign="top">
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
   <!-- LCD screen (main) -->
@@ -3105,11 +3075,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="session.Event_Now" render="Progress" position="16,27" size="100,5">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="6,32" size="90,32" font="Display;30" halign="right" valign="top">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="100,34" zPosition="1" size="26,30" font="Display;14" valign="top">
-      <convert type="ClockToText">Format:%S</convert>
+    <widget source="global.CurrentTime" render="Label" position="6,32" size="150,32" font="Display;30" halign="right" valign="top">
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.RecordState" render="FixedLabel" text=" " position="6,30" zPosition="1" size="120,34">
       <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
@@ -3126,7 +3093,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="6,32" size="120,32" font="Display;30" halign="center" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.RecordState" render="FixedLabel" text=" " position="6,32" zPosition="1" size="120,32">
       <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
@@ -3156,7 +3123,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!--StandbySummary -->
   <screen name="StandbySummary" position="0,0" size="132,64">
     <widget source="global.CurrentTime" render="Label" position="6,0" size="120,64" font="Display;38" halign="center" valign="center">
-      <convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.RecordState" render="FixedLabel" position="6,0" zPosition="1" size="120,64" text=" ">
       <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
@@ -3244,7 +3211,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="350,0" size="2,560" backgroundColor="grey" />
     <eLabel position="390,510" size="600,2" backgroundColor="grey" />
     <widget source="global.CurrentTime" render="Label" position="61,467" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap position="843,327" size="100,40" zPosition="4" pixmap="Turbo/menu/plugin.png" alphatest="on" transparent="1" />
     <ePixmap position="242,518" zPosition="1" size="35,25" pixmap="Turbo/buttons/key_text.png" transparent="1" alphatest="on" />
@@ -3292,14 +3259,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="title" position="392,16" size="600,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
     <eLabel position="350,0" size="2,560" backgroundColor="grey" />
     <eLabel position="390,510" size="600,2" backgroundColor="grey" />
-    <widget source="global.CurrentTime" render="Label" position="14,461" size="200,60" font="Regular;60" zPosition="5" halign="right" foregroundColor="gold" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="216,462" size="82,36" font="Regular;35" zPosition="5" halign="left" foregroundColor="gold" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+    <widget source="global.CurrentTime" render="Label" position="14,461" size="230,60" font="Regular;60" zPosition="5" halign="right" foregroundColor="gold" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1,533" size="350,22" font="Regular;20" zPosition="5" halign="center" foregroundColor="gold" backgroundColor="background_tux" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="Turbo/icons/mytube.png" position="56,158" zPosition="-3" size="200,200" alphatest="blend" transparent="1" />
     <widget name="detailtext" position="393,97" size="600,400" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top" backgroundColor="darkgrey" />
@@ -3335,7 +3299,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="67,448" size="180,60" font="Regular; 52" halign="left" backgroundColor="background_tux" transparent="1" valign="center" foregroundColor="gold">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap pixmap="Turbo/icons/mytube.png" position="56,158" zPosition="-3" size="200,200" alphatest="blend" transparent="1" />
     <widget name="detailtext" position="319,310" size="700,240" zPosition="10" font="Regular;22" foregroundColor="white" backgroundColor="background_tux" transparent="1" />
@@ -3349,14 +3313,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="title" position="388,30" size="600,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" backgroundColor="background_tux" />
     <eLabel position="350,0" size="2,560" backgroundColor="grey" />
     <eLabel position="390,510" size="600,2" backgroundColor="grey" />
-    <widget source="global.CurrentTime" render="Label" position="14,461" size="200,60" font="Regular;60" zPosition="5" halign="right" foregroundColor="gold" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="216,462" size="82,36" font="Regular;35" zPosition="5" halign="left" foregroundColor="gold" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+    <widget source="global.CurrentTime" render="Label" position="14,461" size="230,60" font="Regular;60" zPosition="5" halign="right" foregroundColor="gold" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1,533" size="350,22" font="Regular;20" zPosition="5" halign="center" foregroundColor="gold" backgroundColor="background_tux" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="config" zPosition="2" position="392,103" size="600,400" scrollbarMode="showNever" transparent="1" />
     <ePixmap position="430,516" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
@@ -3383,14 +3344,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="Turbo/icons/mytube.png" position="56,158" zPosition="-3" size="200,200" alphatest="blend" transparent="1" />
     <eLabel position="350,0" size="2,560" backgroundColor="grey" />
     <eLabel position="390,510" size="600,2" backgroundColor="grey" />
-    <widget source="global.CurrentTime" render="Label" position="14,461" size="200,60" font="Regular;60" zPosition="5" halign="right" foregroundColor="gold" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="216,462" size="82,36" font="Regular;35" zPosition="5" halign="left" foregroundColor="gold" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+    <widget source="global.CurrentTime" render="Label" position="14,461" size="230,60" font="Regular;60" zPosition="5" halign="right" foregroundColor="gold" transparent="1">
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1,533" size="350,22" font="Regular;20" zPosition="5" halign="center" foregroundColor="gold" backgroundColor="background_tux" transparent="1">
-      <convert type="ClockToText">Date</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap position="600,518" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
     <widget name="key_red" position="600,524" zPosition="2" size="200,25" font="Regular; 20" halign="center" valign="center" foregroundColor="white" backgroundColor="background_tux" transparent="1" />

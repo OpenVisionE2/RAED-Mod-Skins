@@ -85,6 +85,9 @@ Pls Read skin info
     <alias name="ChoiceList" font="Regular" size="26" height="30" />
     <alias name="config" font="Regular" size="26" height="30" />
   </fonts>
+  <parameters>
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+  </parameters>
   <windowstyle type="skinned" id="0">
     <title offset="25,4" font="Regular;44" />
     <color name="Background" color="un1a000000" />
@@ -161,10 +164,7 @@ Pls Read skin info
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1670,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1800,36" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <ePixmap pixmap="MX_HQ9B/ico_dolby_off.png" position="1230,36" size="62,44" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ9B/ico_dolby_on.png" position="1230,36" size="62,44" zPosition="2" alphatest="blend">
@@ -376,7 +376,7 @@ Pls Read skin info
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1665,230" size="180,30" font="Regular;24" halign="center" foregroundColor="button" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" font="Regular;24" position="76,230" size="87,30" halign="right" foregroundColor="button" backgroundColor="black" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
@@ -431,10 +431,7 @@ Pls Read skin info
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1665,104" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1795,106" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <eLabel backgroundColor="background" font="Regular; 38" foregroundColor="lime" position="129,158" size="160,40" text="NOW &gt;" transparent="1" />
     <widget backgroundColor="background" font="Regular;34" foregroundColor="foreground" halign="right" position="384,158" render="Label" size="120,40" source="session.Event_Now" transparent="1">
@@ -756,7 +753,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (50, 50), png = 1),
     <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
     <widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
   <screen name="DeliteSetupFp" position="30,120" size="820,850" title="Fast Plugin Setup">
@@ -1316,7 +1313,7 @@ MultiContentEntryText(pos = (665, 3), size = (155, 37),  font = 1, flags = RT_HA
       <convert type="ServiceName">Provider</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1345,25" size="195,40" font="Regular;36" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <ePixmap pixmap="MX_HQ9B/recbg2.png" position="1555,138" size="30,30" zPosition="1" alphatest="blend" />
     <widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ9B/rec_1.png" position="1555,138" size="30,30" zPosition="3" alphatest="blend">
@@ -1541,7 +1538,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
     <ePixmap pixmap="MX_HQ9B/menu/menubutton.png" position="1650,810" size="48,48" alphatest="blend" />
     <ePixmap pixmap="MX_HQ9B/menu/epg.png" position="1710,810" size="48,48" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1315,370" size="350,40" font="Regular;32" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="list" position="20,20" size="1170,760" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9B/menu/bg1180x40.png" selectionPixmap="MX_HQ9B/menu/button1180x40.png" transparent="1" />
     <eLabel position="0,790" size="1820,3" zPosition="-1" backgroundColor="un272727" />
@@ -1645,7 +1642,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
   </screen>
   <screen name="GraphMultiEPG" position="center,110" size="1780,880" title="Electronic Program Guide">
     <widget source="global.CurrentTime" render="Label" position="1220,20" size="540,60" font="Regular;46" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="Event" render="Label" position="1228,80" zPosition="1" size="528,70" font="Regular;30" halign="center" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="EventName">Name</convert>
@@ -1698,7 +1695,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
     <eLabel position="1200,20" size="620,320" zPosition="2" backgroundColor="black" />
     <widget source="session.VideoPicture" render="Pig" position="1228,30" zPosition="3" size="530,300" backgroundColor="transparent2" />
     <widget source="global.CurrentTime" render="Label" position="1315,370" size="350,40" font="Regular;32" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="config" position="20,20" size="1160,760" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9B/menu/bg1180x40.png" selectionPixmap="MX_HQ9B/menu/button1180x40.png" transparent="1" />
     <eLabel position="0,790" size="1820,3" zPosition="-1" backgroundColor="un272727" />
@@ -1768,7 +1765,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
   </screen>
   <screen name="SimpleChannelSelection" position="center,110" size="1780,880" title="">
     <widget source="global.CurrentTime" render="Label" position="1220,60" size="540,60" font="Regular;46" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget name="list" position="20,20" size="1180,765" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="button" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="#ffffff" colorServiceDescription="#ffffff" colorServiceDescriptionSelected="#ffffff" serviceItemHeight="45" serviceNumberFont="Regular;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9B/menu/bg1180x45.png" selectionPixmap="MX_HQ9B/menu/button1180x45.png" transparent="1" />
     <eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="un272727" />
@@ -1880,13 +1877,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="95,41" size="180,32" zPosition="10" pixmap="MX_HQ9B/ster.png" alphatest="blend" />
     <ePixmap position="1670,104" size="150,100" zPosition="10" pixmap="MX_HQ9B/camera.png" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1780,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1369,168" size="240,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgosd" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="un6be6" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -2701,13 +2695,10 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
     <ePixmap position="95,41" size="180,32" zPosition="10" pixmap="MX_HQ9B/ster.png" alphatest="blend" />
     <ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ9B/camera.png" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1780,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1369,162" size="240,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgosd" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="un6be6" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -2748,13 +2739,10 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
     <ePixmap position="95,41" size="180,32" zPosition="10" pixmap="MX_HQ9B/ster.png" alphatest="blend" />
     <ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ9B/you_tube.png" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1780,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1369,162" size="240,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgosd" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="325,35" size="1280,50" font="Regular;38" foregroundColor="button" backgroundColor="un6be6" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -3710,13 +3698,10 @@ MultiContentEntryPixmapAlphaTest(pos = (738, 4), size = (40, 40), png = 1),
     <ePixmap position="95,41" size="180,32" zPosition="10" pixmap="MX_HQ9B/ster.png" alphatest="blend" />
     <ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ9B/camera.png" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1780,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1360,162" size="240,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgosd" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="330,162" size="450,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgosd" transparent="1">
       <convert type="ServicePosition">Position</convert>
@@ -3835,7 +3820,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (50, 50), png = 1),
     <widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4237,13 +4222,10 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <ePixmap position="1670,104" size="150,100" zPosition="1" pixmap="MX_HQ9B/camera.png" alphatest="blend" />
     <widget name="Cover" position="110,35" size="130,185" zPosition="10" alphatest="on" />
     <widget source="global.CurrentTime" render="Label" position="1650,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1780,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="un6be6" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1369,168" size="240,35" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgosd" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+      <convert type="ClockToText">FullDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="un6be6" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4298,7 +4280,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget name="key_green" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_blue" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,460" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4311,7 +4293,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
       <convert type="StringList" />
     </widget>
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4333,7 +4315,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget name="Setup" position="100,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="Single search" position="986,565" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="bgmain" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4351,7 +4333,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget name="save" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="movieinfo" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4362,7 +4344,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget name="movie_name" position="20,20" size="820,35" font="Regular;30" backgroundColor="bgmain" halign="center" transparent="1" />
     <widget name="previewtext" position="20,70" size="820,550" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4376,7 +4358,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4390,7 +4372,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4401,7 +4383,7 @@ MultiContentEntryText(pos = (0, 48), size = (800, 35), flags = RT_HALIGN_LEFT, f
     <widget name="menulist" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9B/menu/bg820x40.png" selectionPixmap="MX_HQ9B/menu/button820x40.png" transparent="1" />
     <widget name="info" position="20,660" size="820,550" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="850,480" size="440,100" font="Regular;38" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -4513,7 +4495,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
   </screen>
   <screen name="PermanentClockScreen" position="1680,0" size="400,70" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="1,1" size="400,70" transparent="1" zPosition="0" foregroundColor="button" backgroundColor="transparent2" shadowColor="#40101010" shadowOffset="2,2" font="Regular;56" valign="center" halign="right">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
   <screen name="ChromiumOSWindow" position="30,120" size="820,850" title="Start ChromiumOS">
@@ -4560,7 +4542,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4608,7 +4590,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4658,7 +4640,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4705,7 +4687,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4754,7 +4736,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4804,7 +4786,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4853,7 +4835,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4900,7 +4882,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4937,7 +4919,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget source="key_yellow" render="Label" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="key_blue" render="Label" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -4982,7 +4964,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget source="key_yellow" render="Label" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="key_blue" render="Label" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -5035,7 +5017,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -5086,7 +5068,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
@@ -5136,7 +5118,7 @@ MultiContentEntryText(pos = (10, 52), size = (760, 20), font=1, flags = RT_HALIG
     <widget name="key_yellow" position="685,810" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="key_blue" position="980,810" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1650,740" size="100,40" font="Regular;32" zPosition="5" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
-      <convert type="ClockToText">Default</convert>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget source="Service" render="Label" position="20,0" size="1140,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
