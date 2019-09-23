@@ -3023,10 +3023,10 @@
     <eLabel text="help..." backgroundColor="layer-a-background" font="Arial; 38" position="410,22" size="670,55" transparent="1" valign="top" zPosition="0" />
     <widget name="list" itemHeight="50" font="Regular; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" foregroundColor="layer-a-foreground" position="560,120" size="1000,850" transparent="1" />
     <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="MaxFullHD_XTA/skin_default/rc.png,MaxFullHD_XTA/skin_default/rcold.png" position="1580,center" size="160,700" zPosition="10" />
-    <widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="0,0" size="37,70" zPosition="11" />
-    <widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" size="37,70" zPosition="11" />
-    <widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="0,0" size="37,70" zPosition="11" />
-    <widget alphatest="on" name="arrowup2" pixmap="skin_default/arrowup.png" position="0,0" size="37,70" zPosition="11" />
+    <widget alphatest="on" name="arrowdown" pixmap="arrowdown.png" position="0,0" size="37,70" zPosition="11" />
+    <widget alphatest="on" name="arrowdown2" pixmap="arrowdown.png" position="0,0" size="37,70" zPosition="11" />
+    <widget alphatest="on" name="arrowup" pixmap="arrowup.png" position="0,0" size="37,70" zPosition="11" />
+    <widget alphatest="on" name="arrowup2" pixmap="arrowup.png" position="0,0" size="37,70" zPosition="11" />
     <widget name="long_key" backgroundColor="layer-a-background" font="Regular; 30" halign="right" position="980,29" size="390,45" transparent="1" />
     <!-- Buttons -->
     <ePixmap alphatest="blend" name="" pixmap="MaxFullHD_XTA/screen_back/button-back-light.png" position="1780,1020" size="300,52" zPosition="-1" />
@@ -5040,8 +5040,8 @@
     <widget source="file" render="Label" backgroundColor="layer-a-background" font="Arial; 38" position="460,22" size="930,55" transparent="1" valign="top" zPosition="0" />
     <widget name="pic" position="232,97" size="1638,957" alphatest="on" transparent="0" />
     <eLabel backgroundColor="black" foregroundColor="black" position="232,97" size="1638,957" zPosition="-5" />
-    <widget name="point" position="398,25" size="50,50" zPosition="3" pixmap="skin_default/icons/record.png" alphatest="blend" />
-    <widget name="play_icon" position="398,25" size="50,50" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="blend" />
+    <widget name="point" position="398,25" size="50,50" zPosition="3" pixmap="icons/record.png" alphatest="blend" />
+    <widget name="play_icon" position="398,25" size="50,50" zPosition="3" pixmap="icons/ico_mp_play.png" alphatest="blend" />
     <!-- Clock -->
     <widget backgroundColor="layer-a-background" font="Regular; 23" foregroundColor="layer-a-accent1" halign="right" position="82,21" render="Label" size="158,60" source="global.CurrentTime" transparent="1" text="Donnerstag">
       <convert type="ClockToText">FullDate</convert>
@@ -5336,7 +5336,7 @@
     <!-- Clock -->
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
-    <widget name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="center,840" size="150,85" />
+    <widget name="RassLogo" pixmap="icons/rass_logo.png" position="center,840" size="150,85" />
     <widget backgroundColor="dark" font="Regular; 30" name="RadioText" noWrap="1" position="center,930" shadowColor="transpBlack" shadowOffset="-2,-2" size="1620,45" halign="center" />
     <widget backgroundColor="dark" font="Regular; 30" halign="center" name="RtpText" noWrap="1" position="150,975" shadowColor="transpBlack" shadowOffset="-2,-2" size="1620,45" foregroundColor="foreground" />
   </screen>
@@ -5416,7 +5416,7 @@
     <ePixmap alphatest="blend" pixmap="MaxFullHD_XTA/screen_back/cabel_icon.png" position="265,465" size="150,150" />
     <!-- Widgets -->
     <eLabel text="Cable Scan" backgroundColor="layer-a-background" font="Arial; 38" position="410,22" size="970,55" transparent="1" valign="top" zPosition="0" />
-    <widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="620,115" size="64,64" transparent="1" alphatest="blend" />
+    <widget name="frontend" pixmap="icons/scan-c.png" position="620,115" size="64,64" transparent="1" alphatest="blend" />
     <widget name="scan_state" backgroundColor="layer-a-background" font="Arial; 34" position="700,120" size="1020,50" transparent="1" valign="top" zPosition="0" />
     <eLabel backgroundColor="redblack" foregroundColor="background" position="620,185" size="1100,2" />
     <widget name="scan_progress" pixmap="MaxFullHD_XTA/colors/00007eff.png" position="620,209" size="1100,15" transparent="0" />
@@ -7774,7 +7774,7 @@
     <!-- Widgets -->
     <widget source="Title" render="Label" backgroundColor="layer-a-background" font="Arial; 38" position="410,22" size="970,55" transparent="1" valign="top" zPosition="0" />
     <widget name="config" font="Regular; 28" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" foregroundColor="layer-a-foreground" position="620,120" size="1100,850" transparent="1" />
-    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="center,center" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
+    <widget name="HelpWindow" pixmap="vkey_icon.png" position="center,center" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <!-- Lines and Png  -->
     <ePixmap alphatest="blend" name="" pixmap="MaxFullHD_XTA/screen_back/button-back-light.png" position="1780,1020" size="150,52" zPosition="-1" />
     <ePixmap alphatest="blend" name="" pixmap="MaxFullHD_XTA/buttons/key_text.png" position="1785,1020" size="122,52" zPosition="10" />
