@@ -1513,7 +1513,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="bus" position="20,100" size="560,28" font="Regular;25" halign="center" transparent="1" />
     <ePixmap position="266,412" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
     <widget name="initializetext" position="266,418" size="200,25" zPosition="2" font="Regular; 20" halign="center" transparent="1" foregroundColor="white" />
-    <widget name="initialize" pixmap="skin_default/buttons/red.png" position="0,0" size="0,0" />
+    <widget name="initialize" pixmap="buttons/red.png" position="0,0" size="0,0" />
   </screen>
   <!-- Hard disk Wait -->
   <screen name="HarddiskWait" position="center,center" size="710,460">
@@ -1888,7 +1888,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <!-- Dish -->
   <screen name="Dish" position="86,100" size="130,235" title="Dish" zPosition="1" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="Dishpixmap" position="0,28" size="130,160" zPosition="-1" pixmap="skin_default/icons/dish.png" transparent="1" alphatest="on" />
+    <widget name="Dishpixmap" position="0,28" size="130,160" zPosition="-1" pixmap="icons/dish.png" transparent="1" alphatest="on" />
     <!--widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
     <eLabel name="From" position="5,194" size="45,16" zPosition="1" font="Regular;16" halign="left" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:" />
     <widget name="posFrom" position="55,190" size="70,20" zPosition="1" font="Regular;20" halign="left" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
@@ -1897,7 +1897,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <!-- Dish 2 -->
   <screen name="Dish-2" position="1080,150" size="125,200" title="Dish" zPosition="11" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="119,146" zPosition="12" alphatest="blend" />
+    <widget name="Dishpixmap" pixmap="icons/dish.png" position="0,0" size="119,146" zPosition="12" alphatest="blend" />
     <eLabel name="From" position="0,150" size="55,20" zPosition="1" font="Regular;16" halign="left" transparent="1" text="From:" />
     <widget name="posFrom" position="55,150" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="yellow" transparent="1" />
     <eLabel name="Goto" position="0,175" size="55,20" zPosition="1" font="Regular;16" halign="left" transparent="1" text="Goto:" />
@@ -2146,11 +2146,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- Video Finetune -->
   <screen name="VideoFinetune" position="center,center" size="1280,720" backgroundColor="background_tux" flags="wfNoBorder">
     <widget source="Canvas" render="Canvas" position="center,center" transparent="1" size="720,576" />
-    <ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="2" alphatest="on" position="40,645" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="2" alphatest="on" position="75,645" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="2" alphatest="on" position="110,645" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_4.png" zPosition="2" alphatest="on" position="145,645" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_5.png" zPosition="2" alphatest="on" position="180,645" size="35,25" />
+    <ePixmap pixmap="buttons/key_1.png" zPosition="2" alphatest="on" position="40,645" size="35,25" />
+    <ePixmap pixmap="buttons/key_2.png" zPosition="2" alphatest="on" position="75,645" size="35,25" />
+    <ePixmap pixmap="buttons/key_3.png" zPosition="2" alphatest="on" position="110,645" size="35,25" />
+    <ePixmap pixmap="buttons/key_4.png" zPosition="2" alphatest="on" position="145,645" size="35,25" />
+    <ePixmap pixmap="buttons/key_5.png" zPosition="2" alphatest="on" position="180,645" size="35,25" />
   </screen>
   <!-- Menu -->
   <screen name="Menu" position="300,88" size="680,580" title="Main menu" flags="wfBorder" backgroundColor="background_tux">
@@ -3475,7 +3475,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="model" render="Label" position="65,134" size="580,28" font="Regular;25" halign="center" transparent="1" />
     <widget source="capacity" render="Label" position="65,66" size="580,28" font="Regular;25" halign="center" transparent="1" />
     <widget source="bus" render="Label" position="65,100" size="580,28" font="Regular;25" halign="center" transparent="1" />
-    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="65,180" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" pixmap="vkey_icon.png" position="65,180" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <widget name="config" position="65,12" size="588,50" scrollbarMode="showNever" transparent="1" />
     <ePixmap position="0,388" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
     <ePixmap position="203,388" size="200,40" pixmap="Turbo/buttons/green25.png" alphatest="blend" zPosition="1" />
