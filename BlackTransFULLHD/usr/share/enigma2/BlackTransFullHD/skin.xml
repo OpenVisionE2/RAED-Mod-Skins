@@ -1468,7 +1468,7 @@
     <widget backgroundColor="FUllHDBackground" font="RegularLight;20" halign="center" position="70,560" render="Label" size="700,25" source="session.CurrentService" transparent="1" valign="center">
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
-    <widget backgroundColor="un808888" foregroundColor="FUllHDBackground" name="Timeline" pointer="position_arrow.png:3,5" position="70,597" size="700,20" />
+    <widget backgroundColor="un808888" foregroundColor="FUllHDBackground" name="Timeline" pointer="skin_default/position_arrow.png:3,5" position="70,597" size="700,20" />
     <eLabel backgroundColor="FUllHDForeground" position="800,130" size="420,440" zPosition="1" />
     <eLabel backgroundColor="FUllHDBackground" position="802,132" size="416,436" zPosition="2" />
     <widget position="810,140" render="Listbox" scrollbarMode="showOnDemand" size="400,420" source="cutlist" zPosition="3">
@@ -2551,9 +2551,9 @@
     <widget alphatest="blend" name="QuestionPixmap" pixmap="BlackTransFullHD/icons/message/question-53.png" position="30,10" size="53,53" />
     <widget alphatest="blend" name="InfoPixmap" pixmap="BlackTransFullHD/icons/message/info-53.png" position="30,10" size="53,53" />
     <!--
-  <widget name="ErrorPixmap" pixmap="icons/input_error.png" position="30,10" size="53,53" alphatest="blend" />
-  <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="30,10" size="53,53" alphatest="blend" />
-  <widget name="InfoPixmap" pixmap="icons/input_info.png" position="30,10" size="53,53" alphatest="blend" />-->
+  <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="30,10" size="53,53" alphatest="blend" />
+  <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="30,10" size="53,53" alphatest="blend" />
+  <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="30,10" size="53,53" alphatest="blend" />-->
     <widget itemHeight="32" name="list" position="20,95" size="860,420" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
@@ -2968,7 +2968,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
-    <widget name="RassLogo" pixmap="icons/rass_logo.png" position="212,824" size="50,21" />
+    <widget name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="212,824" size="50,21" />
     <widget backgroundColor="rds_text_bg" font="RegularLight; 30" name="RadioText" noWrap="1" position="288,818" shadowColor="transpBlack" shadowOffset="-2,-2" size="1380,50" />
     <widget backgroundColor="rds_text_bg" font="RegularLight; 30" halign="right" name="RtpText" noWrap="1" position="288,870" shadowColor="transpBlack" shadowOffset="-2,-2" size="1380,50" />
   </screen>
@@ -5759,7 +5759,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="model" render="Label" position="65,354" size="980,50" font="Regular; 32" halign="center" transparent="1" />
     <widget source="capacity" render="Label" position="65,226" size="980,50" font="Regular; 32" halign="center" transparent="1" />
     <widget source="bus" render="Label" position="65,290" size="980,50" font="Regular; 32" halign="center" transparent="1" />
-    <widget name="HelpWindow" pixmap="vkey_icon.png" position="65,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="65,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <widget name="config" position="65,122" size="988,90" scrollbarMode="showOnDemand" transparent="1" font="Regular; 28" />
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="BlackTransFullHD/buttons/key_red.png" position="167,1017" size="50,60" />
@@ -6036,7 +6036,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <widget name="icon_sel11" position="970,600" size="120,120" zPosition="3" alphatest="blend" />
     <widget name="info" position="308,912" size="860,80" font="Regular; 26" zPosition="2" transparent="1" valign="center" halign="center" />
     <widget name="hotkey" position="737,826" size="50,50" zPosition="2" alphatest="blend" />
-    <ePixmap pixmap="buttons/key_menu.png" position="643,842" size="35,25" zPosition="2" alphatest="blend" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" position="643,842" size="35,25" zPosition="2" alphatest="blend" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CommitInfo" position="0,0" size="1920,1080" title="CommitInfo">
     <eLabel backgroundColor="FUllHDBackground" position="3,3" size="1915,1075" zPosition="-10" />
@@ -6677,4 +6677,36 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
   <widget name="stars" pixmap="~/starsbar_filled.png" position="1512,732" size="100,20" transparent="1" zPosition="6" />
   <widget backgroundColor="background" font="Regular;30" name="detailtext" position="20,550" size="1200,450" transparent="1" />
 </screen>
+	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder"> 
+	      <eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1" /> 
+	      <eLabel position="0,810" size="1920,1" backgroundColor="#1b3c85" zPosition="-1" /> 
+	      <widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#ffffff" backgroundColor="#00000000" font="Regular; 46" transparent="1" /> 
+	      <widget source="label1" render="Label" position="50,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+	      <widget source="label2" render="Label" position="425,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+	      <widget source="label3" render="Label" position="800,850" size="320,200" font="Regular;55" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#008cff" backgroundColor="#00000000" transparent="1" />
+	      <widget source="label4" render="Label" position="1175,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+	      <widget source="label5" render="Label" position="1550,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+	</screen>
+	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder"> 
+	        <eLabel position="0,785" size="1920,52" backgroundColor="#1b3c85" zPosition="-1"/>
+		<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="Regular; 46" transparent="1" /> 
+		<widget source="label1" render="Label" position="15,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label1s" render="Label" position="15,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap1" position="15,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label2" render="Label" position="325,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label2s" render="Label" position="325,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap2" position="325,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label3" render="Label" position="635,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label3s" render="Label" position="635,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap3" position="635,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label4" render="Label" position="985,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label4s" render="Label" position="985,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" /> 
+		<widget name="pixmap4" position="985,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label5" render="Label" position="1295,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label5s" render="Label" position="1295,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" /> 
+		<widget name="pixmap5" position="1295,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label6" render="Label" position="1605,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label6s" render="Label" position="1605,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap6" position="1605,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+	</screen>
 </skin>

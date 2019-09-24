@@ -3464,7 +3464,7 @@ self.instance.resize(eSize(*wsize))
     <widget name="zeile4b" position="195,270" size="380,40" font="Regular;30" halign="left" foregroundColor="cyan2" backgroundColor="background" transparent="1" />
     <widget name="picture" zPosition="0" position="175,365" size="300,300" alphatest="blend" />
     <!--play files-->
-    <widget name="playline2" position="0,300" size="600,21" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
+    <widget name="playline2" position="0,300" size="600,21" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget name="random" position="150,40" size="50,30" alphatest="blend" />
@@ -4314,7 +4314,7 @@ self.instance.resize(eSize(*wsize))
     <ePixmap pixmap="BundesligaFHD/menu/panel.png" position="1300,950" size="1280,60" alphatest="blend" zPosition="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
-    <widget alphatest="blend" name="RassLogo" pixmap="icons/rass_logo.png" position="80,935" size="50,21" />
+    <widget alphatest="blend" name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="80,935" size="50,21" />
     <widget backgroundColor="transpBlack" font="Regular; 32" foregroundColor="foreground" name="RadioText" noWrap="1" position="60,970" size="1800,40" />
     <widget backgroundColor="transpBlack" font="Regular; 32" foregroundColor="foreground" halign="right" name="RtpText" noWrap="1" position="60,1010" size="1800,40" />
   </screen>
@@ -5420,7 +5420,7 @@ self.instance.resize(eSize(*wsize))
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
     <widget name="SeekState" position="880,895" zPosition="1" size="350,45" halign="center" font="Regular; 40" valign="center" />
-    <widget backgroundColor="grey" foregroundColor="background" name="Timeline" pointer="position_arrow.png:3,5" position="700,955" size="1170,12" />
+    <widget backgroundColor="grey" foregroundColor="background" name="Timeline" pointer="skin_default/position_arrow.png:3,5" position="700,955" size="1170,12" />
     <widget backgroundColor="background" position="25,145" render="Listbox" scrollbarMode="showOnDemand" size="660,860" source="cutlist" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template":[
@@ -5477,10 +5477,10 @@ self.instance.resize(eSize(*wsize))
     <widget backgroundColor="background" enableWrapAround="1" itemHeight="45" font="Regular;32" name="list" position="68,140" scrollbarMode="showOnDemand" size="1200,805" scrollbarWidth="8" scrollbarBackgroundPicture="BundesligaFHD/menu/scrollbar_bg.png" scrollbarSliderBorderWidth="0" transparent="1" />
     <widget name="rc" position="1510,460" size="154,500" pixmaps="BundesligaFHD/skin_default/rc_vu_1.png,BundesligaFHD/skin_default/rc_vu_2.png,BundesligaFHD/skin_default/rc_vu_3.png,BundesligaFHD/skin_default/rc_vu_4.png,BundesligaFHD/skin_default/rc_vu_5.png" zPosition="1" alphatest="blend" />
     <widget backgroundColor="background" font="Regular; 32" halign="left" name="long_key" position="68,970" size="1200,45" transparent="1" />
-    <widget alphatest="blend" name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
-    <widget alphatest="blend" name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
-    <widget alphatest="blend" name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
-    <widget alphatest="blend" name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
     <ePixmap pixmap="BundesligaFHD/buttons/key_ok.png" position="1720,1040" size="60,30" alphatest="blend" />
     <ePixmap pixmap="BundesligaFHD/buttons/key_exit.png" position="1800,1040" size="60,30" alphatest="blend" />
   </screen>
@@ -5693,7 +5693,7 @@ self.instance.resize(eSize(*wsize))
     <widget backgroundColor="background" font="Regular;32" halign="center" position="1050,895" render="Label" size="500,40" source="session.CurrentService" transparent="1">
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
-    <widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="position_arrow.png:3,5" position="700,955" size="1160,12" zPosition="3" />
+    <widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="skin_default/position_arrow.png:3,5" position="700,955" size="1160,12" zPosition="3" />
     <widget backgroundColor="background" foregroundColor="foreground" position="25,145" render="Listbox" scrollbarMode="showOnDemand" size="640,860" source="cutlist" scrollbarWidth="8" scrollbarBackgroundPicture="BundesligaFHD/menu/scrollbar_bg.png" scrollbarSliderBorderWidth="0" transparent="1" zPosition="4">
       <convert type="TemplatedMultiContent">
 			{"template":[
@@ -5811,7 +5811,7 @@ self.instance.resize(eSize(*wsize))
     <widget backgroundColor="background" font="Regular; 28" foregroundColor="cyan2" name="audioLabel" position="1140,40" size="200,30" transparent="1" />
     <widget backgroundColor="background" font="Regular; 28" foregroundColor="cyan2" name="subtitleLabel" position="1380,40" size="200,30" transparent="1" />
     <widget backgroundColor="background" font="Regular; 28" foregroundColor="cyan2" name="chapterLabel" position="210,40" size="600,30" transparent="1" />
-    <widget alphatest="blend" name="anglePix" pixmap="icons/icon_view.png" position="860,370" size="26,16" />
+    <widget alphatest="blend" name="anglePix" pixmap="skin_default/icons/icon_view.png" position="860,370" size="26,16" />
     <widget backgroundColor="background" font="Regular;28" foregroundColor="cyan2" name="angleLabel" position="900,40" size="200,30" transparent="1" />
     <widget backgroundColor="background" font="Regular;32" foregroundColor="foreground" halign="right" position="110,75" render="Label" size="125,38" source="session.CurrentService" transparent="1">
       <convert type="ServicePosition">Position</convert>
@@ -6791,7 +6791,7 @@ self.instance.resize(eSize(*wsize))
     <widget source="bus" render="Label" position="68,250" size="1200,40" font="Regular; 32" transparent="1" />
     <widget itemHeight="45" name="config" font="Regular;32" secondfont="Regular;28" position="68,305" size="1200,630" scrollbarMode="showOnDemand" backgroundColor="background" scrollbarWidth="8" scrollbarBackgroundPicture="BundesligaFHD/menu/scrollbar_bg.png" scrollbarSliderBorderWidth="0" transparent="1" />
     <widget source="introduction" render="Label" position="68,945" size="1200,65" zPosition="10" font="Regular; 32" halign="left" valign="center" backgroundColor="background" transparent="1" />
-    <widget name="HelpWindow" pixmap="vkey_icon.png" position="700,1400" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
+    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="700,1400" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <ePixmap pixmap="BundesligaFHD/buttons/button_red.png" position="60,1035" size="350,45" alphatest="blend" />
     <ePixmap pixmap="BundesligaFHD/buttons/button_green.png" position="430,1035" size="350,45" alphatest="blend" />
     <ePixmap pixmap="BundesligaFHD/buttons/button_yellow.png" position="800,1035" size="350,45" alphatest="blend" />
@@ -14394,4 +14394,36 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
     <ePixmap pixmap="BundesligaFHD/buttons/button_yellow.png" position="800,1035" size="350,47" alphatest="blend" />
     <ePixmap pixmap="BundesligaFHD/buttons/button_blue.png" position="1170,1035" size="350,47" alphatest="blend" />
   </screen>
+	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder"> 
+	      <eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1" /> 
+	      <eLabel position="0,810" size="1920,1" backgroundColor="#1b3c85" zPosition="-1" /> 
+	      <widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#ffffff" backgroundColor="#00000000" font="Regular; 46" transparent="1" /> 
+	      <widget source="label1" render="Label" position="50,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+	      <widget source="label2" render="Label" position="425,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+	      <widget source="label3" render="Label" position="800,850" size="320,200" font="Regular;55" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#008cff" backgroundColor="#00000000" transparent="1" />
+	      <widget source="label4" render="Label" position="1175,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+	      <widget source="label5" render="Label" position="1550,850" size="320,200" font="Regular;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+	</screen>
+	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder"> 
+	        <eLabel position="0,785" size="1920,52" backgroundColor="#1b3c85" zPosition="-1"/>
+		<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="Regular; 46" transparent="1" /> 
+		<widget source="label1" render="Label" position="15,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label1s" render="Label" position="15,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap1" position="15,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label2" render="Label" position="325,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label2s" render="Label" position="325,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap2" position="325,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label3" render="Label" position="635,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label3s" render="Label" position="635,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap3" position="635,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label4" render="Label" position="985,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label4s" render="Label" position="985,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" /> 
+		<widget name="pixmap4" position="985,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label5" render="Label" position="1295,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label5s" render="Label" position="1295,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" /> 
+		<widget name="pixmap5" position="1295,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+		<widget source="label6" render="Label" position="1605,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label6s" render="Label" position="1605,850" size="300,200" font="Regular;45" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
+		<widget name="pixmap6" position="1605,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
+	</screen>
 </skin>
