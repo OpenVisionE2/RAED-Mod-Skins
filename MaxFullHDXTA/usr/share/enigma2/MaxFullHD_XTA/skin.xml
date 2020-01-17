@@ -3786,9 +3786,7 @@
     <!-- Widgets -->
     <widget name="text" font="Arial; 32" backgroundColor="layer-b-background" foregroundColor="foreground" halign="center" position="534,220" size="1026,550" transparent="1" valign="center" />
     <widget name="list" font="Regular; 28" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="layer-b-background" foregroundColor="foreground" position="534,775" size="1026,200" transparent="1" />
-    <widget name="ErrorPixmap" alphatest="blend" pixmap="MaxFullHD_XTA/icons/input_error.png" position="265,465" size="150,150" zPosition="1" />
-    <widget name="QuestionPixmap" alphatest="blend" pixmap="MaxFullHD_XTA/icons/input_question.png" position="265,465" size="150,150" zPosition="1" />
-    <widget name="InfoPixmap" alphatest="blend" pixmap="MaxFullHD_XTA/icons/input_info.png" position="265,465" size="150,150" zPosition="1" />
+    <widget name="icon" position="265,465" size="150,150" pixmap="icons/message/input_info.png,icons/message/input_question.png,icons/message/input_error.png" alphatest="blend" />
   </screen>
   <screen name="MessageBoxSimple" title="Message" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
     <!-- Background -->
@@ -3801,9 +3799,7 @@
     <!-- Widgets -->
     <widget name="text" font="Arial; 32" backgroundColor="layer-b-background" foregroundColor="foreground" halign="center" position="534,350" size="880,300" transparent="1" valign="center" />
     <widget name="list" font="Regular; 28" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="layer-b-background" foregroundColor="foreground" position="534,655" size="880,150" transparent="1" />
-    <widget name="ErrorPixmap" alphatest="blend" pixmap="MaxFullHD_XTA/icons/input_error.png" position="265,465" size="150,150" zPosition="1" />
-    <widget name="QuestionPixmap" alphatest="blend" pixmap="MaxFullHD_XTA/icons/input_question.png" position="265,465" size="150,150" zPosition="1" />
-    <widget name="InfoPixmap" alphatest="blend" pixmap="MaxFullHD_XTA/icons/input_info.png" position="265,465" size="150,150" zPosition="1" />
+    <widget name="icon" position="265,465" size="150,150" pixmap="icons/message/input_info.png,icons/message/input_question.png,icons/message/input_error.png" alphatest="blend" />
   </screen>
   <screen name="MPHelp" title="MPHelp" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Background -->
