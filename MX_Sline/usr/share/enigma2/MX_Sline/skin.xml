@@ -2337,9 +2337,7 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
   </screen>
   <screen name="MessageBox" position="510,300" size="900,10" title="Message">
     <widget name="text" position="97,15" size="780,0" font="Regular;28" />
-    <widget name="ErrorPixmap" pixmap="MX_Sline/icons/input_error.png" position="20,20" size="53,53" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="MX_Sline/icons/input_question.png" position="20,20" size="53,53" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="MX_Sline/icons/input_info.png" position="20,20" size="53,53" alphatest="blend" />
+    <widget name="icon" position="20,20" size="53,53" pixmap="icons/message/input_info.png,icons/message/input_question.png,icons/message/input_error.png" alphatest="blend" />
     <widget name="list" position="100,100" font="Regular;28" itemHeight="40" size="480,400" />
     <applet type="onLayoutFinish">
 from enigma import eSize, ePoint
