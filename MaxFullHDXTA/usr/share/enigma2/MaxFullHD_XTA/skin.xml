@@ -173,6 +173,7 @@
     <color color="layer-a-foreground" name="WindowTitleForeground" />
   </windowstyle>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
     <parameter name="ConfigListSeperator" value="320" />
     <parameter name="ChoicelistDash" value="0,3,1000,50" />

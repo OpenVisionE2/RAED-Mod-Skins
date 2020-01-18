@@ -76,6 +76,7 @@
     <color name="yellow_tux" value="#00d5a233" />
   </colors>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
   </parameters>
   <!-- Main screen colors (id=0 Framebuffer) -->

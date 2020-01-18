@@ -11,33 +11,33 @@ Pls Read skin info
     <resolution xres="1920" yres="1080" bpp="32" />
   </output>
   <colors>
-<color name="white" value="#ffffff" />
-<color name="grey" value="#9f9f9f" />
-<color name="darkgrey" value="#4a4a4a" />
-<color name="black" value="#000000" />
-<color name="red" value="#ff1818" />
-<color name="green" value="#00ee00" />
-<color name="yellow" value="#bab329" />
-<color name="blue" value="#008cff" />
-<color name="bgblue" value="#080046a8" />
-<color name="bgbutton" value="#121212" />
-<color name="button" value="#ffffff" />
-<color name="selbutton" value="#051a1a" />
-<color name="bgkey" value="#000000" />
-<color name="bgmain" value="#10000000" />
-<color name="bgosd" value="#10000000" />
-<color name="info" value="#3482ff" />
-<color name="transparent" value="#ffffffff" />
-<color name="transparent2" value="#ff000000" />
-<color name="transpBlack" value="#21000000" />
-<color name="transpGrey" value="#21363636" />
-<color name="background" value="#25040f28" />
-<color name="foreground" value="#dddddd" />
-<color name="transpWhite" value="#77ffffff" />
-<color name="transpyellow" value="#33bab329" />
-<color name="border1" value="#4872a0" />
-<color name="hellgreen" value="#2256C856" />
-<color name="dark" value="#15102748" />
+    <color name="white" value="#ffffff" />
+    <color name="grey" value="#9f9f9f" />
+    <color name="darkgrey" value="#4a4a4a" />
+    <color name="black" value="#000000" />
+    <color name="red" value="#ff1818" />
+    <color name="green" value="#00ee00" />
+    <color name="yellow" value="#bab329" />
+    <color name="blue" value="#008cff" />
+    <color name="bgblue" value="#080046a8" />
+    <color name="bgbutton" value="#121212" />
+    <color name="button" value="#ffffff" />
+    <color name="selbutton" value="#051a1a" />
+    <color name="bgkey" value="#000000" />
+    <color name="bgmain" value="#10000000" />
+    <color name="bgosd" value="#10000000" />
+    <color name="info" value="#3482ff" />
+    <color name="transparent" value="#ffffffff" />
+    <color name="transparent2" value="#ff000000" />
+    <color name="transpBlack" value="#21000000" />
+    <color name="transpGrey" value="#21363636" />
+    <color name="background" value="#25040f28" />
+    <color name="foreground" value="#dddddd" />
+    <color name="transpWhite" value="#77ffffff" />
+    <color name="transpyellow" value="#33bab329" />
+    <color name="border1" value="#4872a0" />
+    <color name="hellgreen" value="#2256C856" />
+    <color name="dark" value="#15102748" />
     <color name="ciel" value="#0053a9ff" />
     <color name="cyan" value="#000090e6" />
     <color name="cyan1" value="#0000deff" />
@@ -86,6 +86,7 @@ Pls Read skin info
     <alias name="config" font="Regular" size="26" height="30" />
   </fonts>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
   </parameters>
   <windowstyle type="skinned" id="0">

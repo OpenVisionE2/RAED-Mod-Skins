@@ -75,6 +75,7 @@
     <font filename="/usr/share/enigma2/Turbo/fonts/venus.ttf" name="PG" scale="100" />
   </fonts>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
   </parameters>
   <!-- Window -->

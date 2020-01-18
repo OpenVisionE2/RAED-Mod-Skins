@@ -82,6 +82,7 @@
     <font filename="/usr/share/enigma2/WhiteTransFullHD/fonts/DroidSans.ttf" name="RegularLight" scale="105" />
   </fonts>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
   </parameters>
   <subtitles>

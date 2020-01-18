@@ -112,6 +112,7 @@ Pls Read skin info
     <alias name="Dreamexplorer" font="Regular" size="28" height="38" />
   </fonts>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
     <parameter name="FileListMultiLock" value="2,0,25,25" />
     <parameter name="FileListMultiIcon" value="45,0,25,25" />
