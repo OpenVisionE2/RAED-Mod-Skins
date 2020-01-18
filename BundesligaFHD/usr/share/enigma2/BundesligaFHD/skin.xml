@@ -90,6 +90,7 @@
     <color name="yellow" value="#00f5db04" />
   </colors>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
     <!--             Choicelist                       -->
     <parameter name="ChoicelistItemHeight" value="45" />
