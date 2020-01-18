@@ -55,6 +55,7 @@ The publication of the skin is not permitted without permission of the author - 
     <font filename="LiberationSans-Regular.ttf" name="titles" scale="136" />
   </fonts>
   <parameters>
+    <parameter name="AllowUseOnlyIcon" value="1"/>
     <parameter name="AllowUserDatesAndTimes" value="1,1"/>
   </parameters>
   <windowstyle type="skinned" id="0">
