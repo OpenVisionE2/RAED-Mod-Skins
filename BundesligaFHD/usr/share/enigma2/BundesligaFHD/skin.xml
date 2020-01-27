@@ -3951,7 +3951,7 @@ self.instance.resize(eSize(*wsize))
     <ePixmap pixmap="BundesligaFHD/menu/setup.png" position="1480,700" size="256,256" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="BundesligaFHD/menu/panel.png" position="1300,950" size="1280,60" alphatest="blend" zPosition="1" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Ipkg" position="0,0" size="1920,1080" title="Installing Software...">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Opkg" position="0,0" size="1920,1080" title="Installing Software...">
     <ePixmap pixmap="BundesligaFHD/menu/back.png" position="0,0" size="1920,1080" zPosition="-1" />
     <ePixmap pixmap="BundesligaFHD/icons/line2.png" position="68,167" size="1200,2" />
     <ePixmap pixmap="BundesligaFHD/icons/line2.png" position="68,225" size="1200,2" />
@@ -3972,7 +3972,7 @@ self.instance.resize(eSize(*wsize))
     <ePixmap pixmap="BundesligaFHD/menu/setup.png" position="1480,700" size="256,256" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="BundesligaFHD/menu/panel.png" position="1300,950" size="1280,60" alphatest="blend" zPosition="1" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1920,1080" title="...">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OpkgInstaller" position="0,0" size="1920,1080" title="...">
     <ePixmap pixmap="BundesligaFHD/menu/back.png" position="0,0" size="1920,1080" zPosition="-1" />
     <widget backgroundColor="background" font="Regular; 32" position="45,80" render="Label" size="500,40" source="global.CurrentTime" transparent="1" valign="center" halign="left">
       <convert type="ClockToText">FullDate</convert>
@@ -3981,7 +3981,7 @@ self.instance.resize(eSize(*wsize))
       <convert type="ClockToText"></convert>
     </widget>
     <ePixmap pixmap="BundesligaFHD/icons/line2.png" position="68,905" size="1200,2" zPosition="1" />
-    <eLabel backgroundColor="background" font="Regular;45" foregroundColor="foreground" halign="left" position="45,25" size="1200,60" text="IpkgInstaller" transparent="1" />
+    <eLabel backgroundColor="background" font="Regular;45" foregroundColor="foreground" halign="left" position="45,25" size="1200,60" text="OpkgInstaller" transparent="1" />
     <widget backgroundColor="background" enableWrapAround="1" itemHeight="45" font="Regular;32" name="list" position="68,140" scrollbarMode="showOnDemand" size="1200,755" scrollbarWidth="8" scrollbarBackgroundPicture="BundesligaFHD/menu/scrollbar_bg.png" scrollbarSliderBorderWidth="0" transparent="1" />
     <widget backgroundColor="background" font="Regular; 35" halign="center" position="68,915" render="Label" size="1200,100" source="introduction" transparent="1" />
     <ePixmap pixmap="BundesligaFHD/buttons/button_red.png" position="60,1035" size="350,45" alphatest="blend" />
@@ -3993,7 +3993,7 @@ self.instance.resize(eSize(*wsize))
     <ePixmap pixmap="BundesligaFHD/menu/setup.png" position="1480,700" size="256,256" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="BundesligaFHD/menu/panel.png" position="1300,950" size="1280,60" alphatest="blend" zPosition="1" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="IPKGMenu" position="0,0" size="1920,1080" title="IPKGMenu">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OPKGMenu" position="0,0" size="1920,1080" title="OPKGMenu">
     <ePixmap pixmap="BundesligaFHD/menu/back.png" position="0,0" size="1920,1080" zPosition="-1" />
     <widget backgroundColor="background" font="Regular; 32" position="45,80" render="Label" size="500,40" source="global.CurrentTime" transparent="1" valign="center" halign="left">
       <convert type="ClockToText">FullDate</convert>
@@ -4012,7 +4012,7 @@ self.instance.resize(eSize(*wsize))
     <ePixmap pixmap="BundesligaFHD/menu/setup.png" position="1480,700" size="256,256" alphatest="blend" zPosition="1" />
     <ePixmap pixmap="BundesligaFHD/menu/panel.png" position="1300,950" size="1280,60" alphatest="blend" zPosition="1" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="IPKGSource" position="0,0" size="1920,1080" title="IPKGSource">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OPKGSource" position="0,0" size="1920,1080" title="OPKGSource">
     <ePixmap pixmap="BundesligaFHD/menu/back.png" position="0,0" size="1920,1080" zPosition="-1" />
     <widget backgroundColor="background" font="Regular; 32" position="45,80" render="Label" size="500,40" source="global.CurrentTime" transparent="1" valign="center" halign="left">
       <convert type="ClockToText">FullDate</convert>

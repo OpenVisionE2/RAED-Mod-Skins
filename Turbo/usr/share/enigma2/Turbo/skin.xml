@@ -2693,15 +2693,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="package" render="Label" position="10,30" size="680,25" font="Regular;19" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
     <widget source="status" render="Label" position="10,100" size="680,100" font="Regular;20" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
   </screen>
-  <!-- IPKG -->
-  <screen name="Ipkg" position="center,center" size="650,200" title="Installing Software...">
+  <!-- OPKG -->
+  <screen name="Opkg" position="center,center" size="650,200" title="Installing Software...">
     <widget name="activityslider" position="5,0" size="550,5" pixmap="Turbo/buttons/progress_small.png" />
     <widget name="package" position="60,30" size="550,25" font="Regular;20" transparent="1" />
     <widget name="status" position="60,80" size="550,45" font="Regular;18" transparent="1" />
     <widget name="slider" position="68,137" size="530,15" pixmap="Turbo/buttons/progress_big.png" />
   </screen>
-  <!-- IPKGMenu -->
-  <screen name="IPKGMenu" position="center,204" size="830,380" title="Select upgrade source to edit.">
+  <!-- OPKGMenu -->
+  <screen name="OPKGMenu" position="center,204" size="830,380" title="Select upgrade source to edit.">
     <eLabel position="0,338" size="828,1" backgroundColor="gold" />
     <eLabel position="152,0" size="1,336" backgroundColor="gold" />
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
@@ -2714,8 +2714,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_green" render="Label" position="274,351" zPosition="2" size="200,25" font="Regular; 20" halign="center" valign="center" backgroundColor="background_tux" transparent="1" />
     <widget name="filelist" position="157,5" size="670,310" scrollbarMode="showNever" transparent="1" />
   </screen>
-  <!-- IPKGSource -->
-  <screen name="IPKGSource" position="center,center" size="710,240" title="Edit upgrade source url.">
+  <!-- OPKGSource -->
+  <screen name="OPKGSource" position="center,center" size="710,240" title="Edit upgrade source url.">
     <ePixmap position="68,190" size="200,40" pixmap="Turbo/buttons/red25.png" alphatest="blend" zPosition="1" />
     <ePixmap position="438,190" size="200,40" pixmap="Turbo/buttons/green25.png" alphatest="blend" zPosition="1" />
     <widget source="key_red" render="Label" position="68,196" zPosition="2" size="200,25" font="Regular; 20" halign="center" valign="center" backgroundColor="background_tux" transparent="1" />
@@ -2748,8 +2748,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				</convert>
     </widget>
   </screen>
-  <!-- IpkgInstaller -->
-  <screen name="IpkgInstaller" position="center,204" size="830,380" title="Install extensions">
+  <!-- OpkgInstaller -->
+  <screen name="OpkgInstaller" position="center,204" size="830,380" title="Install extensions">
     <widget source="global.CurrentTime" render="Label" position="19,6" size="120,40" zPosition="1" font="Regular; 34" valign="top" halign="right" backgroundColor="background_tux" transparent="1" foregroundColor="gold">
       <convert type="ClockToText"></convert>
     </widget>

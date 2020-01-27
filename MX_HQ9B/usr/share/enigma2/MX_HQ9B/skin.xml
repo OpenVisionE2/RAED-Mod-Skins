@@ -2396,13 +2396,13 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 89), size = (0, 0), png = 5), # index
 </convert>
     </widget>
   </screen>
-  <screen name="Ipkg" position="30,120" size="820,850" title="Installing Software...">
+  <screen name="Opkg" position="30,120" size="820,850" title="Installing Software...">
     <widget name="activityslider" position="20,20" size="780,10" />
     <widget name="slider" position="20,245" size="780,45" />
     <widget name="package" position="20,70" size="780,30" font="Regular;26" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="status" position="20,115" size="780,65" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
-  <screen name="IpkgInstaller" position="30,120" size="820,850" title="Ipkg Installer...">
+  <screen name="OpkgInstaller" position="30,120" size="820,850" title="Opkg Installer...">
     <widget name="list" position="5,20" size="810,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9B/menu/bg820x40.png" selectionPixmap="MX_HQ9B/menu/button820x40.png" transparent="1" />
     <widget source="introduction" render="Label" position="2,650" size="816,45" zPosition="10" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1" />
     <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
@@ -2411,7 +2411,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 89), size = (0, 0), png = 5), # index
     <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
-  <screen name="IPKGMenu" position="30,120" size="820,850" title="Select upgrade source to edit.">
+  <screen name="OPKGMenu" position="30,120" size="820,850" title="Select upgrade source to edit.">
     <widget name="filelist" position="20,20" size="780,320" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9B/menu/bg820x40.png" selectionPixmap="MX_HQ9B/menu/button820x40.png" transparent="1" />
     <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
     <ePixmap pixmap="MX_HQ9B/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend" />
@@ -2419,7 +2419,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 89), size = (0, 0), png = 5), # index
     <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
-  <screen name="IPKGSource" position="190,187" size="1540,150" title="Edit upgrade source url.">
+  <screen name="OPKGSource" position="190,187" size="1540,150" title="Edit upgrade source url.">
     <ePixmap pixmap="MX_HQ9B/buttons/red48x48.png" position="470,90" size="48,48" alphatest="blend" />
     <ePixmap pixmap="MX_HQ9B/buttons/green48x48.png" position="845,90" size="48,48" alphatest="blend" />
     <widget source="key_red" render="Label" position="545,90" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />

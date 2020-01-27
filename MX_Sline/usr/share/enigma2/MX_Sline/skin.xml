@@ -3057,7 +3057,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (5, 89), size = (0, 0), png = 5), # inde
 </convert>
     </widget>
   </screen>
-  <screen name="Ipkg" position="center,center" size="1302,782" title="Installing Software..." flags="wfNoBorder">
+  <screen name="Opkg" position="center,center" size="1302,782" title="Installing Software..." flags="wfNoBorder">
     <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <ePixmap pixmap="MX_Sline/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off" />
     <ePixmap pixmap="MX_Sline/menu/packetinstal.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
@@ -3072,7 +3072,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (5, 89), size = (0, 0), png = 5), # inde
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-  <screen name="IpkgInstaller" position="center,center" size="1302,782" title="Ipkg Installer..." flags="wfNoBorder">
+  <screen name="OpkgInstaller" position="center,center" size="1302,782" title="Opkg Installer..." flags="wfNoBorder">
     <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <ePixmap pixmap="MX_Sline/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off" />
     <ePixmap pixmap="MX_Sline/menu/packetinstal.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
@@ -3089,7 +3089,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (5, 89), size = (0, 0), png = 5), # inde
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-  <screen name="IPKGMenu" position="center,center" size="1302,782" title="Select upgrade source to edit." flags="wfNoBorder">
+  <screen name="OPKGMenu" position="center,center" size="1302,782" title="Select upgrade source to edit." flags="wfNoBorder">
     <widget source="Title" render="Label" position="40,18" size="820,60" halign="left" font="Regular;46" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <ePixmap pixmap="MX_Sline/menu/1300.png" position="0,0" size="1302,782" zPosition="-1" alphatest="off" />
     <ePixmap pixmap="MX_Sline/menu/softwaree.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
@@ -3105,7 +3105,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (5, 89), size = (0, 0), png = 5), # inde
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-  <screen name="IPKGSource" position="90,187" size="1740,150" title="Edit upgrade source url.">
+  <screen name="OPKGSource" position="90,187" size="1740,150" title="Edit upgrade source url.">
     <ePixmap pixmap="MX_Sline/buttons/red48x48.png" position="570,88" size="48,48" alphatest="blend" />
     <ePixmap pixmap="MX_Sline/buttons/green48x48.png" position="945,88" size="48,48" alphatest="blend" />
     <widget source="key_red" render="Label" position="645,88" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" backgroundColor="bgbutton" transparent="1" />

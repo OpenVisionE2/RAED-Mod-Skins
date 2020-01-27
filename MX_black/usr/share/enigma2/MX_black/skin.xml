@@ -2221,7 +2221,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
     <widget source="key_red" render="Label" position="260,459" size="220,35" zPosition="2" font="Regular;24" halign="left" valign="center" transparent="1" backgroundColor="transpBlack" />
     <widget source="key_green" render="Label" position="530,459" size="220,35" zPosition="2" font="Regular;24" halign="left" valign="center" transparent="1" backgroundColor="transpBlack" />
   </screen>
-  <screen name="Ipkg" position="370,150" size="540,310" title="Installing Software...">
+  <screen name="Opkg" position="370,150" size="540,310" title="Installing Software...">
     <widget name="activityslider" position="10,190" size="520,5" />
     <widget name="slider" position="10,340" size="520,30" />
     <widget name="package" position="5,220" size="530,20" font="Regular;18" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
@@ -2242,7 +2242,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
     <widget name="arrowup" pixmap="MX_black/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
     <widget name="arrowup2" pixmap="MX_black/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
   </screen>
-  <screen name="IpkgInstaller" position="340,125" size="600,502" title="Ipkg Installer...">
+  <screen name="OpkgInstaller" position="340,125" size="600,502" title="Opkg Installer...">
     <widget name="list" position="10,10" size="580,400" scrollbarMode="showOnDemand" />
     <eLabel position="0,450" size="600,2" backgroundColor="grey" zPosition="5" />
     <widget source="introduction" render="Label" position="10,420" size="580,26" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -2251,14 +2251,14 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
     <ePixmap pixmap="MX_black/buttons/red35x35.png" position="380,460" size="250,35" zPosition="1" alphatest="blend" />
     <widget source="key_red" render="Label" position="430,460" size="220,35" zPosition="2" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
   </screen>
-  <screen name="IPKGSource" position="60,125" size="1160,100" title="Edit upgrade source url.">
+  <screen name="OPKGSource" position="60,125" size="1160,100" title="Edit upgrade source url.">
     <ePixmap pixmap="MX_black/buttons/red35x35.png" position="380,60" size="35,35" alphatest="blend" />
     <ePixmap pixmap="MX_black/buttons/green35x35.png" position="630,60" size="35,35" alphatest="blend" />
     <widget source="key_red" render="Label" position="430,60" zPosition="1" size="220,35" font="Regular;22" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget source="key_green" render="Label" position="680,60" zPosition="1" size="220,35" font="Regular;22" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget name="text" position="5,10" size="1150,25" font="Regular;22" foregroundColor="white" />
   </screen>
-  <screen name="IPKGMenu" position="300,150" size="680,435" title="Select upgrade source to edit.">
+  <screen name="OPKGMenu" position="300,150" size="680,435" title="Select upgrade source to edit.">
     <widget name="filelist" position="20,20" size="640,325" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap pixmap="MX_black/div-h.png" position="0,385" zPosition="1" size="680,2" />
     <ePixmap pixmap="MX_black/buttons/red35x35.png" position="155,395" size="35,35" alphatest="blend" />

@@ -3916,7 +3916,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 26" halign="left" position="1053,997" render="Label" size="300,40" source="key_yellow" transparent="1" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/icons/safe.png" position="1456,340" size="300,300" transparent="1" zPosition="2" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Ipkg" position="0,0" size="1920,1080" title="Installing Software...">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Opkg" position="0,0" size="1920,1080" title="Installing Software...">
     <eLabel backgroundColor="FUllHDBackground" position="3,3" size="1915,1075" zPosition="-10" />
     <eLabel backgroundColor="FUllHDBorder" position="1918,0" size="3,1080" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBorder" position="0,0" size="3,1080" transparent="0" zPosition="-5" />
@@ -3933,7 +3933,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget borderWidth="1" name="slider" position="135,556" size="980,50" transparent="1" font="Regular; 30" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/icons/paket.png" position="1456,340" size="300,300" transparent="1" zPosition="2" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1920,1080" title="...">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OpkgInstaller" position="0,0" size="1920,1080" title="...">
     <eLabel backgroundColor="FUllHDBackground" position="3,3" size="1915,1075" zPosition="-10" />
     <eLabel backgroundColor="FUllHDBorder" position="1918,0" size="3,1080" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBorder" position="0,0" size="3,1080" transparent="0" zPosition="-5" />
@@ -3943,7 +3943,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
-    <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="Ipkg Installer" transparent="1" />
+    <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="Opkg Installer" transparent="1" />
     <widget itemHeight="30" name="list" position="135,150" scrollbarMode="showOnDemand" size="900,650" transparent="1" />
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 30" halign="center" position="135,811" render="Label" size="900,50" source="introduction" transparent="1" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/buttons/key_red.png" position="154,990" size="50,60" />
@@ -3952,7 +3952,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 26" halign="left" position="637,997" render="Label" size="300,40" source="key_green" transparent="1" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/icons/paket.png" position="1456,340" size="300,300" transparent="1" zPosition="2" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="IPKGMenu" position="0,0" size="1920,1080" title="Select IPKG source.....">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OPKGMenu" position="0,0" size="1920,1080" title="Select OPKG source.....">
     <eLabel backgroundColor="FUllHDBackground" position="3,3" size="1915,1075" zPosition="-10" />
     <eLabel backgroundColor="FUllHDBorder" position="1918,0" size="3,1080" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBorder" position="0,0" size="3,1080" transparent="0" zPosition="-5" />
@@ -3962,7 +3962,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
-    <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="IPKGMenu" transparent="1" />
+    <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="OPKGMenu" transparent="1" />
     <widget itemHeight="30" name="filelist" position="135,150" scrollbarMode="showOnDemand" size="900,780" transparent="1" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/buttons/key_red.png" position="154,990" size="50,60" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/buttons/key_green.png" position="579,990" size="50,60" />
@@ -3970,7 +3970,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 26" halign="left" position="637,997" render="Label" size="300,40" source="key_green" transparent="1" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/icons/paket.png" position="1456,340" size="300,300" transparent="1" zPosition="2" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="IPKGSource" position="0,0" size="1920,1080" title="IPKG source">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OPKGSource" position="0,0" size="1920,1080" title="OPKG source">
     <eLabel backgroundColor="FUllHDBackground" position="3,3" size="1915,1075" zPosition="-10" />
     <eLabel backgroundColor="FUllHDBorder" position="1918,0" size="3,1080" transparent="0" zPosition="-5" />
     <eLabel backgroundColor="FUllHDBorder" position="0,0" size="3,1080" transparent="0" zPosition="-5" />
@@ -3980,7 +3980,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,1079" size="1920,2" transparent="0" zPosition="0" />
     <eLabel backgroundColor="FUllHDBackground" position="0,0" size="2,1080" transparent="0" zPosition="0" />
-    <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="IPKGSource" transparent="1" />
+    <eLabel backgroundColor="FUllHDBackground" font="Arial; 55" position="4,4" size="1000,60" text="OPKGSource" transparent="1" />
     <widget backgroundColor="FUllHDBackground" font="RegularLight; 30" foregroundColor="FUllHDForeground" name="text" position="center,380" size="1520,50" zPosition="3" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/buttons/key_red.png" position="154,990" size="50,60" />
     <ePixmap alphatest="blend" pixmap="WhiteTransFullHD/buttons/key_green.png" position="579,990" size="50,60" />

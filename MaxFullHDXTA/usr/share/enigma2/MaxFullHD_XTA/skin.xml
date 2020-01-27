@@ -3131,7 +3131,7 @@
     </widget>
     <!-- Clock -->
   </screen>
-  <screen name="Ipkg" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="Opkg" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Background -->
     <ePixmap alphatest="blend" name="menu-top" pixmap="MaxFullHD_XTA/screen_back/menu_newline.png" position="0,20" size="1410,60" zPosition="-2" />
     <ePixmap alphatest="blend" name="menu-band" pixmap="MaxFullHD_XTA/screen_back/menu_bandx1850.png" position="0,460" size="1850,160" zPosition="-80" />
@@ -3156,7 +3156,7 @@
     </widget>
     <!-- Clock -->
   </screen>
-  <screen name="IpkgInstaller" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="OpkgInstaller" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Background -->
     <ePixmap alphatest="blend" name="menu-top" pixmap="MaxFullHD_XTA/screen_back/menu_newline.png" position="0,20" size="1410,60" zPosition="-2" />
     <ePixmap alphatest="blend" name="menu-band" pixmap="MaxFullHD_XTA/screen_back/menu_bandx1850.png" position="0,460" size="1850,160" zPosition="-80" />
@@ -3164,7 +3164,7 @@
     <eLabel backgroundColor="layer-a-foreground" position="598,108" size="1144,884" zPosition="-12" />
     <ePixmap alphatest="blend" pixmap="MaxFullHD_XTA/screen_back/setting.png" position="265,465" size="150,150" />
     <!-- Widgets -->
-    <eLabel text="IpkgInstaller" backgroundColor="layer-a-background" font="Arial; 38" position="410,22" size="970,55" transparent="1" valign="top" zPosition="0" />
+    <eLabel text="OpkgInstaller" backgroundColor="layer-a-background" font="Arial; 38" position="410,22" size="970,55" transparent="1" valign="top" zPosition="0" />
     <widget name="list" font="Regular; 28" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" foregroundColor="layer-a-foreground" position="620,120" size="1100,800" transparent="1" />
     <eLabel backgroundColor="layer-a-foreground" foregroundColor="foreground" position="620,925" size="1100,2" />
     <widget render="Label" source="introduction" backgroundColor="layer-a-background" font="Arial; 30" position="620,930" size="1100,50" transparent="1" valign="center" zPosition="0" />
@@ -3189,7 +3189,7 @@
     </widget>
     <!-- Clock -->
   </screen>
-  <screen name="IPKGMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="OPKGMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Background -->
     <ePixmap alphatest="blend" name="menu-top" pixmap="MaxFullHD_XTA/screen_back/menu_newline.png" position="0,20" size="1410,60" zPosition="-2" />
     <ePixmap alphatest="blend" name="menu-band" pixmap="MaxFullHD_XTA/screen_back/menu_bandx1850.png" position="0,460" size="1850,160" zPosition="-80" />
@@ -3197,7 +3197,7 @@
     <eLabel backgroundColor="layer-a-foreground" position="598,108" size="1144,884" zPosition="-12" />
     <ePixmap alphatest="blend" pixmap="MaxFullHD_XTA/screen_back/setting.png" position="265,465" size="150,150" />
     <!-- Widgets -->
-    <eLabel text="IPKGMenu" backgroundColor="layer-a-background" font="Arial; 38" position="410,22" size="970,55" transparent="1" valign="top" zPosition="0" />
+    <eLabel text="OPKGMenu" backgroundColor="layer-a-background" font="Arial; 38" position="410,22" size="970,55" transparent="1" valign="top" zPosition="0" />
     <widget name="filelist" font="Regular; 28" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background2" foregroundColor="layer-a-foreground" position="620,120" size="1100,850" transparent="1" />
     <!-- Lines and Png */-->
     <ePixmap alphatest="blend" name="" pixmap="MaxFullHD_XTA/buttons/key_exit.png" position="1785,1020" size="122,52" zPosition="10" />
@@ -3220,7 +3220,7 @@
     </widget>
     <!-- Clock -->
   </screen>
-  <screen name="IPKGSource" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="OPKGSource" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Background -->
     <ePixmap alphatest="blend" name="menu-top" pixmap="MaxFullHD_XTA/screen_back/menu_newline.png" position="0,20" size="1410,60" zPosition="-2" />
     <ePixmap alphatest="blend" name="menu-band" pixmap="MaxFullHD_XTA/screen_back/menu_bandx1850.png" position="0,460" size="1850,160" zPosition="-80" />
