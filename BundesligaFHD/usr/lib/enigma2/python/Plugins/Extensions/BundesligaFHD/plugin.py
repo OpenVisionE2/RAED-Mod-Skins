@@ -116,6 +116,4 @@ def main(session, **kwargs):
     session.open(BundesligaFHDConfig)
 
 def Plugins(**kwargs):
-    for line in open("/etc/enigma2/settings"):
-     if "config.skin.primary_skin=BundesligaFHD/skin.xml" in line:
-         return PluginDescriptor(name=_('BundesligaFHDConfig setup'), description=_('BundesligaFHDConfig setup'), where=[PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU], icon='BundesligaFHD.png', fnc=main)
+    return PluginDescriptor(name=_('BundesligaFHDConfig setup'), description=_('BundesligaFHDConfig setup'), where=[PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU], icon='BundesligaFHD.png', fnc=main)
