@@ -132,6 +132,4 @@ def main(session, **kwargs):
     session.open(MXSlineConfig)
 
 def Plugins(**kwargs):
-    for line in open("/etc/enigma2/settings"):
-        if "config.skin.primary_skin=MX_Sline/skin.xml" in line:
-            return PluginDescriptor(name=_('MX Sline Config setup'), description=_('MX Sline Config setup'), where=[PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU], icon='MXSline.png', fnc=main)
+    return PluginDescriptor(name=_('MX Sline Config setup'), description=_('MX Sline Config setup'), where=[PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU], icon='MXSline.png', fnc=main)
