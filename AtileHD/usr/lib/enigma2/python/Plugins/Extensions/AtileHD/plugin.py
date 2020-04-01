@@ -763,19 +763,19 @@ class AtileHD_Config(Screen, ConfigListScreen):
         user_skin_file=resolveFilename(SCOPE_CONFIG, 'skin_user' + self.currentSkin + '.xml')
         if path.exists(user_skin_file):
             remove(user_skin_file)
-        if self.myAtileHD_active.value:
-            printDEBUG("update_user_skin.self.myAtileHD_active.value")
-            user_skin = ""
-            if path.exists(self.skin_base_dir + 'skin_user_header.xml'):
+        #if self.myAtileHD_active.value:
+        printDEBUG("update_user_skin.self.myAtileHD_active.value")
+        user_skin = ""
+        if path.exists(self.skin_base_dir + 'skin_user_header.xml'):
                 user_skin = user_skin + self.readXMLfile(self.skin_base_dir + 'skin_user_header.xml' , 'fonts')
-            if path.exists(self.skin_base_dir + 'skin_user_colors.xml'):
+        if path.exists(self.skin_base_dir + 'skin_user_colors.xml'):
                 user_skin = user_skin + self.readXMLfile(self.skin_base_dir + 'skin_user_colors.xml' , 'ALLSECTIONS')
-            if path.exists(self.skin_base_dir + 'skin_user_window.xml'):
+        if path.exists(self.skin_base_dir + 'skin_user_window.xml'):
                 user_skin = user_skin + self.readXMLfile(self.skin_base_dir + 'skin_user_window.xml' , 'ALLSECTIONS')
-            if path.exists(self.skin_base_dir + 'mySkin'):
+        if path.exists(self.skin_base_dir + 'mySkin'):
                 for f in listdir(self.skin_base_dir + "mySkin/"):
                     user_skin = user_skin + self.readXMLfile(self.skin_base_dir + "mySkin/" + f, 'screen')
-            if user_skin != '':
+        if user_skin != '':
                 user_skin = "<skin>\n" + user_skin
                 user_skin = user_skin + "</skin>\n"
                 with open (user_skin_file, "w") as myFile:
@@ -783,9 +783,10 @@ class AtileHD_Config(Screen, ConfigListScreen):
                     myFile.write(user_skin)
                     myFile.flush()
                     myFile.close()
-            #checking if all renderers are in system
-            self.checkComponent(user_skin, 'render' , resolveFilename(SCOPE_PLUGINS, '../Components/Renderer/') )
-            self.checkComponent(user_skin, 'pixmap' , resolveFilename(SCOPE_SKIN, '') )
+        #checking if all renderers converters are in system
+        self.checkComponent(user_skin, 'render' , resolveFilename(SCOPE_PLUGINS, '../Components/Renderer/') )
+        self.checkComponent(user_skin, 'Convert' , resolveFilename(SCOPE_PLUGINS, '../Components/Converter/') )
+        self.checkComponent(user_skin, 'pixmap' , resolveFilename(SCOPE_SKIN, '') )
                
     def checkComponent(self, myContent, look4Component , myPath): #look4Component=render|
         def updateLackOfFile(name, mySeparator =', '):
