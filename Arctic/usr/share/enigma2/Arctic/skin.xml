@@ -1,7 +1,7 @@
 <skin>
   <!-- Skin arctic V1.5 to hmmmdada -->
   <!-- Modified By RAED For Dreambox OE2.0 25-01-2015 -->
-  <!-- Updated By RAED For Openvision images 25-03-2020 -->
+  <!-- Updated By RAED For OpenVision images 25-03-2020 -->
   <output id="0">
     <resolution bpp="32" xres="1920" yres="1080" />
   </output>
