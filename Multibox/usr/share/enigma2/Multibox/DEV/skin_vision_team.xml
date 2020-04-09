@@ -685,4 +685,14 @@
 <panel name="template_fullscreen" />
 <panel name="template_pixmap_BG" />
 </screen>
+	<!-- DVB Information -->
+	<screen name="DVBInformation" title="DVB information" backgroundColor="#60000000" flags="wfNoBorder" position="center,center" size="1416,882">
+		<eLabel text="DVB information" font="Regular;40" backgroundColor="#60000000" foregroundColor="#00ffffff" position="27,8" size="1375,50" transparent="1"/>
+		<widget name="AboutScrollLabel" itemHeight="50" font="Regular;35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#60000000" foregroundColor="#00ffffff" position="10,66" size="1396,805" transparent="1"/>
+	</screen>
+	<!-- OpenVision Information -->
+	<screen name="OpenVisionInformation" title="Open Vision information" backgroundColor="#60000000" flags="wfNoBorder" position="center,center" size="1416,882">
+		<eLabel text="Open Vision information" font="Regular;40" backgroundColor="#60000000" foregroundColor="#00ffffff" position="27,8" size="1375,50" transparent="1"/>
+		<widget name="AboutScrollLabel" itemHeight="50" font="Regular;35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#60000000" foregroundColor="#00ffffff" position="10,66" size="1396,805" transparent="1"/>
+	</screen>
     </skin>
