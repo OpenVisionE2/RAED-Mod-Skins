@@ -1704,14 +1704,7 @@
     <widget name="label2" position="620,100" size="570,45" font="Regular;33" foregroundColor="white" halign="right" backgroundColor="background" valign="center" transparent="1" />
     <eLabel position="10,150" size="1180,2" backgroundColor="Line" />
     <widget source="list" render="Listbox" position="10,160" size="1180,810" scrollbarMode="showOnDemand" transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (8, 3), size = (1043, 42), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
-					],
-				"fonts": [gFont("Regular", 30)],
-				"itemHeight": 45
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
@@ -1724,14 +1717,7 @@
     <widget name="info" position="10,100" size="1180,45" font="Regular;36" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
     <eLabel position="10,145" size="1180,2" backgroundColor="Line" />
     <widget source="list" render="Listbox" position="10,150" size="1180,830" scrollbarMode="showOnDemand" transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (8, 3), size = (1043, 42), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
-					],
-				"fonts": [gFont("Regular", 36)],
-				"itemHeight": 50
-				}
-			</convert>
+      <convert type="StringList" />
     </widget>
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
