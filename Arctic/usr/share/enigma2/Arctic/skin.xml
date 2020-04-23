@@ -1765,26 +1765,6 @@ gma2/python/Plugins/Extensions/MovieDB/spinner/wait8.png,/usr/lib/enigma2/python
     <eLabel position="274,1032" size="44,39" font="PVR; 40" text="a" foregroundColor="blue_transparent" zPosition="10" valign="center" halign="left" backgroundColor="lightpanel" />
     <eLabel name=" " position="5,973" size="44,39" font="PVR; 40" text="a" foregroundColor="un4a00a0a" zPosition="10" valign="center" halign="left" />
   </screen>
-  <!--screen name="ChannelSelection_summary" position="0,0" size="132,64">
-    <widget font="Regular;24" halign="center" position="0,0" render="RollerCharLCD" size="132,64" source="parent.ServiceEvent" valign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-  <screen name="MenuSummary" position="0,0" size="132,64">
-    <widget font="Regular;24" halign="center" position="0,0" render="RollerCharLCD" size="132,64" source="parent.menu" valign="center">
-      <convert type="StringListSelection" />
-    </widget>
-  </screen>
-  <screen name="InfoBarMoviePlayerSummary" position="0,0" size="132,64">
-    <widget source="session.CurrentService" render="RollerCharLCD" position="0,0" size="200,20" font="Regular;20">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-  <screen name="StandbySummary" position="0,0" size="132,64">
-    <widget font="Regular;46" halign="center" position="0,0" render="Label" size="132,64" source="global.CurrentTime" valign="center">
-      <convert type="ClockToText"></convert>
-    </widget>
-  </screen-->
   <!--Skinselector-->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1920,1080" title="Skinauswahl">
     <eLabel position="-15,19" size="80,51" zPosition="13" font="PVR; 60" text="d" halign="right" valign="center" />

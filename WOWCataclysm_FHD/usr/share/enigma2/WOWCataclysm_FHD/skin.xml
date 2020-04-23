@@ -13318,59 +13318,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, (720-wsizey)/2))
     <ePixmap alphatest="blend" pixmap="WOWCataclysm_FHD/menu/vti_setup.png" position="1295,530" size="560,320" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="WOWCataclysm_FHD/menu/vti.png" position="1280,895" size="600,54" zPosition="1" />
   </screen>
-  <!-- LCD Screens -->
-<!-- <screen name="ChannelSelection_summary" position="0,0" size="200,20">
-    <widget source="parent.ServiceEvent" render="Label" position="0,0" size="200,20" font="Regular;20">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-
-  <screen name="InfoBarSummary" position="0,0" size="200,20">
-    <widget source="session.CurrentService" render="RollerCharLCD" position="0,0" size="200,20" font="Regular;20">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-
-  <screen name="MenuSummary" position="0,0" size="200,20">
-    <widget source="parent.title" render="Label" position="0,0" size="200,20" font="Regular;20" />
-    <widget source="parent.menu" render="Label" position="0,0" size="200,20" font="Regular;20">
-      <convert type="StringListSelection" />
-    </widget>
-  </screen>
-
-  <screen name="InfoBarMoviePlayerSummary" position="0,0" size="200,20">
-    <widget source="session.CurrentService" render="RollerCharLCD" position="0,0" size="200,20" font="Regular;20">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-
-  <screen name="SetupSummary" position="0,0" size="200,20">
-    <widget source="SetupTitle" render="Label" position="0,0" size="200,20" font="Regular;20" />
-  </screen>
-
-  <screen name="SimpleSummary" position="0,0" size="200,20">
-    <widget source="parent.Title" render="RollerCharLCD" position="0,0" size="200,20" font="Regular;20" />
-  </screen>
-
-  <screen name="DVDSummary" position="0,0" size="132,64">
-    <widget source="session.CurrentService" render="Label" position="0,0" size="132,64" font="Regular;45" halign="center" valign="top">
-      <convert type="ServicePosition">Remaining</convert>
-    </widget>
-  </screen>
-
-  <screen name="StandbySummary" position="0,0" size="132,64">
-    <widget source="global.CurrentTime" render="Label" position="6,4" size="120,24" font="Regular;22" halign="center" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <eLabel position="0,28" size="132,1" backgroundColor="white" />
-    <widget source="global.CurrentTime" render="Label" position="6,32" size="120,32" font="Regular;28" halign="center" valign="center">
-      <convert type="ClockToText">Date</convert>
-    </widget>
-    <widget source="session.RecordState" render="FixedLabel" position="0,0" zPosition="1" size="200,20" text=" REC ">
-      <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-  </screen -->
   <!-- Added By RAED -->
   <screen name="SoftcamSetup" position="0,0" size="1920,1080" flags="wfNoBorder" title="SoftcamSelection">
     <ePixmap pixmap="WOWCataclysm_FHD/menu/back_2.png" position="0,0" size="1920,1080" zPosition="-1" />
