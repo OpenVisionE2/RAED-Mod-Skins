@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Components.VariableText import VariableText
 from enigma import eLabel, eEPGCache
 from Renderer import Renderer

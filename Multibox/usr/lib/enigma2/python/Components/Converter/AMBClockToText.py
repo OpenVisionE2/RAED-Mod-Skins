@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Converter import Converter
 from time import localtime, strftime
 from Components.Element import cached

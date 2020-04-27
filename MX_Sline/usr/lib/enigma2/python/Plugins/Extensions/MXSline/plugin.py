@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Plugin By Maggy Mod By RAED
 from Components.ActionMap import ActionMap
 from Components.config import config, getConfigListEntry, ConfigText, ConfigPassword, ConfigClock, ConfigSelection, ConfigSubsection, ConfigYesNo, configfile, NoSave

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService, eTimer, eServiceReference, eEPGCache
 from Components.Element import cached
