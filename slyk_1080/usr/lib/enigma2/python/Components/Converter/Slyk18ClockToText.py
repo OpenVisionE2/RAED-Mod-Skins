@@ -4,7 +4,6 @@ from Components.config import *
 from Converter import Converter
 from Components.Sources.Clock import Clock
 from time import time as getTime, localtime, strftime
-from Poll import Poll
 from Components.Element import cached
 import os.path
 
