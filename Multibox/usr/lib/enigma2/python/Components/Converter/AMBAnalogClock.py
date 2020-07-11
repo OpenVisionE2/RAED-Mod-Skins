@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import division
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from time import localtime, strftime
@@ -52,7 +53,7 @@ class AMBAnalogClock(Converter, object):
         if percent is None:
             return 'N/A'
         else:
-            return '%d' % (percent * 100 / 65536)
+            return '%d' % (percent * 100 // 65536)
             return
 
     text = property(getText)
@@ -63,12 +64,12 @@ class AMBAnalogClock(Converter, object):
             count = self.source.snr
             if count is None:
                 return 0
-            return count * 100 / 65536
+            return count * 100 // 65536
         elif self.type == self.AGCNUM:
             count = self.source.agc
             if count is None:
                 return 0
-            return count * 100 / 65536
+            return count * 100 // 65536
         elif self.type == self.BERNUM:
             count = self.source.ber
             if count < 320000:
@@ -114,7 +115,7 @@ class AMBAnalogClock(Converter, object):
             m = t.tm_min
             if c > 11:
                 c = c - 12
-            val = c * 5 + m / 12
+            val = c * 5 + m // 12
             return val
         else:
             return 0

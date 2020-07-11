@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import division
 from Converter import Converter
 from time import localtime, strftime
 from Components.Element import cached
@@ -72,19 +73,19 @@ class AMBClockToText(Converter, object):
 			return string
         
 		if self.type == self.IN_MINUTES:
-			return ngettext('%d Min', '%d Mins', time / 60) % (time / 60)
+			return ngettext('%d Min', '%d Mins', time // 60) % (time // 60)
 		if self.type == self.AS_LENGTH:
 			if time < 0:
 				return ''
-			return '%d:%02d' % (time / 60, time % 60)
+			return '%d:%02d' % (time // 60, time % 60)
 		if self.type == self.AS_LENGTHHOURS:
 			if time < 0:
 				return ''
-			return '%d:%02d' % (time / 3600, time / 60 % 60)
+			return '%d:%02d' % (time // 3600, time // 60 % 60)
 		if self.type == self.AS_LENGTHSECONDS:
 			if time < 0:
 				return ''
-			return '%d:%02d:%02d' % (time / 3600, time / 60 % 60, time % 60)
+			return '%d:%02d:%02d' % (time // 3600, time // 60 % 60, time % 60)
 		if self.type == self.TIMESTAMP:
 			return str(time)
 		t = localtime(time)

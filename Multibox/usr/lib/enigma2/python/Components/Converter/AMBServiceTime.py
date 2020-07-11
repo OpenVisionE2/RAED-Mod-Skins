@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import division
 #taken from "ServicePosition" Converter
 #edited by mogli123 @ et-view-support.com
 from Components.Converter.Converter import Converter
@@ -55,9 +56,9 @@ class AMBServiceTime(Poll, Converter, object):
 			return ""
 		else:
 			if self.type == self.TYPE_STARTTIME:
-				return strftime("%H:%M", localtime(time() - (self.position / 90000)))
+				return strftime("%H:%M", localtime(time() - (self.position // 90000)))
 			elif self.type == self.TYPE_ENDTIME:
-				return strftime("%H:%M", localtime(time() + (self.length / 90000 - self.position / 90000)))
+				return strftime("%H:%M", localtime(time() + (self.length // 90000 - self.position // 90000)))
 
 	range = 10000
 	position = property(getPosition)
