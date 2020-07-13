@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService, eTimer, eServiceReference, eEPGCache
 from Components.Element import cached
@@ -221,13 +220,13 @@ class AMBEmuInfo(Converter, object):
                 emun = 'EMU : Wicardd'
                 ecmtime = ecmtime.rstrip('ce')
                 if int(ecmtime.split()[0]) >= 1000:
-                    ecmtime2 = str(float(ecmtime.split()[0]) // 1000) + ' s'
+                    ecmtime2 = str(float(ecmtime.split()[0]) / 1000) + ' s'
                 else:
                     ecmtime2 = str(ecmtime)
             if len(provid) == 8 and using != '' or using == 'SBox':
                 emun = 'EMU : SBox'
                 if int(ecmtime.split()[0]) >= 1000:
-                    ecmtime2 = str(float(ecmtime.split()[0]) // 1000) + ' s'
+                    ecmtime2 = str(float(ecmtime.split()[0]) / 1000) + ' s'
                 else:
                     ecmtime2 = str(ecmtime)
             if len(provid) <= 7 and using != '':

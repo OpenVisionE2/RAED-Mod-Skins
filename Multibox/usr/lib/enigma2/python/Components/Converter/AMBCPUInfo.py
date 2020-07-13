@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 
 from Converter import Converter
 from Poll import Poll
@@ -112,7 +111,7 @@ class CpuUsageMonitor(Poll, object):
             info = []
             for i in range(len(self.__curr_info)):
                 try:
-                    p = 100 * (self.__curr_info[i][2] - prev_info[i][2]) // (self.__curr_info[i][1] - prev_info[i][1])
+                    p = 100 * (self.__curr_info[i][2] - prev_info[i][2]) / (self.__curr_info[i][1] - prev_info[i][1])
                 except ZeroDivisionError:
                     p = 0
 

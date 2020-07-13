@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 #
 # Converter NextEvents
 # by m0rphU & LN
@@ -107,7 +106,7 @@ class AMBNextEvents(Converter, object):
 		begin = strftime("%H:%M", localtime(event.getBeginTime()))
 		end = strftime("%H:%M", localtime(event.getBeginTime() + event.getDuration()))
 		title = event.getEventName()#[:self.titleWidth]
-		duration = "%d min" % (event.getDuration() // 60)
+		duration = "%d min" % (event.getDuration() / 60)
 		sdescr = event.getShortDescription()
 		ldescr = event.getExtendedDescription()
 		if self.showDuration == self.withDuration:

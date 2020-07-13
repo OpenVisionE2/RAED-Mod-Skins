@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 from Components.config import *
 from Converter import Converter
 from Components.Sources.Clock import Clock
@@ -11,7 +10,7 @@ import os.path
 
 # Slyk18ClockToText
 
-# Slyk18AsLength = 1 min // 2 mins // 1 Hour // 2 Hours
+# Slyk18AsLength = 1 min / 2 mins / 1 Hour / 2 Hours
 # Slyk18DateFormat1 = Full Day - (0-12)hour - (00-59)min - am/pm : Monday 4.19am
 # Slyk18DateFormat2 = (0-12)hour - (00-59)min - am/pm - Abbr Week - Decimal Day(0-31) - Decimal Month(01-12) : 4.28pm Sun 20/11
 # Slyk18Time = (0-12)hour - (00-59)min - am/pm : 4.28pm
@@ -86,12 +85,12 @@ class Slyk18ClockToText(Converter, object):
             if time <= 9:
                 return ""
             else:
-                if time // 3600 < 1:
-                    return ngettext(_("%d Min"), _("%d Mins"), (time // 60)) % (time // 60)
-                elif time // 60 % 60 == 0:
-                    return ngettext(_("%d Hour"), _("%d Hours"), (time // 3600)) % (time // 3600)
+                if time / 3600 < 1:
+                    return ngettext(_("%d Min"), _("%d Mins"), (time / 60)) % (time / 60)
+                elif time / 60 % 60 == 0:
+                    return ngettext(_("%d Hour"), _("%d Hours"), (time / 3600)) % (time / 3600)
                 else:
-                    return "%dh %2dm" % (time // 3600, time // 60 % 60)
+                    return "%dh %2dm" % (time / 3600, time / 60 % 60)
 
         if int(strftime("%H", t)) >= 12:
             timesuffix = _('pm')

@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 #
 #  Coded by Vali
 #
@@ -56,8 +55,8 @@ class AMBSatInfo(Poll, Converter, object):
 				frontendData = (feinfo and feinfo.getAll(True))
 				if (frontendData is not None):
 					if ((frontendData.get("tuner_type") == "DVB-S") or (frontendData.get("tuner_type") == "DVB-C")):
-						frequency = (str((frontendData.get("frequency") // 1000)) + " MHz")
-						symbolrate = (str((frontendData.get("symbol_rate") // 1000)) + "")
+						frequency = (str((frontendData.get("frequency") / 1000)) + " MHz")
+						symbolrate = (str((frontendData.get("symbol_rate") / 1000)) + "")
 						try:
 							if (frontendData.get("tuner_type") == "DVB-S"):
 								polarisation_i = frontendData.get("polarization")
@@ -276,7 +275,7 @@ class AMBSatInfo(Poll, Converter, object):
 									orb_pos = str((float(orbital_pos))/10.0) + "E"
 						Ret_Text = Ret_Text + "" + orb_pos + ""
 					elif (frontendData.get("tuner_type") == "DVB-T"):
-						frequency = (str((frontendData.get("frequency") // 1000)) + " MHz")
+						frequency = (str((frontendData.get("frequency") / 1000)) + " MHz")
 						Ret_Text = Ret_Text + "Frequency: " + frequency
 				prvd = info.getInfoString(iServiceInformation.sProvider)
 				#Ret_Text = prvd + "  " + Ret_Text

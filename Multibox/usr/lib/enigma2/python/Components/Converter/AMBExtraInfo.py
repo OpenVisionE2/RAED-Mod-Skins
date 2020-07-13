@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 # Embedded file name: /usr/lib/enigma2/python/Components/Converter/ASBlueExtraInfo.py
 from enigma import iServiceInformation, iPlayableService
 from Components.Converter.Converter import Converter
@@ -377,7 +376,7 @@ class AMBExtraInfo(Poll, Converter, object):
             return ''
         yres = info.getInfo(iServiceInformation.sVideoHeight)
         mode = ('i', 'p', '')[info.getInfo(iServiceInformation.sProgressive)]
-        fps = str((info.getInfo(iServiceInformation.sFrameRate) + 500) // 1000)
+        fps = str((info.getInfo(iServiceInformation.sFrameRate) + 500) / 1000)
         return str(xres) + 'x' + str(yres) + mode + fps
 
     def createVideoCodec(self, info):
@@ -407,13 +406,13 @@ class AMBExtraInfo(Poll, Converter, object):
     def createFrequency(self, fedata):
         frequency = fedata.get('frequency')
         if frequency:
-            return str(frequency // 1000)
+            return str(frequency / 1000)
         return ''
 
     def createSymbolRate(self, fedata):
         symbolrate = fedata.get('symbol_rate')
         if symbolrate:
-            return str(symbolrate // 1000)
+            return str(symbolrate / 1000)
         return ''
 
     def createPolarization(self, fedata):
@@ -449,9 +448,9 @@ class AMBExtraInfo(Poll, Converter, object):
     def createOrbPos(self, feraw):
         orbpos = feraw.get('orbital_position')
         if orbpos > 1800:
-            return str(float(3600 - orbpos) // 10.0) + '\xc2\xb0 W'
+            return str(float(3600 - orbpos) / 10.0) + '\xc2\xb0 W'
         if orbpos > 0:
-            return str(float(orbpos) // 10.0) + '\xc2\xb0 E'
+            return str(float(orbpos) / 10.0) + '\xc2\xb0 E'
         return ''
 
     def createOrbPosOrTunerSystem(self, fedata, feraw):
@@ -545,7 +544,7 @@ class AMBExtraInfo(Poll, Converter, object):
             elif orbpos == 2120:
                 orb_pos = 'Echostar 2'
             else:
-                orb_pos = str(float(3600 - orbpos) // 10.0) + 'W'
+                orb_pos = str(float(3600 - orbpos) / 10.0) + 'W'
         elif orbpos > 0:
             if orbpos == 192:
                 orb_pos = 'Astra 1F'
@@ -666,7 +665,7 @@ class AMBExtraInfo(Poll, Converter, object):
             elif orbpos == 30:
                 orb_pos = 'Telecom 2'
             else:
-                orb_pos = str(float(orbpos) // 10.0) + 'E'
+                orb_pos = str(float(orbpos) / 10.0) + 'E'
         return orb_pos
 
     def createProviderName(self, info):

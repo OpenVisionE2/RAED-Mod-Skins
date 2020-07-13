@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr, eServiceReference, eEPGCache
 from Components.Element import cached
@@ -81,7 +80,7 @@ class AMBServiceNameEventNobile(Converter, object):
             t = localtime(act_event.getBeginTime() + act_event.getDuration())
             return '%02d:%02d' % (t.tm_hour, t.tm_min)
         elif self.type == self.DURATION:
-            return '%d min' % int(act_event.getDuration() // 60)
+            return '%d min' % int(act_event.getDuration() / 60)
         elif self.type == self.EXTENDED_DESCRIPTION or self.type == self.EXTENDED_DESCRIPTION_EVENT:
             short = act_event.getShortDescription()
             tmp = act_event.getExtendedDescription()
