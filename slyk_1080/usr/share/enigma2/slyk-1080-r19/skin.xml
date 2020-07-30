@@ -18,7 +18,6 @@
 	<include filename="menu-templates.xml" />
 	<include filename="wizards.xml" />
 	<include filename="general.xml" />
-	<include filename="CCcamInfo.xml" />
 	<include filename="ChannelSelection.xml" />
 	<include filename="epg.xml" />
 	<include filename="eventview.xml" />

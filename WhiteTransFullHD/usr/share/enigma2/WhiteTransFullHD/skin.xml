@@ -147,9 +147,6 @@
   <widget source="session.CurrentService" render="Label" font="Regular; 20" position="72,1052" size="55,23" halign="left" transparent="1" foregroundColor="unf0b400" valign="top">
     <convert type="ServiceInfo">VideoHeight</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="119,1052" size="175,23" zPosition="3" font="Regular; 20" halign="center" noWrap="1" backgroundColor="background" transparent="1" text="CCcam 2.3.0" foregroundColor="white" valign="top">
-    <convert type="VisionCamInfo">Camd</convert>
-  </widget>
   <!-- /* Uhrzeit/Datum -->
   <!--Uhrzeit/Datum */-->
   <!-- /* EPG -->

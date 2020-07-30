@@ -248,9 +248,6 @@
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<!-- EMU Start -->
-        <widget source="session.CurrentService" render="Label" position="40,680" size="400,20" zPosition="3" font="Regular;18" halign="center" noWrap="1"  backgroundColor="background" transparent="1" text="CCcam 2.3.0">
-         <convert type="VisionCamInfo">Camd</convert>
-        </widget>
 		<widget source="session.CurrentService" render="Label" position="450,680" size="450,20" backgroundColor="background" font="Regular; 17" foregroundColor="foreground" transparent="1" zPosition="21" halign="center">
           <convert type="CaidInfo2" />
         </widget>

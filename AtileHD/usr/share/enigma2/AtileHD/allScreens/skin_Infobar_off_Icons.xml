@@ -216,9 +216,6 @@
 		</widget>
 		<!-- SNR AGC End -->
 		<!-- EMU Start -->
-        <widget source="session.CurrentService" render="Label" position="60,685" size="600,25" zPosition="3" font="Regular;18" halign="center" noWrap="1"  backgroundColor="background" transparent="1" text="CCcam 2.3.0">
-         <convert type="VisionCamInfo">Camd</convert>
-        </widget>
 		<widget source="session.CurrentService" render="Label" position="625,685" size="600,25" backgroundColor="background" font="Regular; 17" foregroundColor="foreground" transparent="1" zPosition="21" halign="center">
           <convert type="CaidInfo2" />
         </widget>

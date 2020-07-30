@@ -17,7 +17,6 @@
 	<include filename="v-menu-templates.xml" />
 	<include filename="v-wizards.xml" />
 	<include filename="v-general.xml" />
-	<include filename="v-CCcamInfo.xml" />
 	<include filename="v-ChannelSelection.xml" />
 	<include filename="v-epg.xml" />
 	<include filename="v-eventview.xml" />
