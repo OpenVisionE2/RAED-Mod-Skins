@@ -261,19 +261,6 @@ class AMBCaidInfo(Poll, Converter, object):
                                         return False
                                 #oscam
                                 reader = ecm_info.get("reader", None)
-                                #cccam  
-                                usingx = ecm_info.get("usingx", "")
-                                #mgcamd
-                                source = ecm_info.get("source", None)
-                                if self.type == self.IS_EMU:
-                                        return usingx == "emu" or source == "emu" or reader == "emu"
-                                if self.type == self.IS_NET:
-                                        if usingx == "CCcam-s2s":
-                                                return 1
-                                        else:
-                                                return  (source != None and source != "emu") or (reader != None and reader != "emu")
-                                else:
-                                        return False
 
                 return False
 
@@ -479,32 +466,8 @@ class AMBCaidInfo(Poll, Converter, object):
                                         else:
                                                 item = line.split(":", 1)
                                                 if len(item) > 1:
-                                                        #wicard block
-                                                        if item[0] == "Provider":
-                                                                item[0] = "prov"
-                                                                item[1] = item[1].strip()[2:]
-                                                        elif item[0] == "ECM PID":
-                                                                item[0] = "pid"
-                                                        elif item[0] == "response time":
-                                                                info["source"] = "net"
-                                                                it_tmp = item[1].strip().split(" ")
-                                                                info["ecm time"] = "%s msec" % it_tmp[0]
-                                                                y = it_tmp[-1].find('[')
-                                                                if y !=-1:
-                                                                        info["server"] = it_tmp[-1][:y]
-                                                                        info["protocol"] = it_tmp[-1][y+1:-1]
-                                                                item[0]="port"
-                                                                item[1] = ""
-                                                        elif item[0] == "hops":
-                                                                item[1] = item[1].strip("\n")
-                                                        elif item[0] == "system":
-                                                                item[1] = item[1].strip("\n")
-                                                        elif item[0] == "provider":
-                                                                item[1] = item[1].strip("\n")
-                                                        elif item[0][:2] == 'cw'or item[0] =='ChID' or item[0] == "Service":
-                                                                pass
                                                         #mgcamd new_oscam block
-                                                        elif item[0] == "source":
+                                                        if item[0] == "source":
                                                                 if item[1].strip()[:3] == "net":
                                                                         it_tmp = item[1].strip().split(" ")
                                                                         info["protocol"] = it_tmp[1][1:]
@@ -526,9 +489,6 @@ class AMBCaidInfo(Poll, Converter, object):
                                                                 else:
                                                                         info["source"] = "net"
                                                                         item[0] = "server"
-                                                        #cccam block
-                                                        elif item[0] == "provid":
-                                                                item[0] = "prov"
                                                         elif item[0] == "using:":
                                                                 if item[1].strip() == "emu" or item[1].strip() == "Local":
                                                                         item[0] = "source"

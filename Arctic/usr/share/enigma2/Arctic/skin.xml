@@ -817,9 +817,6 @@
   <widget source="session.CurrentService" render="Label" position="1402,128" zPosition="6" size="300,35" font="Regular;25" halign="right" transparent="1" backgroundColor="background" text="Viaccess" foregroundColor="purple_vu">
   <convert type="CaidInfo2">CryptInfo</convert>
 </widget>
-  <widget source="session.CurrentService" render="Label" position="1246,128" size="304,35" zPosition="3" font="Regular;25" halign="center" noWrap="1" backgroundColor="background" transparent="1" text="CCcam 2.3.0" foregroundColor="un40a0aa0">
-  <convert type="VisionCamInfo">camd</convert>
-</widget>
   <!-- MSNWeather -->
   <eLabel text="Wind :" position="258,782" size="134,42" zPosition="5" font="Regular;35" backgroundColor="background" transparent="1" foregroundColor="background_dark"/>
   <widget noWrap="1" backgroundColor="background" font="Regular;30" render="Label" position="390,788" size="286,37" source="session.MSNWeather" zPosition="9" transparent="1" foregroundColor="background_dark">
@@ -4212,9 +4209,6 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
     <widget source="session.CurrentService" render="Label" position="210,880" size="1200,30" backgroundColor="background" font="Regular; 17" foregroundColor="blue_transparent" transparent="1" zPosition="21" halign="center">
       <convert type="CaidInfo2" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1256,310" size="400,35" zPosition="3" font="Regular; 25" halign="center" noWrap="1" backgroundColor="background" transparent="1" text="CCcam 2.3.0" valign="top" foregroundColor="un40a0aa0">
-      <convert type="VisionCamInfo">Camd</convert>
-    </widget>
     <!--widget name="Universe" position="482,310" size="450,35" halign="center" zPosition="1" font="Regular; 26" foregroundColor="un4a00a0a" backgroundColor="background" transparent="1" /-->
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar3" position="0,0" size="1920,1080" title="InfoBar" transparent="0" zPosition="0">
@@ -4416,9 +4410,6 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
     </widget>
     <widget source="session.CurrentService" render="Label" position="210,750" size="1200,30" backgroundColor="background" font="Regular; 17" foregroundColor="blue_transparent" transparent="1" zPosition="21" halign="center">
       <convert type="CaidInfo2" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1256,175" size="400,35" zPosition="3" font="Regular; 25" halign="center" noWrap="1" backgroundColor="background" transparent="1" text="CCcam 2.3.0" valign="top" foregroundColor="un40a0aa0">
-      <convert type="VisionCamInfo">Camd</convert>
     </widget>
     <!--widget name="Universe" position="482,175" size="450,35" halign="center" zPosition="1" font="Regular; 26" foregroundColor="un4a00a0a" backgroundColor="background" transparent="1" /!-->
   </screen>
@@ -4699,9 +4690,6 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
   <widget source="session.CurrentService" render="Label" position="210,880" size="1200,30" backgroundColor="background" font="Regular; 17" foregroundColor="blue_transparent" transparent="1" zPosition="21" halign="center">
     <convert type="CaidInfo2" />
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1256,310" size="400,35" zPosition="3" font="Regular; 25" halign="center" noWrap="1" backgroundColor="background" transparent="1" text="CCcam 2.3.0" valign="top" foregroundColor="un40a0aa0">
-    <convert type="VisionCamInfo">Camd</convert>
-  </widget>
   <!--widget name="Universe" position="482,310" size="450,35" halign="center" zPosition="1" font="Regular; 26" foregroundColor="un4a00a0a" backgroundColor="background" transparent="1" /!-->
   <widget alphatest="blend" render="MSNWeatherPixmap" position="1655,925" size="70,70" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Arctic/WeatherIcon/,png</convert>
@@ -4815,9 +4803,6 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
     </widget>
     <widget source="session.CurrentService" render="Label" position="210,810" size="1200,30" backgroundColor="background" font="Regular; 17" foregroundColor="blue_transparent" transparent="1" zPosition="21" halign="center">
       <convert type="CaidInfo2" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1256,235" size="400,35" zPosition="3" font="Regular; 25" halign="center" noWrap="1" backgroundColor="background" transparent="1" text="CCcam 2.3.0" valign="top" foregroundColor="un40a0aa0">
-      <convert type="VisionCamInfo">Camd</convert>
     </widget>
     <!--widget name="Universe" position="482,235" size="450,35" halign="center" zPosition="1" font="Regular; 26" foregroundColor="un4a00a0a" backgroundColor="background" transparent="1" /!-->
   </screen>
@@ -5020,9 +5005,6 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
     </widget>
     <widget source="session.CurrentService" render="Label" position="210,750" size="1200,30" backgroundColor="background" font="Regular; 17" foregroundColor="blue_transparent" transparent="1" zPosition="21" halign="center">
       <convert type="CaidInfo2" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1256,175" size="400,35" zPosition="3" font="Regular; 25" halign="center" noWrap="1" backgroundColor="background" transparent="1" text="CCcam 2.3.0" valign="top" foregroundColor="un40a0aa0">
-      <convert type="VisionCamInfo">Camd</convert>
     </widget>
     <!--widget name="Universe" position="482,175" size="450,35" halign="center" zPosition="1" font="Regular; 26" foregroundColor="un4a00a0a" backgroundColor="background" transparent="1" /!-->
   </screen>

@@ -179,10 +179,6 @@ class AMBEmuInfo(Converter, object):
             if x[0] == 'source':
                 source = x[1].strip()
                 address = x[1].strip()
-                if 'net (cccamd' in address:
-                    address = address.lstrip('net (camd').rstrip(')')
-                if 'net (newcamd' in address:
-                    address = address.lstrip('net (wcamd').rstrip(')')
             if x[0] == 'address':
                 address = x[1].strip()
             if x[0] == 'from':
@@ -190,8 +186,6 @@ class AMBEmuInfo(Converter, object):
             if x[0] == 'using':
                 using = x[1].strip()
                 using2 = using
-                if using == 'CCcam-s2s':
-                    using2 = 'CCcam'
             if x[0] == 'ecm time':
                 ecmtime = x[1].strip()
                 ecmtime2 = ''
@@ -212,25 +206,6 @@ class AMBEmuInfo(Converter, object):
             emun = 'Unknown EMU'
             if protocol != '' and reader != '':
                 emun = 'EMU : OsCam'
-                if float(ecmtime) >= 1:
-                    ecmtime2 = str(ecmtime) + ' s'
-                else:
-                    ecmtime2 = str(int(float(ecmtime) * 1000)) + ' ms'
-            if source != '':
-                emun = 'EMU : Wicardd'
-                ecmtime = ecmtime.rstrip('ce')
-                if int(ecmtime.split()[0]) >= 1000:
-                    ecmtime2 = str(float(ecmtime.split()[0]) / 1000) + ' s'
-                else:
-                    ecmtime2 = str(ecmtime)
-            if len(provid) == 8 and using != '' or using == 'SBox':
-                emun = 'EMU : SBox'
-                if int(ecmtime.split()[0]) >= 1000:
-                    ecmtime2 = str(float(ecmtime.split()[0]) / 1000) + ' s'
-                else:
-                    ecmtime2 = str(ecmtime)
-            if len(provid) <= 7 and using != '':
-                emun = 'EMU : CCcam'
                 if float(ecmtime) >= 1:
                     ecmtime2 = str(ecmtime) + ' s'
                 else:

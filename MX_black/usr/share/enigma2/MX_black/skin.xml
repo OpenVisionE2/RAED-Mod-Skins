@@ -826,48 +826,6 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
   <screen name="NabEnsetInfo" position="340,160" size="600,410" title="Settings Info">
     <widget name="infotext" position="10,10" size="580,380" font="Regular;18" backgroundColor="transpBlack" transparent="1" />
   </screen>
-  <screen name="DeliteCCcMain" position="230,150" size="820,435" title="CCcam Info">
-    <ePixmap position="550,100" size="256,256" pixmap="MX_black/menu/blue.png" zPosition="1" alphatest="on" />
-    <widget source="list" render="Listbox" enableWrapAround="1" position="20,20" size="500,400" zPosition="1" scrollbarMode="showNever" transparent="1">
-      <convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (10,10), size = (480,32), flags = RT_HALIGN_LEFT, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":50
-}
-</convert>
-    </widget>
-  </screen>
-  <screen name="DeliteCCcSetup" position="300,150" size="680,435" title="CCcam Info Setup">
-    <widget name="lab1" position="20,20" size="640,125" font="Regular;18" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="config" position="20,150" size="640,220" scrollbarMode="showOnDemand" transparent="1" />
-    <ePixmap pixmap="MX_black/buttons/red35x35.png" position="75,395" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="MX_black/buttons/green35x35.png" position="355,395" size="35,35" alphatest="blend" />
-    <widget name="key_red" position="125,399" size="250,35" zPosition="1" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-    <eLabel text="Virtual Keyboard" position="405,399" size="250,35" zPosition="1" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-  </screen>
-  <screen name="DeliteCCcHo" position="300,150" size="680,435" title="Cccam Main Info">
-    <widget name="infotext" position="20,20" size="640,340" font="Regular;20" backgroundColor="transpBlack" transparent="1" />
-    <widget name="Linconn" position="0,390" size="680,35" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" />
-  </screen>
-  <screen name="DeliteCCcEnt" position="300,150" size="680,435" title="Cccam Entitlements Info">
-    <widget name="infotext" position="20,20" size="640,340" font="Regular;20" backgroundColor="transpBlack" transparent="1" />
-    <widget name="Linconn" position="0,390" size="680,35" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" />
-  </screen>
-  <screen name="DeliteCCcSe" position="300,150" size="680,435" title="Cccam Servers">
-    <widget name="statuslab" position="20,285" size="640,110" font="Regular;18" halign="center" valign="center" transparent="1" foregroundColor="blue" />
-    <widget name="Linconn" position="0,395" size="680,35" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" />
-    <widget source="list" render="Listbox" position="20,20" size="640,270" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
-      <convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (35, 0), size = (600, 30), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-MultiContentEntryPixmapAlphaTest(pos = (5, 7), size = (20, 20), png = 1),
-],
-"fonts": [gFont("Regular", 20)],
-"itemHeight": 30
-}
-</convert>
-    </widget>
-  </screen>
   <screen name="DeliteCCcAc" position="300,150" size="680,435" title="Active Clients">
     <widget name="statuslab" position="20,300" size="640,70" font="Regular;18" halign="center" valign="center" transparent="1" foregroundColor="blue" backgroundColor="transpBlack" />
     <widget name="Linconn" position="0,390" size="680,35" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" />

@@ -22,7 +22,6 @@
                 <include filename="o-movies.xml" />
                 <include filename="o-epg.xml" />
                 <include filename="o-information.xml" />
-                <include filename="o-cccam.xml" />
                 <include filename="o-timers.xml" />
                 <include filename="o-channel-selection.xml" />
                 <include filename="o-infobar.xml" />

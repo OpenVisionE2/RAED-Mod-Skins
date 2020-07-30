@@ -1283,61 +1283,6 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-  <screen name="DeliteCCcMain" position="center,228" size="1300,700" title="CCcam Info">
-    <ePixmap pixmap="MX_Sline/menu/bluep.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
-    <widget source="list" render="Listbox" enableWrapAround="1" position="20,20" size="810,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" scrollbarMode="showNever" transparent="1">
-      <convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
-"fonts": [gFont("Regular",34)],
-"itemHeight":55
-}
-</convert>
-    </widget>
-    <widget name="Linconn" position="30,580" size="810,35" font="Regular;28" halign="center" valign="center" backgroundColor="un9f1313" />
-    <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-  <screen name="DeliteCCcSetup" position="center,228" size="1300,700" title="CCcam Info Setup">
-    <ePixmap pixmap="MX_Sline/menu/bluep.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
-    <widget name="lab1" position="20,20" size="820,187" font="Regular;28" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-    <widget name="config" position="20,220" size="820,480" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-    <ePixmap pixmap="MX_Sline/buttons/red48x48.png" position="450,640" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="MX_Sline/buttons/green48x48.png" position="802,640" size="48,48" alphatest="blend" />
-    <widget name="key_red" position="510,640" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-    <eLabel text="Virtual Keyboard" position="862,640" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-    <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-  <screen name="DeliteCCcHo" position="center,228" size="1300,700" title="Cccam Main Info">
-    <ePixmap pixmap="MX_Sline/menu/bluep.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
-    <widget name="infotext" position="20,20" size="820,600" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-    <widget name="Linconn" position="30,580" size="810,35" font="Regular;28" halign="center" valign="center" backgroundColor="un9f1313" />
-    <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
-  <screen name="DeliteCCcEnt" position="center,228" size="1300,700" title="Cccam Entitlements Info">
-    <ePixmap pixmap="MX_Sline/menu/bluep.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
-    <widget name="infotext" position="30,20" size="840,600" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-    <widget name="Linconn" position="30,580" size="810,35" font="Regular;28" halign="center" valign="center" backgroundColor="un9f1313" />
-    <widget source="global.CurrentTime" render="Label" position="840,70" size="460,80" font="Regular;70" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="850,520" size="440,100" font="Regular;38" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-  </screen>
   <screen name="DeliteCCcSe" position="center,228" size="1300,700" title="Servers">
     <ePixmap pixmap="MX_Sline/menu/bluep.png" position="920,165" size="300,300" zPosition="-1" alphatest="on" />
     <widget source="list" render="Listbox" position="20,20" size="810,480" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" transparent="1">

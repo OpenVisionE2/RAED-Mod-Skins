@@ -1119,21 +1119,6 @@
 	<widget name="message_label" font="Regular;36" position="0,0" zPosition="2" valign="center" halign="center" size="375,45" backgroundColor="lightpanel" transparent="1"/>
 	</screen>
 
-	<!-- CCCam InfoBar -->
-
-	<screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="1132,37" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
-		<widget name="irdeto" position="0,0" size="22,37" font="Regular;24" text="I" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="seca" position="22,0" size="22,37" font="Regular;24" text="S" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="nagra" position="45,0" size="22,37" font="Regular;24" text="N" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="via" position="67,0" size="22,37" font="Regular;24" text="V" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="conax" position="90,0" size="45,37" font="Regular;24" text="CO" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="betacrypt" position="135,0" size="37,37" font="Regular;24" text="BC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="crypto" position="172,0" size="52,37" font="Regular;24" text="CW" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="dreamcrypt" position="225,0" size="37,37" font="Regular;24" text="DC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="nds" position="262,0" size="60,37" font="Regular;24" text="NDS" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1"/>
-		<widget name="ecmInfo" position="337,0" size="795,37" font="Regular;24" valign="center" transparent="1" borderColor="black" borderWidth="2" noWrap="1"/>
-	</screen>
-
 	<!-- BitrateViewer -->
 
 	<screen name="BitrateViewer" backgroundColor="transparent" position="1380,510" size="510,285" title="Bitrate viewer" flags="wfNoBorder">

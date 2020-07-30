@@ -22,7 +22,6 @@
                 <include filename="q-movies.xml" />
                 <include filename="q-epg.xml" />
                 <include filename="q-information.xml" />
-                <include filename="q-cccam.xml" />
                 <include filename="q-timers.xml" />
                 <include filename="q-channel-selection.xml" />
                 <include filename="q-infobar.xml" />

@@ -4304,91 +4304,6 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
   </screen>
-  <screen name="CCcamInfoEcmInfoSelection" position="0,0" size="1920,1080" title="CCcam ECM Info" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoInfoScreen" position="0,0" size="1920,1080" title="CCcam Info" flags="wfNoBorder" backgroundColor="background">
-    <widget name="text" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamShareViewMenu" position="0,0" size="1920,1080" title="CCcam Share Menu" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,110" size="1180,620" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <widget name="uphops" font="Regular; 36" position="10,750" size="1180,40" zPosition="1" transparent="1" />
-    <widget name="cards" font="Regular; 36" position="10,810" size="1180,40" zPosition="1" transparent="1" />
-    <widget name="providers" font="Regular; 36" position="10,870" size="1180,40" zPosition="1" transparent="1" />
-    <widget name="reshare" font="Regular; 36" position="10,930" size="1180,40" zPosition="1" transparent="1" />
-    <widget name="title" position="1223,560" size="670,390" font="Regular; 36" halign="center" valign="center" transparent="1" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" position="1500,20" size="300,50" font="Italic; 40" halign="right" foregroundColor="white" backgroundColor="Multiboxlabel" transparent="1">
-      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
-    </widget>
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoSubMenu" position="0,0" size="1920,1080" title="CCcamInfo SubMenu" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,100" size="1180,670" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <widget name="info" position="10,780" size="1180,200" font="Regular; 36" halign="center" valign="center" transparent="1" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoServerMenu" position="0,0" size="1920,1080" title="CCcam Server Info" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,100" size="1180,670" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <widget name="info" position="10,780" size="1180,200" font="Regular; 36" halign="center" valign="center" transparent="1" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoConfigMenu" position="0,0" size="1920,1080" title="CCcam Info Setup" flags="wfNoBorder" backgroundColor="background">
-    <widget name="config" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoShareInfo" position="0,0" size="1920,1080" title="CCcam Share Info" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <panel name="template_name_red_o_blue" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoConfigSwitcher" position="0,0" size="1920,1080" title="CCcam Config Switcher" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <panel name="template_name_red_o_blue" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoMenuConfig" position="0,0" size="1920,1080" title="CCcam Info Config" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <panel name="template_source_red_o_yellow" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
   <!--Oscaminfo-->
   <screen name="OscamInfoMenu" position="0,0" size="1920,1080" title="OscamInfo Menu" flags="wfNoBorder" backgroundColor="background">
     <widget name="mainmenu" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
@@ -4497,24 +4412,6 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_menu_ok_exit" />
     <panel name="template_fullscreen" />
     <panel name="template_pixmap_BG" />
-  </screen>
-  <!--CCcaminfo-->
-  <screen name="CCcamInfoMain" position="0,0" size="1920,1080" title="CCcam Info" flags="wfNoBorder" backgroundColor="background">
-    <widget name="menu" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
-  </screen>
-  <screen name="CCcamInfoRemoteBoxMenu" position="0,0" size="1920,1080" title="CCcam Remote Info" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="10,100" size="1180,870" enableWrapAround="1" itemHeight="50" font="Regular; 36" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-    <panel name="template_name_red_o_blue" />
-    <widget source="Title" render="Label" position="180,20" size="1300,50" font="Italic; 40" halign="left" valign="center" foregroundColor="white" backgroundColor="background" borderColor="Multiboxlabel" borderWidth="3" transparent="1" zPosition="1" />
-    <panel name="template_fullscreen" />
-    <panel name="template_pixmap_BG" />
-    <panel name="template_menu_ok_exit" />
-    <panel name="template_pig_setup" />
   </screen>
   <!--Volume Adjust-->
   <screen name="Volume_adjust" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="background">
