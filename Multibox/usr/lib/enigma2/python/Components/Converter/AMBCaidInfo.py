@@ -261,8 +261,6 @@ class AMBCaidInfo(Poll, Converter, object):
                                         return False
                                 #oscam
                                 reader = ecm_info.get("reader", None)
-                                else:
-                                        return False
 
                 return False
 
