@@ -467,7 +467,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                                 item = line.split(":", 1)
                                                 if len(item) > 1:
                                                         #mgcamd new_oscam block
-                                                        elif item[0] == "source":
+                                                        if item[0] == "source":
                                                                 if item[1].strip()[:3] == "net":
                                                                         it_tmp = item[1].strip().split(" ")
                                                                         info["protocol"] = it_tmp[1][1:]
