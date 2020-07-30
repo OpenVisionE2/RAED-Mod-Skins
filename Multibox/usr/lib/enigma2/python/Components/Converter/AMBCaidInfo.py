@@ -259,7 +259,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                         if caid == "26":
                                                 return True
                                         return False
-                                #oscam
+                                # oscam and ncam
                                 reader = ecm_info.get("reader", None)
 
                 return False
@@ -313,7 +313,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                                         pid = ""
                                                 if self.type == self.PID:
                                                         return pid
-                                                # oscam
+                                                # oscam and ncam
                                                 try:
                                                         prov = "%0.6X" % int(ecm_info.get("prov", ""),16)
                                                 except:
@@ -397,7 +397,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                                 if self.type == self.ALL:
                                                         if source == "emu":
                                                                 textvalue = "%s - %s (Caid: %s)" % (source, self.systemTxtCaids.get(caid[:2]), caid)
-                                                        #new oscam ecm.info with port parametr
+                                                        #new oscam and ncam ecm.info with port parametr
                                                         elif reader != "" and source == "net" and port != "":
                                                                 textvalue = "%s - Prov: %s, Caid: %s, Reader: %s, %s (%s:%s) - %ss, %s hops" % (source, prov, caid, reader, protocol, server, port, ecm_time, hops)
                                                         elif reader != "" and source == "net":
@@ -460,13 +460,13 @@ class AMBCaidInfo(Poll, Converter, object):
                         if ecm:
                                 for line in ecm:
                                         x = line.lower().find("msec")
-                                        #ecm time for mgcamd and oscam
+                                        #ecm time for oscam and ncam
                                         if x != -1:
                                                 info["ecm time"] = line[0:x+4]
                                         else:
                                                 item = line.split(":", 1)
                                                 if len(item) > 1:
-                                                        #mgcamd new_oscam block
+                                                        #new_oscam and ncam block
                                                         if item[0] == "source":
                                                                 if item[1].strip()[:3] == "net":
                                                                         it_tmp = item[1].strip().split(" ")
