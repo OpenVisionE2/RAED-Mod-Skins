@@ -347,52 +347,52 @@ class AMBCaidInfo(Poll, Converter, object):
                                                         for param in params:
                                                                 if param != '':
                                                                         if param[0] != '%':
-                                                                                textvalue+=param
+                                                                                textvalue += param
                                                                         #server
                                                                         elif param == "%S":
-                                                                                textvalue+=server
+                                                                                textvalue += server
                                                                         #hops
                                                                         elif param == "%H":
-                                                                                textvalue+=hops
+                                                                                textvalue += hops
                                                                         #system
                                                                         elif param == "%SY":
-                                                                                textvalue+=system
+                                                                                textvalue += system
                                                                         #provider
                                                                         elif param == "%PV":
-                                                                                textvalue+=provider
+                                                                                textvalue += provider
                                                                         #port
                                                                         elif param == "%SP":
-                                                                                textvalue+=port
+                                                                                textvalue += port
                                                                         #protocol
                                                                         elif param == "%PR":
-                                                                                textvalue+=protocol
+                                                                                textvalue += protocol
                                                                         #caid
                                                                         elif param == "%C":
-                                                                                textvalue+=caid
+                                                                                textvalue += caid
                                                                         #Pid
                                                                         elif param == "%P":
-                                                                                textvalue+=pid
+                                                                                textvalue += pid
                                                                         #prov
                                                                         elif param == "%p":
-                                                                                textvalue+=prov
+                                                                                textvalue += prov
                                                                         #sOurce
                                                                         elif param == "%O":
-                                                                                textvalue+=source
+                                                                                textvalue += source
                                                                         #Reader
                                                                         elif param == "%R":
-                                                                                textvalue+=reader
+                                                                                textvalue += reader
                                                                         #ECM Time
                                                                         elif param == "%T":
-                                                                                textvalue+=ecm_time
+                                                                                textvalue += ecm_time
                                                                         elif param == "%t":
-                                                                                textvalue+="\t"
+                                                                                textvalue += "\t"
                                                                         elif param == "%n":
-                                                                                textvalue+="\n"
+                                                                                textvalue += "\n"
                                                                         elif param[1:].isdigit():
-                                                                                textvalue=textvalue.ljust(len(textvalue)+int(param[1:]))
+                                                                                textvalue = textvalue.ljust(len(textvalue) + int(param[1:]))
                                                                         if len(textvalue) > 0:
                                                                                 if textvalue[-1] != "\t" and textvalue[-1] != "\n":
-                                                                                        textvalue+=" "
+                                                                                        textvalue += " "
                                                         return textvalue[:-1]
                                                 if self.type == self.ALL:
                                                         if source == "emu":
@@ -462,7 +462,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                         x = line.lower().find("msec")
                                         #ecm time for oscam and ncam
                                         if x != -1:
-                                                info["ecm time"] = line[0:x+4]
+                                                info["ecm time"] = line[0:x + 4]
                                         else:
                                                 item = line.split(":", 1)
                                                 if len(item) > 1:
@@ -500,7 +500,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                                                 if tt != -1:
                                                                         info["server"] = item[1][:tt].strip()
                                                                         item[0] = "port"
-                                                                        item[1] = item[1][tt+1:]
+                                                                        item[1] = item[1][tt + 1:]
                                                         info[item[0].strip().lower()] = item[1].strip()
                                                 else:
                                                         if "caid" not in info:
@@ -508,13 +508,13 @@ class AMBCaidInfo(Poll, Converter, object):
                                                                 if x != -1:
                                                                         y = line.find(",")
                                                                         if y != -1:
-                                                                                info["caid"] = line[x+5:y]
+                                                                                info["caid"] = line[x + 5:y]
                                                         if "pid" not in info:
                                                                 x = line.lower().find("pid")
                                                                 if x != -1:
                                                                         y = line.find(" =")
                                                                         if y != -1:
-                                                                                info["pid"] = line[x+4:y]
+                                                                                info["pid"] = line[x + 4:y]
                                 ecmf.close()
                 return info
         def changed(self, what):
