@@ -114,4 +114,3 @@ class MaggyEventName(Converter, object):
             return
 
     text = property(getText)
-

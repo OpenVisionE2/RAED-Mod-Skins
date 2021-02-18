@@ -14,7 +14,7 @@
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
-#    
+#
 #######################################################################
 
 from Renderer import Renderer
@@ -59,7 +59,7 @@ class AMBFrontend(VariableText, Renderer):
 	def connect(self, source):
 		Renderer.connect(self, source)
 		self.changed((self.CHANGED_DEFAULT,))
-		
+
 	def changed(self, what):
 		if self.instance:
 			if what[0] == self.CHANGED_CLEAR:
@@ -115,7 +115,7 @@ class AMBFrontend(VariableText, Renderer):
 						if "symbol_rate" in sname:
 							tmp = int(sname["symbol_rate"]) / 1000
 							sr = str(tmp) + "  "
-						if "orbital_position" in sname:	
+						if "orbital_position" in sname:
 							numSat = sname["orbital_position"]
 							if numSat > 1800:
 								idx = str((float(3600 - numSat)) / 10.0) + "W"
@@ -133,7 +133,7 @@ class AMBFrontend(VariableText, Renderer):
 					if fq != "":
 						try:
 							self.text = fq + pol + fec + sr + orb.replace("E)", "\xc2\xb0E)").replace("W)", "\xc2\xb0W)")
-						except: 
+						except:
 							self.text = fq + pol + fec + sr + orb
 					else:
 						self.text = "Transporder info not detected"

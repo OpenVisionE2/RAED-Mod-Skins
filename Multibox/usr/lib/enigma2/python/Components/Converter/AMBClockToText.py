@@ -21,7 +21,7 @@ class AMBClockToText(Converter, object):
 	AS_LENGTHHOURS = 11
 	AS_LENGTHSECONDS = 12
 	FULL_DATE = 13
-    
+
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		self.fix = ''
@@ -62,14 +62,14 @@ class AMBClockToText(Converter, object):
         	time = self.source.time
         	if time is None:
             		return ''
-        
+
 		def fix_space(string):
 			if 'Proportional' in self.fix and t.tm_hour < 10:
 				return ' ' + string
 			if 'NoSpace' in self.fix:
 				return string.lstrip(' ')
 			return string
-        
+
 		if self.type == self.IN_MINUTES:
 			return ngettext('%d Min', '%d Mins', time / 60) % (time / 60)
 		if self.type == self.AS_LENGTH:
@@ -111,11 +111,11 @@ class AMBClockToText(Converter, object):
 			t1 = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'][t.tm_wday]
 			t2 = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'][t.tm_wday]
 			m1 = ['Jan', 'Feb', 'Mrz', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'][(t.tm_mon - 1)]
-			m2 = ['Januar', 'Februar', u'M\xe4rz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'][(t.tm_mon - 1)]			
+			m2 = ['Januar', 'Februar', u'M\xe4rz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'][(t.tm_mon - 1)]
 			d = d.replace('%a', t1)
 			d = d.replace('%A', t2)
 			d = d.replace('%b', m1)
 			d = d.replace('%B', m2)
 		return strftime(d, t)
-    
+
 	text = property(getText)

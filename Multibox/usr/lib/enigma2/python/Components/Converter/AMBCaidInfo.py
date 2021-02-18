@@ -51,7 +51,7 @@ class AMBCaidInfo(Poll, Converter, object):
         FORMAT = 29
         CRYPT2 = 30
         CURCAM = 31
-        my_interval = 1000 
+        my_interval = 1000
 
         def __init__(self, type):
                 Poll.__init__(self)
@@ -328,7 +328,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                                 protocol = ecm_info.get("protocol", "")
                                                 #port
                                                 port = ecm_info.get("port", "")
-                                                # source        
+                                                # source
                                                 source = ecm_info.get("source", "")
                                                 # server
                                                 server = ecm_info.get("server", "")
@@ -521,4 +521,3 @@ class AMBCaidInfo(Poll, Converter, object):
 
         def changed(self, what):
                 Converter.changed(self, (self.CHANGED_POLL,))
-                
