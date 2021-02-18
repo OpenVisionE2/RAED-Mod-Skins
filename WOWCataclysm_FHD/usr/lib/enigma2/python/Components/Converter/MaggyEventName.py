@@ -5,6 +5,7 @@ from Components.Element import cached
 from Tools.ISO639 import LanguageCodes
 from Tools.BoundFunction import boundFunction
 
+
 class MaggyEventName(Converter, object):
     NAME = 0
     SHORT_DESCRIPTION = 1

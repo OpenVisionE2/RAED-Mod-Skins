@@ -5,6 +5,7 @@ from time import localtime, strftime
 from Components.Element import cached
 from Components.config import config
 
+
 class AMBClockToText(Converter, object):
 	DEFAULT = 0
 	WITH_SECONDS = 1
@@ -55,8 +56,6 @@ class AMBClockToText(Converter, object):
 			self.fmt_string = type[7:]
 		else:
 			self.type = self.DEFAULT
-
-
 
 	@cached
 	def getText(self):

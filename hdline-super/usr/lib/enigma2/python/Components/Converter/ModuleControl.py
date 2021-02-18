@@ -6,6 +6,7 @@ from Components.Element import cached
 from enigma import eDVBCI_UI, eDVBCIInterfaces
 from Poll import Poll
 
+
 class ModuleControl(Poll, Converter, object):
 	NAME1 = 0
 	NAME2 = 1

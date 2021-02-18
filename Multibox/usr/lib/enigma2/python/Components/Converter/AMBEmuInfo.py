@@ -7,6 +7,7 @@ from Tools.Directories import fileExists
 from os import path, popen
 import re
 
+
 class AMBEmuInfo(Converter, object):
     TEMPERATURE = 1
     EMU = 2

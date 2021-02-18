@@ -19,7 +19,6 @@ if os.path.exists(filename):
 			hours24 = False
 
 
-
 class SlykNextEventsTime(VariableText, Renderer):
     def __init__(self):
         Renderer.__init__(self)

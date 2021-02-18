@@ -17,6 +17,7 @@ import os
 info = {}
 old_ecm_mtime = None
 
+
 class AMBCaidInfo(Poll, Converter, object):
         CAID = 0
         PID = 1
@@ -517,6 +518,7 @@ class AMBCaidInfo(Poll, Converter, object):
                                                                                 info["pid"] = line[x + 4:y]
                                 ecmf.close()
                 return info
+
         def changed(self, what):
                 Converter.changed(self, (self.CHANGED_POLL,))
                 

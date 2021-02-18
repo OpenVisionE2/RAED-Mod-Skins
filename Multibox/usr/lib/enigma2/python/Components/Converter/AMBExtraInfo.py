@@ -9,6 +9,7 @@ from Tools.Transponder import ConvertToHumanReadable
 from Tools.GetEcmInfo import GetEcmInfo
 from Poll import Poll
 
+
 def addspace(text):
     if text:
         text += '  '

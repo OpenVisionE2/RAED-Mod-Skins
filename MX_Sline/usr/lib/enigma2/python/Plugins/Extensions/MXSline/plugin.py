@@ -29,11 +29,13 @@ gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain('enigma2')
 gettext.bindtextdomain('MXSline', '%s%s' % (resolveFilename(SCOPE_PLUGINS), 'Extensions/MXSline/locale/'))
 
+
 def _(txt):
     t = gettext.dgettext('MXSline', txt)
     if t == txt:
         t = gettext.gettext(txt)
     return t
+
 
 reswidth = getDesktop(0).size().width()
 resheight = getDesktop(0).size().height()
@@ -42,6 +44,7 @@ config.plugins.MXSline = ConfigSubsection()
 config.plugins.MXSline.style = ConfigSelection(default='Black', choices=[('Black', _('Black')),
  ('Blue', _('Blue')),
  ('Grey', _('Grey'))])
+
 
 class MXSlineConfig(ConfigListScreen, Screen):
     if reswidth == 1920:
@@ -118,8 +121,10 @@ class MXSlineConfig(ConfigListScreen, Screen):
     def restart(self):
         self.session.open(TryQuitMainloop, 3)
 
+
 def main(session, **kwargs):
     session.open(MXSlineConfig)
+
 
 def Plugins(**kwargs):
     for line in open("/etc/enigma2/settings"):

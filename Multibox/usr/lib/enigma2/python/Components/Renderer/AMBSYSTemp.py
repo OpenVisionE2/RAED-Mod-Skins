@@ -5,6 +5,7 @@ from enigma import eLabel
 from Components.Renderer.Renderer import Renderer
 from os import path, popen
 
+
 class AMBSYSTemp(Renderer, VariableText):
 
     def __init__(self):

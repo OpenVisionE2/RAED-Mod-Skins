@@ -27,11 +27,13 @@ gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain('enigma2')
 gettext.bindtextdomain('BundesligaFHD', '%s%s' % (resolveFilename(SCOPE_PLUGINS), 'Extensions/BundesligaFHD/locale/'))
 
+
 def _(txt):
     t = gettext.dgettext('BundesligaFHD', txt)
     if t == txt:
         t = gettext.gettext(txt)
     return t
+
 
 config.plugins.bundesligafhd = ConfigSubsection()
 config.plugins.bundesligafhd.style = ConfigSelection(default='hsv', choices=[('hsv', _('hsv')),
@@ -57,6 +59,7 @@ config.plugins.bundesligafhd.style = ConfigSelection(default='hsv', choices=[('h
  ('1fcb', _('1fcb')),
  ('scp07', _('scp07')),
  ('fcstp', _('fcstp'))])
+
 
 class BundesligaFHDConfig(ConfigListScreen, Screen):
     skin = '\n\t\t<screen name="BundesligaFHDConfig" position="center,110" size="750,520" title="BundesligaFHD sKIn setup">\n\t\t\t<widget position="15,10" size="720,75" name="config" scrollbarMode="showOnDemand" />\n\t\t\t<ePixmap position="10,475" zPosition="1" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BundesligaFHD/images/red.png" alphatest="blend" />\n\t\t\t<widget source="red_key" render="Label" position="45,477" zPosition="2" size="165,25" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />\n\t\t\t<ePixmap position="215,475" zPosition="1" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BundesligaFHD/images/green.png" alphatest="blend" />\n\t\t\t<widget source="green_key" render="Label" position="250,477" zPosition="2" size="165,25" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />\n\t\t\t<ePixmap position="420,475" zPosition="1" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BundesligaFHD/images/yellow.png" alphatest="blend" />\n\t\t\t<widget source="yellow_key" render="Label" position="455,477" zPosition="2" size="200,25" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />\n\t\t\t<widget name="CSPreview" position="175,120" size="400,225" zPosition="5" alphatest="blend" />\n\t\t</screen>'
@@ -114,8 +117,10 @@ class BundesligaFHDConfig(ConfigListScreen, Screen):
     def restart(self):
         self.session.open(TryQuitMainloop, 3)
 
+
 def main(session, **kwargs):
     session.open(BundesligaFHDConfig)
+
 
 def Plugins(**kwargs):
     for line in open("/etc/enigma2/settings"):

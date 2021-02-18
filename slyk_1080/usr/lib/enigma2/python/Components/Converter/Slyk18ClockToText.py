@@ -97,8 +97,6 @@ class Slyk18ClockToText(Converter, object):
         else:
             timesuffix = _('am')
 			
-		
-
         if self.type == self.DEFAULT:
             return fix_space(_("%2d:%02d") % (t.tm_hour, t.tm_min))
         
@@ -114,14 +112,12 @@ class Slyk18ClockToText(Converter, object):
 			else:
 				d = _("%l.%M") + _(timesuffix) + _(" %a %d/%m")
 
-			
         elif self.type == self.SLYK18_TIME:
 			if hours24:
 				d = _("%H.%M")
 			else:
 				d = _("%l.%M") + _(timesuffix)
           
-           
         elif self.type == self.SLYK18_STARTEDATE:
 			if hours24:   
 				if time < tnow:
@@ -134,7 +130,6 @@ class Slyk18ClockToText(Converter, object):
 				else:
 					d = _('Starts at') + ' ' + _("%l.%M").lstrip() + _(timesuffix)
 				
-        
         elif self.type == self.FULL:
             d = _("%a %e/%m  %-H:%M")
         
