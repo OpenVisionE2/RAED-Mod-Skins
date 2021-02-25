@@ -2013,7 +2013,7 @@ gma2/python/Plugins/Extensions/MovieDB/spinner/wait8.png,/usr/lib/enigma2/python
     <!--Titel-->
     <eLabel position="-15,19" size="80,51" zPosition="13" font="PVR; 60" text="d" halign="right" valign="center" />
     <widget backgroundColor="lightpanel" font="headline; 24" foregroundColor="darkpanel" halign="left" position="70,24" render="Label" size="517,51" source="Title" transparent="0" zPosition="30" noWrap="1" />
-    <ePixmap alphatest="on" pixmap="skin_default/vkey_text.png" position="0,0" size="1,1" zPosition="-4" />
+    <ePixmap alphatest="on" pixmap="vkey_text.png" position="0,0" size="1,1" zPosition="-4" />
     <widget name="header" position="0,160" size="610,36" font="Regular;20" transparent="1" noWrap="1" foregroundColor="darkpanel" zPosition="30" />
     <widget name="text" foregroundColor="darkpanel" position="0,200" size="610,60" font="Regular;40" transparent="1" noWrap="1" halign="right" zPosition="30" />
     <widget name="list" zPosition="30" foregroundColor="darkpanel" position="0,280" size="610,225" selectionDisabled="1" transparent="1" />
@@ -2050,8 +2050,8 @@ gma2/python/Plugins/Extensions/MovieDB/spinner/wait8.png,/usr/lib/enigma2/python
     <eLabel backgroundColor="lightpanel" position="0,0" size="900,1080" />
     <eLabel position="-15,19" size="80,51" zPosition="13" font="PVR; 60" text="d" halign="right" valign="center" />
     <widget backgroundColor="lightpanel" font="headline; 24" foregroundColor="darkpanel" halign="left" position="70,24" render="Label" size="517,51" source="Title" transparent="0" zPosition="30" noWrap="1" />
-    <ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="1" position="1,925" size="35,25" alphatest="on" />
-    <ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="1" position="1,888" size="35,25" alphatest="on" />
+    <ePixmap pixmap="buttons/key_2.png" zPosition="1" position="1,925" size="35,25" alphatest="on" />
+    <ePixmap pixmap="buttons/key_1.png" zPosition="1" position="1,888" size="35,25" alphatest="on" />
     <eLabel position="50,885" size="488,50" font="Regular;18" text="Patch MediaPortal 6.5.0" />
     <eLabel position="50,920" size="288,50" font="Regular;18" text="Patch SerienRecorder" />
     <widget backgroundColor="lightpanel" font="Regular;28" foregroundColor="darkpanel" halign="left" source="key_green" render="Label" position="47,1026" size="228,50" transparent="0" valign="center" zPosition="11" />
@@ -3281,10 +3281,10 @@ alphatest="blend" /-->
     <eLabel position="5,1033" size="44,39" font="PVR; 40" text="a" foregroundColor="button_green" zPosition="10" valign="center" backgroundColor="lightpanel" />
     <eLabel position="274,1032" size="44,39" font="PVR; 40" text="a" foregroundColor="blue_transparent" zPosition="10" valign="center" halign="left" backgroundColor="lightpanel" />
     <eLabel name=" " position="5,973" size="44,39" font="PVR; 40" text="a" foregroundColor="un4a00a0a" zPosition="10" valign="center" halign="left" />
-    <ePixmap pixmap="skin_default/buttons/key_0.png" zPosition="1" position="5,888" size="35,25" alphatest="on" />
-    <ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="1" position="5,925" size="35,25" alphatest="on" />
-    <ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="1" position="277,888" size="35,25" alphatest="on" />
-    <ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="1" position="277,925" size="35,25" alphatest="on" />
+    <ePixmap pixmap="buttons/key_0.png" zPosition="1" position="5,888" size="35,25" alphatest="on" />
+    <ePixmap pixmap="buttons/key_1.png" zPosition="1" position="5,925" size="35,25" alphatest="on" />
+    <ePixmap pixmap="buttons/key_2.png" zPosition="1" position="277,888" size="35,25" alphatest="on" />
+    <ePixmap pixmap="buttons/key_3.png" zPosition="1" position="277,925" size="35,25" alphatest="on" />
     <widget name="key_0" backgroundColor="lightpanel" zPosition="1" position="45,889" size="228,26" font="Regular; 18" halign="left" valign="center" />
     <widget name="key_1" backgroundColor="lightpanel" zPosition="1" position="45,924" size="225,26" font="Regular;18" halign="left" valign="center" />
     <widget name="key_2" backgroundColor="lightpanel" zPosition="1" position="316,890" size="287,26" font="Regular;18" halign="left" valign="center" />
@@ -5243,7 +5243,7 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
     <widget source="model" render="Label" position="5,284" size="580,28" font="Regular;25" halign="center" transparent="1" zPosition="1" />
     <widget source="capacity" render="Label" position="5,196" size="580,28" font="Regular;25" halign="center" transparent="1" zPosition="1" />
     <widget source="bus" render="Label" position="5,240" size="580,28" font="Regular;25" halign="center" transparent="1" zPosition="1" />
-    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="5,320" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" pixmap="vkey_icon.png" position="5,320" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <widget name="config" position="5,122" size="588,50" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
     <eLabel position="5,1033" size="44,39" font="PVR; 40" text="a" foregroundColor="un4a00a0a" zPosition="10" valign="center" backgroundColor="lightpanel" />
     <widget backgroundColor="lightpanel" font="Regular;28" foregroundColor="darkpanel" halign="left" render="Label" source="key_green" position="47,1026" size="228,50" transparent="0" valign="center" zPosition="11" />
@@ -5420,10 +5420,10 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
   <eLabel name="" position="1778,6" size="30,40" zPosition="13" font="PVR;24" text="e" halign="right" valign="center"/>
   <widget name="list" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="lightpanel" foregroundColor="darkpanel" position="205,105" size="804,959" transparent="1"/>
   <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="15,center" size="180,500" zPosition="10"/>
-  <widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
-  <widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
-  <widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
-  <widget alphatest="on" name="arrowup2" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
+  <widget alphatest="on" name="arrowdown" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
+  <widget alphatest="on" name="arrowdown2" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
+  <widget alphatest="on" name="arrowup" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
+  <widget alphatest="on" name="arrowup2" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
   <eLabel position="0,0" size="100,100" text="Default text"/>
 </screen>
     <!-- EventView -->
@@ -6033,7 +6033,7 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
   <widget name="zeile4" position="20,670" size="150,40" font="Regular;28" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1"></widget>           
   <widget name="zeile4b" position="180,670" size="420,40" font="Regular; 28" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1"></widget> 
   <widget name="picture" zPosition="0" position="0,100" size="680,400" alphatest="blend"></widget> 
-  <widget name="playline2" position="0,95" size="680,21" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="foreground"><convert type="ServicePosition">Gauge</convert></widget> 
+  <widget name="playline2" position="0,95" size="680,21" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="foreground"><convert type="ServicePosition">Gauge</convert></widget> 
   <widget name="random" position="615,578" size="50,40" alphatest="blend"></widget>
   <widget name="subdirs" position="615,624" size="50,40" alphatest="blend"></widget>
   <widget name="auto" position="616,670" size="50,40" alphatest="blend"></widget>
@@ -6253,9 +6253,9 @@ MultiContentEntryPixmapAlphaTest(pos = (520, 6), size = (48, 48), png = 3),
 <screen name="FanControl2Plugin" position="567,213" size="800,650" title="Fan Control 2">
 <widget source="Version" render="Label" position="9,635" size="60,20" zPosition="1" font="Regular;11" halign="left" valign="center" transparent="1" />
 <widget name="config" position="0,61" size="800,250" itemHeight="50" textOffset="20,7" scrollbarMode="showOnDemand" backgroundColor="accent" foregroundColor="white" />
-<ePixmap position="9,328" size="780,30" pixmap="skin_default/div-h.png" transparent="1" alphatest="on" />
+<ePixmap position="9,328" size="780,30" pixmap="div-h.png" transparent="1" alphatest="on" />
 <widget source="introduction" render="Label" position="9,330" size="780,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="background" transparent="1" />
-<ePixmap position="9,359" size="780,3" pixmap="skin_default/div-h.png" transparent="1" alphatest="on" />
+<ePixmap position="9,359" size="780,3" pixmap="div-h.png" transparent="1" alphatest="on" />
 <widget source="TxtTemp" render="Label" position="9,381" size="300,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
 <widget source="TxtZielRPM" render="Label" position="9,424" size="300,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
 <widget source="TxtRPM" render="Label" position="9,463" size="300,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />

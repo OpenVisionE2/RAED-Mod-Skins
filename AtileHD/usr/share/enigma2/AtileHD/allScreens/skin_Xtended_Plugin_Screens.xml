@@ -505,7 +505,7 @@
 		<widget source="session.CurrentService" render="Label" position="70,560" size="700,25" font="Regular;20" halign="center" valign="center" foregroundColor="labeltext" backgroundColor="background" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<widget name="Timeline" position="70,597" size="700,20" backgroundColor="darkgrey" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
+		<widget name="Timeline" position="70,597" size="700,20" backgroundColor="darkgrey" pointer="position_arrow.png:3,5" foregroundColor="black" />
 		<eLabel position="800,130" size="420,440" zPosition="1" backgroundColor="white" />
 		<eLabel position="802,132" size="416,436" zPosition="2" backgroundColor="background" />
 		<widget source="cutlist" render="Listbox" position="810,140" size="400,420" zPosition="3" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="selectedScrollFG" scrollbarSliderBorderColor="selectedScrollBG">

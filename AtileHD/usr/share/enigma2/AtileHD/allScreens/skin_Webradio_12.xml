@@ -123,7 +123,7 @@
 
 
 		<!--play files-->
-		<widget name="playline2" position="10,10" size="260,21" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f"><convert type="ServicePosition">Gauge</convert></widget> 
+		<widget name="playline2" position="10,10" size="260,21" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="#20224f"><convert type="ServicePosition">Gauge</convert></widget> 
 		<widget name="random" position="10,40" size="50,30" alphatest="blend" />
 		<widget name="subdirs" position="90,40" size="50,30" alphatest="blend" />
 		<widget name="auto" position="170,40" size="50,30" alphatest="blend" />

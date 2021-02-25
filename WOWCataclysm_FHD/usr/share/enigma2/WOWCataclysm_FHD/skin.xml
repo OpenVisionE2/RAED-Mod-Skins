@@ -3029,8 +3029,8 @@ self.instance.resize(eSize(*wsize))
   <screen name="play_settings" zPosition="4" position="center,95" size="590,210" title="Settings for playing">
     <widget name="config" position="5,40" size="580,60" scrollbarMode="showOnDemand" />
     <widget name="button_backround" position="0,185" size="590,38" zPosition="1" foregroundColor="black" backgroundColor="black" />
-    <widget name="pic_red" pixmap="skin_default/buttons/key_red.png" zPosition="2" position="5,190" size="30,30" backgroundColor="black" alphatest="blend" />
-    <widget name="pic_green" pixmap="skin_default/buttons/key_green.png" zPosition="2" position="295,190" size="30,30" backgroundColor="black" alphatest="blend" />
+    <widget name="pic_red" pixmap="buttons/key_red.png" zPosition="2" position="5,190" size="30,30" backgroundColor="black" alphatest="blend" />
+    <widget name="pic_green" pixmap="buttons/key_green.png" zPosition="2" position="295,190" size="30,30" backgroundColor="black" alphatest="blend" />
     <widget name="key_red" position="40,190" zPosition="2" size="220,35" font="Regular; 28" foregroundColor="white" transparent="1" />
     <widget name="key_green" position="330,190" zPosition="2" size="240,30" font="Regular; 28" foregroundColor="white" transparent="1" />
   </screen>
@@ -3047,7 +3047,7 @@ self.instance.resize(eSize(*wsize))
     <widget name="zeile4b" position="215,270" size="380,40" font="Regular;30" halign="left" foregroundColor="wow" backgroundColor="background" transparent="1" />
     <widget name="picture" zPosition="0" position="70,330" size="500,370" alphatest="blend" />
     <!--play files-->
-    <widget name="playline2" position="0,305" size="600,21" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
+    <widget name="playline2" position="0,305" size="600,21" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
     <widget name="random" position="150,40" size="50,30" alphatest="blend" />
@@ -3077,8 +3077,8 @@ self.instance.resize(eSize(*wsize))
   <screen name="wbrfs_set_we" position="center,center" size="700,600" title="Info" zPosition="99">
     <widget name="warn" position="10,5" zPosition="1" size="680,340" valign="center" halign="center" font="Regular;30" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
     <widget name="config" position="10,350" size="660,200" itemHeight="45" font="Regular;35" scrollbarMode="showOnDemand" />
-    <ePixmap pixmap="skin_default/buttons/key_red.png" position="15,552" size="30,40" alphatest="on" />
-    <ePixmap pixmap="skin_default/buttons/key_green.png" position="300,552" size="30,40" alphatest="on" />
+    <ePixmap pixmap="buttons/key_red.png" position="15,552" size="30,40" alphatest="on" />
+    <ePixmap pixmap="buttons/key_green.png" position="300,552" size="30,40" alphatest="on" />
     <widget name="key_red" position="60,550" zPosition="1" size="240,40" valign="center" halign="left" font="Regular;28" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
     <widget name="key_green" position="340,550" zPosition="1" size="250,40" valign="center" halign="left" font="Regular;28" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
   </screen>
@@ -3918,7 +3918,7 @@ self.instance.resize(eSize(*wsize))
     <ePixmap alphatest="blend" pixmap="WOWCataclysm_FHD/menu/vti.png" position="1280,895" size="600,54" zPosition="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
-    <widget alphatest="blend" name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="80,935" size="50,21" />
+    <widget alphatest="blend" name="RassLogo" pixmap="icons/rass_logo.png" position="80,935" size="50,21" />
     <widget backgroundColor="transpBlack" font="Regular; 32" foregroundColor="foreground" name="RadioText" noWrap="1" position="60,970" size="1800,40" />
     <widget backgroundColor="transpBlack" font="Regular; 32" foregroundColor="foreground" halign="right" name="RtpText" noWrap="1" position="60,1010" size="1800,40" />
   </screen>
@@ -5183,7 +5183,7 @@ self.instance.resize(eSize(*wsize))
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
     <widget name="SeekState" position="880,860" zPosition="1" size="350,45" halign="center" font="Regular; 40" valign="center" />
-    <widget backgroundColor="grey" foregroundColor="background" name="Timeline" pointer="skin_default/position_arrow.png:3,5" position="700,920" size="1180,15" />
+    <widget backgroundColor="grey" foregroundColor="background" name="Timeline" pointer="position_arrow.png:3,5" position="700,920" size="1180,15" />
     <eLabel backgroundColor="foreground" position="42,91" size="2,880" />
     <eLabel backgroundColor="foreground" position="684,91" size="2,880" />
     <eLabel backgroundColor="foreground" position="42,91" size="640,2" />
@@ -5244,12 +5244,12 @@ self.instance.resize(eSize(*wsize))
     <ePixmap pixmap="WOWCataclysm_FHD/icons/line2.png" position="42,915" size="1200,2" zPosition="1" />
     <eLabel backgroundColor="background" font="Regular;45" foregroundColor="foreground" halign="left" position="42,5" size="1000,60" text="help..." transparent="1" />
     <widget backgroundColor="background" enableWrapAround="1" itemHeight="45" font="Regular;32" name="list" position="42,91" scrollbarMode="showOnDemand" size="1200,820" scrollbarWidth="5" scrollbarBackgroundPicture="WOWCataclysm_FHD/menu/scrollbar_bg.png" scrollbarSliderBorderWidth="0" transparent="1" />
-    <widget name="rc" position="1490,480" size="154,500" pixmaps="skin_default/rc.png,skin_default/rc1.png,skin_default/rc2.png" zPosition="1" alphatest="blend" />
+    <widget name="rc" position="1490,480" size="154,500" pixmaps="rc.png,rc1.png,rc2.png" zPosition="1" alphatest="blend" />
     <widget backgroundColor="background" font="Regular; 35" foregroundColor="wow" halign="center" name="long_key" position="42,920" size="1200,45" transparent="1" />
-    <widget alphatest="blend" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
-    <widget alphatest="blend" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
-    <widget alphatest="blend" name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
-    <widget alphatest="blend" name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
+    <widget alphatest="blend" name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="2" />
     <ePixmap pixmap="WOWCataclysm_FHD/buttons/key_ok.png" position="1720,1030" size="60,30" alphatest="blend" />
     <ePixmap pixmap="WOWCataclysm_FHD/buttons/key_exit.png" position="1800,1030" size="60,30" alphatest="blend" />
   </screen>
@@ -5464,7 +5464,7 @@ self.instance.resize(eSize(*wsize))
     <widget backgroundColor="background" font="Regular;32" halign="center" position="1050,855" render="Label" size="500,40" source="session.CurrentService" transparent="1">
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
-    <widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="skin_default/position_arrow.png:3,5" position="700,920" size="1170,15" zPosition="3" />
+    <widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="position_arrow.png:3,5" position="700,920" size="1170,15" zPosition="3" />
     <eLabel backgroundColor="foreground" position="42,91" size="2,880" />
     <eLabel backgroundColor="foreground" position="685,91" size="2,880" />
     <eLabel backgroundColor="foreground" position="42,91" size="640,2" />
@@ -5586,7 +5586,7 @@ self.instance.resize(eSize(*wsize))
     <widget backgroundColor="background" font="Regular; 28" foregroundColor="wow" name="audioLabel" position="1240,75" size="200,30" transparent="1" />
     <widget backgroundColor="background" font="Regular; 28" foregroundColor="wow" name="subtitleLabel" position="1480,75" size="200,30" transparent="1" />
     <widget backgroundColor="background" font="Regular; 28" foregroundColor="wow" name="chapterLabel" position="210,75" size="600,30" transparent="1" />
-    <widget alphatest="blend" name="anglePix" pixmap="skin_default/icons/icon_view.png" position="960,370" size="26,16" />
+    <widget alphatest="blend" name="anglePix" pixmap="icons/icon_view.png" position="960,370" size="26,16" />
     <widget backgroundColor="background" font="Regular;28" foregroundColor="wow" name="angleLabel" position="1000,75" size="200,30" transparent="1" />
     <widget backgroundColor="background" font="Regular; 32" halign="right" position="1610,215" render="Label" size="270,40" source="global.CurrentTime" transparent="1" foregroundColor="wow">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
@@ -6077,7 +6077,7 @@ self.instance.resize(eSize(*wsize))
       <convert type="ClockToText"></convert>
     </widget>
     <eLabel text="CleanupWizard" position="42,5" size="1000,60" font="Regular; 45" backgroundColor="background" transparent="1" foregroundColor="foreground" />
-    <widget name="rc" position="1475,470" size="154,500" pixmaps="skin_default/rc.png,skin_default/rc1.png,skin_default/rc2.png" zPosition="10" alphatest="on" />
+    <widget name="rc" position="1475,470" size="154,500" pixmaps="rc.png,rc1.png,rc2.png" zPosition="10" alphatest="on" />
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowup" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
@@ -6162,7 +6162,7 @@ self.instance.resize(eSize(*wsize))
       <convert type="ClockToText"></convert>
     </widget>
     <eLabel text="ImageWizard" position="42,5" size="1000,60" font="Regular; 45" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-    <widget name="rc" position="1475,470" size="154,500" pixmaps="skin_default/rc.png,skin_default/rc1.png,skin_default/rc2.png" zPosition="10" alphatest="on" />
+    <widget name="rc" position="1475,470" size="154,500" pixmaps="rc.png,rc1.png,rc2.png" zPosition="10" alphatest="on" />
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowup" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
@@ -6195,7 +6195,7 @@ self.instance.resize(eSize(*wsize))
       <convert type="ClockToText"></convert>
     </widget>
     <eLabel text="LanguageWizard" position="42,5" size="1000,60" font="Regular; 45" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-    <widget name="rc" position="1475,470" size="154,500" pixmaps="skin_default/rc.png,skin_default/rc1.png,skin_default/rc2.png" zPosition="10" alphatest="on" />
+    <widget name="rc" position="1475,470" size="154,500" pixmaps="rc.png,rc1.png,rc2.png" zPosition="10" alphatest="on" />
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowup" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
@@ -6226,7 +6226,7 @@ self.instance.resize(eSize(*wsize))
       <convert type="ClockToText"></convert>
     </widget>
     <eLabel text="StartWizard" position="42,5" size="1000,60" font="Regular; 45" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-    <widget name="rc" position="1475,470" size="154,500" pixmaps="skin_default/rc.png,skin_default/rc1.png,skin_default/rc2.png" zPosition="10" alphatest="on" />
+    <widget name="rc" position="1475,470" size="154,500" pixmaps="rc.png,rc1.png,rc2.png" zPosition="10" alphatest="on" />
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowup" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
@@ -6260,7 +6260,7 @@ self.instance.resize(eSize(*wsize))
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="1280,85" size="590,320" zPosition="3" backgroundColor="unff000000" />
     <eLabel text="VideoWizard" position="42,5" size="1000,60" font="Regular; 45" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-    <widget name="rc" position="1475,470" size="154,500" pixmaps="skin_default/rc.png,skin_default/rc1.png,skin_default/rc2.png" zPosition="10" alphatest="on" />
+    <widget name="rc" position="1475,470" size="154,500" pixmaps="rc.png,rc1.png,rc2.png" zPosition="10" alphatest="on" />
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowdown.png" zPosition="11" alphatest="on" />
     <widget name="arrowup" position="-100,-100" size="37,70" pixmap="WOWCataclysm_FHD/skin_default/arrowup.png" zPosition="11" alphatest="on" />
@@ -6599,7 +6599,7 @@ self.instance.resize(eSize(*wsize))
     <widget source="bus" render="Label" position="42,205" size="1200,40" font="Regular; 32" transparent="1" />
     <widget itemHeight="45" name="config" font="Regular;32" secondfont="Regular;28" position="42,255" size="1200,640" scrollbarMode="showOnDemand" backgroundColor="background" scrollbarWidth="5" scrollbarBackgroundPicture="WOWCataclysm_FHD/menu/scrollbar_bg.png" scrollbarSliderBorderWidth="0" transparent="1" />
     <widget source="introduction" render="Label" position="42,905" size="1200,65" zPosition="10" font="Regular; 35" halign="center" valign="center" backgroundColor="background" transparent="1" />
-    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,800" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
+    <widget name="HelpWindow" pixmap="vkey_icon.png" position="50,800" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <ePixmap pixmap="WOWCataclysm_FHD/buttons/button_red.png" position="60,1030" size="350,45" alphatest="blend" />
     <ePixmap pixmap="WOWCataclysm_FHD/buttons/button_green.png" position="430,1030" size="350,45" alphatest="blend" />
     <ePixmap pixmap="WOWCataclysm_FHD/buttons/button_yellow.png" position="800,1030" size="350,45" alphatest="blend" />

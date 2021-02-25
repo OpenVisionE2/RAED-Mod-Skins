@@ -67,7 +67,7 @@
 		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
 		<widget source="key_green" render="Label" position="210,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
 		<widget name="config" textOffset="15,0" position="8,75" size="825,120" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="skin_default/div-h.png" alphatest="blend" position="0,195" zPosition="1" size="840,3" />
+		<ePixmap pixmap="div-h.png" alphatest="blend" position="0,195" zPosition="1" size="840,3" />
 		<widget source="introduction" render="Label" position="0,210" size="825,38" zPosition="10" font="Regular;32" halign="center" valign="center" backgroundColor="messagebox-bg" transparent="1" />
 	</screen>
 	

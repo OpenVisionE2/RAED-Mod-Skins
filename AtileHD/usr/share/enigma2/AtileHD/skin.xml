@@ -669,7 +669,7 @@
     <widget source="key_blue" render="Pixmap" pixmap="AtileHD/buttons/key_blue.png" position="10,85" size="35,25" alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="skin_default/div-h.png" position="10,272" zPosition="10" size="540,2" />
+    <ePixmap pixmap="div-h.png" position="10,272" zPosition="10" size="540,2" />
     <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="selectedScrollFG" scrollbarSliderBorderColor="selectedScrollBG" position="10,280" size="540,200" zPosition="3" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"templates":
@@ -1602,7 +1602,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="session.CurrentService" render="Label" position="70,560" size="700,25" font="Regular;20" halign="center" valign="center" backgroundColor="background" transparent="1">
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
-    <widget name="Timeline" position="70,597" size="700,20" backgroundColor="darkgrey" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
+    <widget name="Timeline" position="70,597" size="700,20" backgroundColor="darkgrey" pointer="position_arrow.png:3,5" foregroundColor="black" />
     <eLabel position="800,130" size="420,440" zPosition="1" backgroundColor="white" />
     <eLabel position="802,132" size="416,436" zPosition="2" backgroundColor="background" />
     <widget source="cutlist" render="Listbox" position="810,140" size="400,420" zPosition="3" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="selectedScrollFG" scrollbarSliderBorderColor="selectedScrollBG">
@@ -1835,7 +1835,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_blue" render="Label" position="955,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="tile_blue_big" transparent="1" />
   </screen>
   <screen name="Dish" position="900,100" size="130,160" title="Dish" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="130,160" alphatest="off" />
+    <widget name="Dishpixmap" pixmap="icons/dish.png" position="0,0" size="130,160" alphatest="off" />
   </screen>
   <!-- DVDPlayer -->
   <screen name="FileBrowser" position="0,0" size="1280,720" title="DVD File Browser" flags="wfNoBorder">
@@ -3655,7 +3655,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
   </screen>
   <screen name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="100,585" size="50,21" />
+    <widget name="RassLogo" pixmap="icons/rass_logo.png" position="100,585" size="50,21" />
     <widget name="RadioText" position="100,620" size="1080,30" font="Regular;24" noWrap="1" foregroundColor="foreground" backgroundColor="selectedBG" />
     <widget name="RtpText" position="100,650" size="1080,30" font="Regular;24" halign="right" noWrap="1" foregroundColor="foreground" backgroundColor="selectedBG" />
   </screen>
@@ -3699,7 +3699,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="350,675" size="290, 5" zPosition="-10" backgroundColor="tile_green" />
     <eLabel position="645,675" size="290, 5" zPosition="-10" backgroundColor="tile_yellow" />
     <eLabel position="940,675" size="290, 5" zPosition="-10" backgroundColor="tile_blue" />
-    <ePixmap pixmap="skin_default/icons/dish_scan.png" position="795,145" size="119,110" zPosition="4" alphatest="on" />
+    <ePixmap pixmap="icons/dish_scan.png" position="795,145" size="119,110" zPosition="4" alphatest="on" />
     <ePixmap position="880,325" zPosition="-9" size="256,256" pixmap="AtileHD/menu/db.png" alphatest="blend" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1020,40" size="200,50" font="Regular;50" halign="right" foregroundColor="titletext" backgroundColor="backtop" transparent="1">
       <convert type="ClockToText"></convert>
@@ -3723,11 +3723,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="FrontendInfo">BER</convert>
     </widget>
     <eLabel name="lock" text="Lock:" position="120,220" size=" 80,25" font="Regular;21" halign="right" backgroundColor="backtop" transparent="1" />
-    <widget source="Frontend" render="Pixmap" position="210,218" size=" 38,31" zPosition="1" pixmap="skin_default/icons/lock_on.png" alphatest="on">
+    <widget source="Frontend" render="Pixmap" position="210,218" size=" 38,31" zPosition="1" pixmap="icons/lock_on.png" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="Frontend" render="Pixmap" position="210,218" size=" 38,31" zPosition="1" pixmap="skin_default/icons/lock_off.png" alphatest="on">
+    <widget source="Frontend" render="Pixmap" position="210,218" size=" 38,31" zPosition="1" pixmap="icons/lock_off.png" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
@@ -3804,17 +3804,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText"></convert>
     </widget>
     <eLabel text="Service scan" position="70,47" size="950,43" font="Regular;35" foregroundColor="titletext" backgroundColor="backtop" transparent="1" />
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="825,165" size="64,64" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="825,165" size="64,64" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="825,165" size="64,64" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="825,165" size="64,64" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="825,165" size="64,64" transparent="1" alphatest="on">
+    <widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="825,165" size="64,64" transparent="1" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
@@ -5291,7 +5291,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_green" render="Label" position="365,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="tile_green_big" transparent="1" />
     <widget source="key_blue" render="Label" position="955,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="tile_blue_big" transparent="1" />
     <widget name="VKeyIcon" pixmap="AtileHD/buttons/key_text.png" position="700,635" zPosition="10" size="70,30" transparent="1" alphatest="on" />
-    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="70,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" pixmap="vkey_icon.png" position="70,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   </screen>
   <screen name="ModemManual" position="0,0" size="1280,720" title="3G Modem Manager Config" flags="wfNoBorder">
     <eLabel position="0,0" size="1280,720" zPosition="-15" backgroundColor="tile_back" />
@@ -6991,7 +6991,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText"></convert>
     </widget>
     <eLabel text="Service scan" position="70,47" size="950,43" font="Regular;35" foregroundColor="titletext" backgroundColor="backtop" transparent="1" />
-    <widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="825,165" size="64,64" transparent="1" alphatest="on" />
+    <widget name="frontend" pixmap="icons/scan-c.png" position="825,165" size="64,64" transparent="1" alphatest="on" />
     <widget name="scan_state" position="120,180" size="600,25" zPosition="2" font="Regular;20" foregroundColor="foreground" backgroundColor="background" transparent="1" />
     <widget name="scan_progress" position="120,250" size="600,15" transparent="1" />
   </screen>
