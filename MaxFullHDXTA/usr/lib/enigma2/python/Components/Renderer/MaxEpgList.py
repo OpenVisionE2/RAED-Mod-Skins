@@ -26,7 +26,7 @@ class MaxEpgList(Renderer, VariableText):
         text = ""
         evt = None
 
-        if self.epgcache is not None:
+        if self.epgcache != None:
             evt = self.epgcache.lookupEvent(['IBDCT', (service.toString(), 0, -1, -1)])
 
         if evt:

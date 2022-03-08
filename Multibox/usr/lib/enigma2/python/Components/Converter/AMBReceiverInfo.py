@@ -197,7 +197,7 @@ class AMBReceiverInfo(Poll, Converter):
             except:
                 st = None
 
-            if st is not None and 0 not in (st.f_bsize, st.f_blocks):
+            if st != None and 0 not in (st.f_bsize, st.f_blocks):
                 result[0] = st.f_bsize * st.f_blocks
                 result[2] = st.f_bsize * st.f_bavail
                 result[1] = result[0] - result[2]
