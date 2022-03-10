@@ -59,16 +59,16 @@ class AMBClockToText(Converter, object):
 
 	@cached
 	def getText(self):
-        	time = self.source.time
-        	if time is None:
-            		return ''
+		time = self.source.time
+		if time is None:
+			return ''
 
-		def fix_space(string):
-			if 'Proportional' in self.fix and t.tm_hour < 10:
-				return ' ' + string
-			if 'NoSpace' in self.fix:
-				return string.lstrip(' ')
-			return string
+	def fix_space(string):
+		if 'Proportional' in self.fix and t.tm_hour < 10:
+			return ' ' + string
+		if 'NoSpace' in self.fix:
+			return string.lstrip(' ')
+		return string
 
 		if self.type == self.IN_MINUTES:
 			return ngettext('%d Min', '%d Mins', time / 60) % (time / 60)

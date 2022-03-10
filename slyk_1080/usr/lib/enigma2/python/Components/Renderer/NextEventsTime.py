@@ -12,11 +12,11 @@ filename = '/usr/share/enigma2/slyk-common/timeformat.txt'
 
 
 if os.path.exists(filename):
-	with open(filename, "r") as myfile:
-		if 'Time = 24' in myfile.read():
-			hours24 = True
-		else:
-			hours24 = False
+    with open(filename, "r") as myfile:
+        if 'Time = 24' in myfile.read():
+            hours24 = True
+        else:
+            hours24 = False
 
 
 class SlykNextEventsTime(VariableText, Renderer):
@@ -59,9 +59,9 @@ class SlykNextEventsTime(VariableText, Renderer):
                         else:
                             timesuffix = _('am')
                         if hours24:
-							text = strftime("%H", t) + "." + strftime("%M", t)
+                            text = strftime("%H", t) + "." + strftime("%M", t)
                         else:
-							text = strftime("%l", t) + "." + strftime("%M", t) + timesuffix
+                            text = strftime("%l", t) + "." + strftime("%M", t) + timesuffix
 
                         break
                     i = i + 1

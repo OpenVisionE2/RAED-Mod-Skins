@@ -86,9 +86,9 @@ class AMBNextEvents(Converter, object):
 			if curEvent:
 				now = localtime(time())
 				try:
-	                           dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, int(config.plugins.SevenHD.Primetime.value[0]), int(config.plugins.SevenHD.Primetime.value[1]))
-                                except:
-                                   dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, 20, 15)
+					dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, int(config.plugins.SevenHD.Primetime.value[0]), int(config.plugins.SevenHD.Primetime.value[1]))
+				except:
+					dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, 20, 15)
 				primeTime = int(mktime(dt.timetuple()))
 				self.epgcache.startTimeQuery(eServiceReference(ref.toString()), primeTime)
 				next = self.epgcache.getNextTimeEntry()
