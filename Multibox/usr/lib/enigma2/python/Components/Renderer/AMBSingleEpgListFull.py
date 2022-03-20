@@ -24,7 +24,7 @@ class AMBSingleEpgListFull(Renderer, VariableText):
             service = self.source.service
             text = ''
             evt = None
-            if self.epgcache != None:
+            if self.epgcache is not None:
                 evt = self.epgcache.lookupEvent(['IBDCT', (service.toString(),
                   0,
                   -1,

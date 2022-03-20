@@ -93,7 +93,7 @@ class AMBServiceNameEventNobile(Converter, object):
                     tmp = tmp.strip()
             else:
                 tmp = tmp.strip()
-                if short != '' or short != None:
+                if short != '' or short is not None:
                     if len(short) > 3:
                         if short[:-2] not in tmp:
                             tmp = short.strip() + '...' + tmp

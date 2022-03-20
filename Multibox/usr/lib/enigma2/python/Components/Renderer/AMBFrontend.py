@@ -39,11 +39,11 @@ class AMBFrontend(VariableText, Renderer):
 			try:
 				self.allSat = {}
 				satellites = parse("/etc/tuxbox/satellites.xml").getroot()
-				if satellites != None:
+				if satellites is not None:
 					for x in satellites.findall("sat"):
 						name = x.get("name") or None
 						position = x.get("position") or None
-						if name != None and position != None:
+						if name is not None and position is not None:
 							position = "%s.%s" % (position[:-1], position[-1:])
 							if position.startswith("-"):
 								position = "%sW" % position[1:]
