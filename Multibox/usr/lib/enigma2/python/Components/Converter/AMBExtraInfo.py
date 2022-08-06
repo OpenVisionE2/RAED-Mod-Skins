@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Embedded file name: /usr/lib/enigma2/python/Components/Converter/ASBlueExtraInfo.py
 from enigma import iServiceInformation, iPlayableService

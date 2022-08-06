@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #Plugin By Maggy Mod By RAED
 from Components.ActionMap import ActionMap

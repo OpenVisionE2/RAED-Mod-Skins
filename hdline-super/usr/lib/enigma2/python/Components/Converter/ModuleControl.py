@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #by Nikolasi
 from Components.Converter.Converter import Converter
