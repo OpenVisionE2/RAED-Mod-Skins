@@ -47,7 +47,7 @@ config.plugins.MXSline.style = ConfigSelection(default='Black', choices=[('Black
 
 class MXSlineConfig(ConfigListScreen, Screen):
     if reswidth == 1920:
-       skin = '''<screen name="MXSlineConfig" position="center,center" size="750,520" title="MXSline sKIn setup">
+        skin = '''<screen name="MXSlineConfig" position="center,center" size="750,520" title="MXSline sKIn setup">
                  <widget position="15,10" size="720,75" name="config" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" />
                  <ePixmap position="10,475" zPosition="1" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MXSline/images/red.png" alphatest="blend" />
                  <widget source="red_key" render="Label" position="45,477" zPosition="2" size="165,25" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
@@ -58,7 +58,7 @@ class MXSlineConfig(ConfigListScreen, Screen):
                  <widget name="CSPreview" position="175,120" size="400,225" zPosition="5" alphatest="blend" />
           </screen>'''
     else:
-       skin = '''<screen name="MXSlineConfig" position="center,center" size="750,520" title="MXSline sKIn setup">
+        skin = '''<screen name="MXSlineConfig" position="center,center" size="750,520" title="MXSline sKIn setup">
                  <widget position="15,10" size="720,75" name="config" scrollbarMode="showOnDemand" />
                  <ePixmap position="10,475" zPosition="1" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MXSline/images/red.png" alphatest="blend" />
                  <widget source="red_key" render="Label" position="45,477" zPosition="2" size="165,25" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
