@@ -5,10 +5,10 @@
 		<widget name="timerlist" position="129,216" size="1193,756" setFont="Regular; 27" setEventNameFont="Regular; 32" setServiceNameFont="Regular; 32" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" itemHeight="84" iconMargin="15" rowSplit="41" satPosLeft="350" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="2" />
 		<panel name="description" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_ok.png" position="1383,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<eLabel text="Edit Timer" position="1440,1002" size="150,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" valign="center" halign="left" transparent="1" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1620,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<eLabel text="Timer Log" position="1689,1002" size="150,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" valign="center" halign="left" transparent="1" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_ok.png" position="1383,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<eLabel text="Edit Timer" position="1440,1002" size="150,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" verticalAlignment="center" horizontalAlignment="left" transparent="1" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1620,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<eLabel text="Timer Log" position="1689,1002" size="150,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" verticalAlignment="center" horizontalAlignment="left" transparent="1" zPosition="3" />
 	</screen>
 	
 	<!-- Timer entry -->
@@ -22,7 +22,7 @@
 	<!-- Timer log / timer info button-->
 	<screen name="TimerLog" title="Timer log" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="loglist" textOffset="30,15" position="0,216" size="1362,756" font="Regular;36" secondfont="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-907-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" valign="center" enableWrapAround="1" transparent="1" scrollbarMode="showNever" zPosition="2" />
+		<widget name="loglist" textOffset="30,15" position="0,216" size="1362,756" font="Regular;36" valueFont="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-907-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" verticalAlignment="center" enableWrapAround="1" transparent="1" scrollbarMode="showNever" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 	
@@ -41,8 +41,8 @@
 		<panel name="v-template2-pig" />
 		<widget name="timerlist" position="129,216" size="1193,756" setFont="Regular; 27" setEventNameFont="Regular; 32" setServiceNameFont="Regular; 32" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-1280-square.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="84" iconMargin="15" rowSplit="41" satPosLeft="350" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="2" />
 		<panel name="description" />
-		<ePixmap pixmap="v-buttons/key_ok.png" position="1383,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<eLabel text="Press OK to select" position="1440,1002" size="300,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" valign="center" halign="left" transparent="1" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_ok.png" position="1383,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<eLabel text="Press OK to select" position="1440,1002" size="300,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" verticalAlignment="center" horizontalAlignment="left" transparent="1" zPosition="3" />
 	</screen>
 	
 	<!-- ## Autotimer ## -->
@@ -50,9 +50,9 @@
 		<panel name="v-template2-pig" />
 		<widget name="entries" position="129,216" size="1193,756" EventNameFont="Regular;32" DayNameFont="Regular;27" ServiceNameFont="Regular;27" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-70-1280-square.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="105" rowSplit1="38" rowSplit2="65" rowHeight="42" iconMargin="15" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_ok.png" position="1383,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<eLabel text="Edit Timer" position="1440,1002" size="150,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" valign="center" halign="left" transparent="1" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_ok.png" position="1383,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<eLabel text="Edit Timer" position="1440,1002" size="150,45" font="Regular;33" foregroundColor="fg3" backgroundColor="bg-br" verticalAlignment="center" horizontalAlignment="left" transparent="1" zPosition="3" />
 	</screen>
 	
 	<screen name="AutoTimerImporter" position="0,0" size="1920,1080" title="Import AutoTimer" flags="wfNoBorder" backgroundColor="transparent">

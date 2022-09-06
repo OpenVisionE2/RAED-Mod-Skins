@@ -4,58 +4,58 @@
         <screen name="GraphicalEPGPIG1" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="v-epg-template1" />
 		<!-- loading epg text -->
-		<widget name="lab1" position="0,507" size="1920,474" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" valign="center" halign="center" transparent="1" zPosition="2"  />
+		<widget name="lab1" position="0,507" size="1920,474" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="2"  />
                 <!-- event name -->
-		<widget source="Event" render="Label" position="285,60" size="869,63" font="Regular;54"  foregroundColor="fg1" backgroundColor="bg-tm" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="285,60" size="869,63" font="Regular;54"  foregroundColor="fg1" backgroundColor="bg-tm" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<!-- event start time -->
-		<widget source="Event" render="Label" position="285,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="285,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M -</convert>
 		</widget>
 		<!-- event End time -->
-		<widget source="Event" render="Label" position="413,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="413,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<!-- event Duration -->
-		<widget source="Event" render="Label" position="578,140" size="120,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="578,140" size="120,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
 		<!-- recording icon -->
-		<widget position="728,147" size="33,33" source="session.RecordState" render="Pixmap" pixmap="v-infobars/recording2.png" alphatest="blend" zPosition="3">
+		<widget position="728,147" size="33,33" source="session.RecordState" render="Pixmap" pixmap="v-infobars/recording2.png" alphaTest="blend" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- description -->
 		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=80,repeat=0,always=0,oneshot=0,startdelay=6000,wrap" position="129,200" size="1193,186"
-                 foregroundColor="fg1" backgroundColor="bg-tm" font="Regular;30" valign="top" transparent="1" zPosition="1">
+                 foregroundColor="fg1" backgroundColor="bg-tm" font="Regular;30" verticalAlignment="top" transparent="1" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- current picon -->
-		<widget source="Service" render="Picon" position="1172,75" size="150,90" alphatest="blend" zPosition="2">
+		<widget source="Service" render="Picon" position="1172,75" size="150,90" alphaTest="blend" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- bouquet name -->
-		<widget source="Title" render="Label" position="92,405" size="735,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-ml" valign="bottom" transparent="1" noWrap="1" zPosition="1" />
+		<widget source="Title" render="Label" position="92,405" size="735,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-ml" verticalAlignment="bottom" transparent="1" noWrap="1" zPosition="1" />
                 <!-- timeline background -->
 		<!-- <ePixmap pixmap="epg/TimeLineBG.png" position="0,450" size="1920,57" zPosition="2" />  -->
 	         <eLabel position="0,450" size="1920,2" backgroundColor="timelinetop" transparent="0" zPosition="2" />
 		 <eLabel position="0,452" size="1920,56" backgroundColor="infobarBlack" transparent="0" zPosition="1" />
                 <!-- left right arrows -->
-		<ePixmap pixmap="v-buttons/backward.png" position="30,458" size="45,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/forward.png" position="1845,458" size="45,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/backward.png" position="30,458" size="45,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/forward.png" position="1845,458" size="45,45" alphaTest="blend" zPosition="3" />
         	<!-- timeline times -->
 		<widget name="timeline_text" position="86,456" size="1835,45" TimelineFont="Regular;36" foregroundColor="fg1" backgroundColor="infobarBlack" borderWidth="0" transparent="1" itemHeight="45" zPosition="3" />
                 <!-- time line seperators -->
-		<widget name="timeline0" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline1" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline2" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline3" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline4" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline5" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline_now" position="0,452" zPosition="4" size="20,521" pixmap="epg/timeline-now.png" alphatest="blend" />
+		<widget name="timeline0" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline1" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline2" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline3" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline4" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline5" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline_now" position="0,452" zPosition="4" size="20,521" pixmap="epg/timeline-now.png" alphaTest="blend" />
 		<ePixmap pixmap="epg/epg-background.png" position="0,507" size="1920,573" zPosition="0" />
 		
 		<widget name="list"
@@ -97,8 +97,8 @@
                 
 		<!--widget name="bouquetlist" position="75,506" size="1845,471" font="Regular;36" itemHeight="59" foregroundColor="fg1" backgroundColor="epgeventbg" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" borderWidth="3" borderColor="black" scrollbarMode="showOnDemand" transparent="0" zPosition="10" /-->
                 <panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<!--applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 15</applet-->
 	</screen>
 	
@@ -106,61 +106,61 @@
 	<screen name="GraphicalEPGPIG2" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="v-epg-template1" />
 		<!-- loading epg text -->
-		<widget name="lab1" position="0,507" size="1920,474" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" valign="center" halign="center" transparent="1" zPosition="2"  />
+		<widget name="lab1" position="0,507" size="1920,474" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="2"  />
                 <!-- event name -->
-		<widget source="Event" render="Label" position="285,60" size="869,63" font="Regular;54"  foregroundColor="fg1" backgroundColor="bg-tm" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="285,60" size="869,63" font="Regular;54"  foregroundColor="fg1" backgroundColor="bg-tm" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<!-- event start time -->
-		<widget source="Event" render="Label" position="285,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="285,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M -</convert>
 		</widget>
 		<!-- event End time -->
-		<widget source="Event" render="Label" position="413,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="413,140" size="113,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<!-- event Duration -->
-		<widget source="Event" render="Label" position="578,140" size="120,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" valign="top" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="578,140" size="120,60" font="Regular;39" foregroundColor="fg2" backgroundColor="bg-tm" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
 		<!-- recording icon -->
-		<widget position="728,147" size="33,33" source="session.RecordState" render="Pixmap" pixmap="v-infobars/recording2.png" alphatest="blend" zPosition="3">
+		<widget position="728,147" size="33,33" source="session.RecordState" render="Pixmap" pixmap="v-infobars/recording2.png" alphaTest="blend" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- description -->
 		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=80,repeat=0,always=0,oneshot=0,startdelay=6000,wrap" position="129,200" size="1193,186"
-                 foregroundColor="fg1" backgroundColor="bg-tm" font="Regular;30" valign="top" transparent="1" zPosition="1">
+                 foregroundColor="fg1" backgroundColor="bg-tm" font="Regular;30" verticalAlignment="top" transparent="1" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- current picon -->
-		<widget source="Service" render="Picon" position="1172,75" size="150,90" alphatest="blend" zPosition="2">
+		<widget source="Service" render="Picon" position="1172,75" size="150,90" alphaTest="blend" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- sky tabs -->
-		<ePixmap pixmap="v-backgrounds/black80.png" position="0,393" size="1920,57" alphatest="blend" />
-		<widget source="Title" render="Label" position="23,393" size="300,57" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarBlack" valign="center" transparent="1" noWrap="1" zPosition="1" />
+		<ePixmap pixmap="v-backgrounds/black80.png" position="0,393" size="1920,57" alphaTest="blend" />
+		<widget source="Title" render="Label" position="23,393" size="300,57" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarBlack" verticalAlignment="center" transparent="1" noWrap="1" zPosition="1" />
                 <widget name="tabsrow" position="0,393" size="1920,57" backgroundColor="#000000" transparent="0" />
-                <widget name="firsttab" position="0,0" size="0,0" font="Bold;36" foregroundColor="white" backgroundColor="selected-text-bg" valign="center" halign="center" noWrap="1" transparent="0" zPosition="2" />
-                <widget name="guidebouquetlist"  position="0,0" size="0,0" font="Regular;36" foregroundColor="white" backgroundColor="#000000" valign="center" halign="left" noWrap="1" transparent="1" zPosition="2" />
+                <widget name="firsttab" position="0,0" size="0,0" font="Bold;36" foregroundColor="white" backgroundColor="selected-text-bg" verticalAlignment="center" horizontalAlignment="center" noWrap="1" transparent="0" zPosition="2" />
+                <widget name="guidebouquetlist"  position="0,0" size="0,0" font="Regular;36" foregroundColor="white" backgroundColor="#000000" verticalAlignment="center" horizontalAlignment="left" noWrap="1" transparent="1" zPosition="2" />
                 <!-- timeline background -->
                 <eLabel position="0,450" size="1920,2" backgroundColor="timelinetop" transparent="0" zPosition="2" />
                 <eLabel position="0,452" size="1920,56" backgroundColor="infobarBlack" transparent="0" zPosition="1" />
                 <!-- left right arrows -->
-		<ePixmap pixmap="v-buttons/backward.png" position="30,458" size="45,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/forward.png" position="1845,458" size="45,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/backward.png" position="30,458" size="45,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/forward.png" position="1845,458" size="45,45" alphaTest="blend" zPosition="3" />
         	<!-- timeline times -->
 		<widget name="timeline_text" position="86,456" size="1835,45" TimelineFont="Regular;36" foregroundColor="fg1" backgroundColor="infobarBlack" borderWidth="0" transparent="1" itemHeight="45" zPosition="3" />
                 <!-- time line seperators -->
-		<widget name="timeline0" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline1" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline2" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline3" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline4" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline5" position="0,450" zPosition="5" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" />
-		<widget name="timeline_now" position="0,452" zPosition="4" size="20,521" pixmap="epg/timeline-now.png" alphatest="blend" />
+		<widget name="timeline0" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline1" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline2" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline3" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline4" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline5" position="0,450" zPosition="5" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" />
+		<widget name="timeline_now" position="0,452" zPosition="4" size="20,521" pixmap="epg/timeline-now.png" alphaTest="blend" />
 		<ePixmap pixmap="epg/epg-background.png" position="0,507" size="1920,573" zPosition="0" />
 		
                 <widget name="list"
@@ -202,8 +202,8 @@
 
 		<widget name="bouquetlist" position="75,506" size="1845,471" font="Regular;36" itemHeight="59" foregroundColor="fg1" backgroundColor="epgeventbg" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" borderWidth="3" borderColor="black" scrollbarMode="showOnDemand" transparent="0" zPosition="10" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
 	
@@ -211,27 +211,27 @@
 	<screen name="GraphicalEPG1" position="0,0" size="1920,1080" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="v-backgrounds/main-bg.jpg" position="0,0" size="1920,1080" transparent="0" zPosition="-2" />
                 <!-- loading epg text -->
-		<widget name="lab1" position="0,135" size="1920,846" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" valign="center" halign="center" transparent="1" zPosition="3"  />
+		<widget name="lab1" position="0,135" size="1920,846" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="3"  />
                 <!-- bouquet name -->
-		<widget source="Title" render="Label" position="92,33" size="735,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-ml" valign="bottom" transparent="1" noWrap="1" zPosition="3" />
+		<widget source="Title" render="Label" position="92,33" size="735,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-ml" verticalAlignment="bottom" transparent="1" noWrap="1" zPosition="3" />
                 <!-- timeline background -->
-		<!-- <ePixmap pixmap="epg/TimeLineBG.png" position="0,78" size="1920,57" alphatest="blend" zPosition="3" /> -->
+		<!-- <ePixmap pixmap="epg/TimeLineBG.png" position="0,78" size="1920,57" alphaTest="blend" zPosition="3" /> -->
                 <eLabel position="0,78" size="1920,2" backgroundColor="timelinetop" transparent="0" zPosition="2" />
 	        <eLabel position="0,80" size="1920,56"  backgroundColor="infobarBlack" transparent="0" zPosition="1" />
                 <!-- left right arrows -->
-		<ePixmap pixmap="v-buttons/backward.png" position="30,86" size="45,45" alphatest="blend" zPosition="4" />
-		<ePixmap pixmap="v-buttons/forward.png" position="1845,86" size="45,45" alphatest="blend" zPosition="4" />
+		<ePixmap pixmap="v-buttons/backward.png" position="30,86" size="45,45" alphaTest="blend" zPosition="4" />
+		<ePixmap pixmap="v-buttons/forward.png" position="1845,86" size="45,45" alphaTest="blend" zPosition="4" />
                 <!-- timeline times -->
 		<widget name="timeline_text" position="86,84" size="1830,45" TimelineFont="Regular;36" foregroundColor="fg1" backgroundColor="infobarBlack" borderWidth="0" transparent="1" itemHeight="45" zPosition="4" />
                 <!-- time line seperators -->
-		<widget name="timeline0" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline1" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline2" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline3" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline4" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline5" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline_now" position="0,80" size="20,899" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="4" />
-        	<ePixmap pixmap="epg/epg-full-background.png" position="0,135" size="1920,990" alphatest="blend" zPosition="-1" />
+		<widget name="timeline0" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline1" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline2" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline3" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline4" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline5" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline_now" position="0,80" size="20,899" pixmap="epg/timeline-now.png" alphaTest="blend" zPosition="4" />
+        	<ePixmap pixmap="epg/epg-full-background.png" position="0,135" size="1920,990" alphaTest="blend" zPosition="-1" />
 		<!-- hide tv screen -->
 		 <widget source="session.VideoPicture" render="Pig" position="1905,0" size="15,15" backgroundColor="transparent" zPosition="-3" />
 
@@ -273,8 +273,8 @@
 		
                 <widget name="bouquetlist" position="75,134" size="1845,843" font="Regular;36" itemHeight="59" foregroundColor="fg1" backgroundColor="epgeventbg" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" borderWidth="3" borderColor="black" scrollbarMode="showOnDemand" transparent="0" zPosition="10" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
 	
@@ -282,31 +282,31 @@
 	<screen name="GraphicalEPG2" position="0,0" size="1920,1080" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="v-backgrounds/main-bg.jpg" position="0,0" size="1920,1080" transparent="0" zPosition="-2" />
                 <!-- loading epg text -->
-		<widget name="lab1" position="0,135" size="1920,846" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" valign="center" halign="center" transparent="1" zPosition="3"  />
+		<widget name="lab1" position="0,135" size="1920,846" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="3"  />
                 <!-- sky tabs -->
-            	<ePixmap pixmap="v-backgrounds/black80.png" position="0,21" size="1920,57" alphatest="blend" />
-		<widget source="Title" render="Label" position="23,21" size="300,57" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarBlack" valign="center" transparent="1" noWrap="1" zPosition="1" />
+            	<ePixmap pixmap="v-backgrounds/black80.png" position="0,21" size="1920,57" alphaTest="blend" />
+		<widget source="Title" render="Label" position="23,21" size="300,57" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarBlack" verticalAlignment="center" transparent="1" noWrap="1" zPosition="1" />
                 <widget name="tabsrow" position="0,21" size="1920,57" backgroundColor="#000000" transparent="0" />
-                <widget name="firsttab" position="0,0" size="0,0" font="Bold;36" foregroundColor="white" backgroundColor="selected-text-bg" valign="center" halign="center" noWrap="1" transparent="0" zPosition="2" />
-                <widget name="guidebouquetlist"  position="0,0" size="0,0" font="Regular;36" foregroundColor="white" backgroundColor="#000000" valign="center" halign="left" noWrap="1" transparent="1" zPosition="2" />
+                <widget name="firsttab" position="0,0" size="0,0" font="Bold;36" foregroundColor="white" backgroundColor="selected-text-bg" verticalAlignment="center" horizontalAlignment="center" noWrap="1" transparent="0" zPosition="2" />
+                <widget name="guidebouquetlist"  position="0,0" size="0,0" font="Regular;36" foregroundColor="white" backgroundColor="#000000" verticalAlignment="center" horizontalAlignment="left" noWrap="1" transparent="1" zPosition="2" />
                 <!-- timeline background -->
-		<!-- <ePixmap pixmap="epg/TimeLineBG.png" position="0,78" size="1920,57" alphatest="blend" zPosition="3" /> -->
+		<!-- <ePixmap pixmap="epg/TimeLineBG.png" position="0,78" size="1920,57" alphaTest="blend" zPosition="3" /> -->
                 <eLabel position="0,78" size="1920,2" backgroundColor="timelinetop" transparent="0" zPosition="2" />
 	        <eLabel position="0,80" size="1920,56"  backgroundColor="infobarBlack" transparent="0" zPosition="1" />
                 <!-- left right arrows -->
-		<ePixmap pixmap="v-buttons/backward.png" position="30,86" size="45,45" alphatest="blend" zPosition="4" />
-		<ePixmap pixmap="v-buttons/forward.png" position="1845,86" size="45,45" alphatest="blend" zPosition="4" />
+		<ePixmap pixmap="v-buttons/backward.png" position="30,86" size="45,45" alphaTest="blend" zPosition="4" />
+		<ePixmap pixmap="v-buttons/forward.png" position="1845,86" size="45,45" alphaTest="blend" zPosition="4" />
                 <!-- timeline times -->
 		<widget name="timeline_text" position="86,84" size="1830,45" TimelineFont="Regular;36" foregroundColor="fg1" backgroundColor="infobarBlack" borderWidth="0" transparent="1" itemHeight="45" zPosition="4" />
                 <!-- time line seperators -->
-		<widget name="timeline0" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline1" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline2" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline3" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline4" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-		<widget name="timeline5" position="0,78" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
-                <widget name="timeline_now" position="0,80" size="20,899" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="4" />
-        	<ePixmap pixmap="epg/epg-full-background.png" position="0,135" size="1920,990" alphatest="blend" zPosition="-1" />
+		<widget name="timeline0" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline1" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline2" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline3" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline4" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+		<widget name="timeline5" position="0,78" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5"/>
+                <widget name="timeline_now" position="0,80" size="20,899" pixmap="epg/timeline-now.png" alphaTest="blend" zPosition="4" />
+        	<ePixmap pixmap="epg/epg-full-background.png" position="0,135" size="1920,990" alphaTest="blend" zPosition="-1" />
 		<!-- hide tv screen -->
 	        <widget source="session.VideoPicture" render="Pig" position="1905,0" size="15,15" backgroundColor="transparent" zPosition="-3" />
 	
@@ -348,71 +348,71 @@
 		
                 <widget name="bouquetlist" position="75,134" size="1845,843" font="Regular;36" itemHeight="59" foregroundColor="fg1" backgroundColor="epgeventbg" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" borderWidth="3" borderColor="black" scrollbarMode="showOnDemand" transparent="0" zPosition="10" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
 	
 	<!-- graphical infobar - multi epg < > -->
 	<screen name="GraphicalInfoBarEPG" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
                 <!-- bouquet name -->
-                <ePixmap pixmap="epg/bouquet-background.png" position="110,545" size="431,83" alphatest="blend" zPosition="0" />
-		<widget source="Title" render="Label" position="125,545" size="407,54" font="Regular;33" valign="center" transparent="1" noWrap="1" foregroundColor="fg3" backgroundColor="messagebox-bg" zPosition="1" />
-                <ePixmap pixmap="v-infobars/header.png" position="110,602" size="1701,158" alphatest="blend" zPosition="1" />
+                <ePixmap pixmap="epg/bouquet-background.png" position="110,545" size="431,83" alphaTest="blend" zPosition="0" />
+		<widget source="Title" render="Label" position="125,545" size="407,54" font="Regular;33" verticalAlignment="center" transparent="1" noWrap="1" foregroundColor="fg3" backgroundColor="messagebox-bg" zPosition="1" />
+                <ePixmap pixmap="v-infobars/header.png" position="110,602" size="1701,158" alphaTest="blend" zPosition="1" />
 		<!-- <ePixmap pixmap="epg/epg-multi-background.png" position="110,816" size="1701,234" zPosition="1" /> -->
 		<eLabel position="110,816" size="1701,234" backgroundColor="infobarBlack" transparent="0" zPosition="1" />
 		<panel position="122,644" size="135,83">
 	               <panel name="main-logo" zPosition="2"/>
 		</panel>
 		<!-- loading epg text -->
-		<widget name="lab1" position="110,819" size="1701,174" font="Regular;36" foregroundColor="fg1" backgroundColor="infobarBlack" valign="center" halign="center" transparent="1" zPosition="2"  />
+		<widget name="lab1" position="110,819" size="1701,174" font="Regular;36" foregroundColor="fg1" backgroundColor="infobarBlack" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="2"  />
                 <!-- event name -->
-		<widget source="Event" render="Label" position="278,627" size="1200,60" font="Regular;48" foregroundColor="fg1" backgroundColor="infobarHead" transparent="1" valign="top" halign="left" noWrap="1" zPosition="2">
+		<widget source="Event" render="Label" position="278,627" size="1200,60" font="Regular;48" foregroundColor="fg1" backgroundColor="infobarHead" transparent="1" verticalAlignment="top" horizontalAlignment="left" noWrap="1" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
                 <!-- event start time -->
-		<widget source="Event" render="Label" position="278,693" size="135,53" font="Regular;39" foregroundColor="fg2" backgroundColor="infobarHead" transparent="1" noWrap="1" valign="top" halign="left" zPosition="2">
+		<widget source="Event" render="Label" position="278,693" size="135,53" font="Regular;39" foregroundColor="fg2" backgroundColor="infobarHead" transparent="1" noWrap="1" verticalAlignment="top" horizontalAlignment="left" zPosition="2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M -</convert>
 		</widget>
                 <!-- event End time -->
-		<widget source="Event" render="Label" position="408,693" size="108,53" font="Regular;39" foregroundColor="fg2" backgroundColor="infobarHead" transparent="1" noWrap="1" valign="top" halign="center" zPosition="2">
+		<widget source="Event" render="Label" position="408,693" size="108,53" font="Regular;39" foregroundColor="fg2" backgroundColor="infobarHead" transparent="1" noWrap="1" verticalAlignment="top" horizontalAlignment="center" zPosition="2">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
                 <!-- event Duration -->
-		<widget source="Event" render="Label" position="573,693" size="120,60" halign="left" valign="top" foregroundColor="fg2" backgroundColor="infobarHead" font="Regular;39" noWrap="1" transparent="1" zPosition="2">
+		<widget source="Event" render="Label" position="573,693" size="120,60" horizontalAlignment="left" verticalAlignment="top" foregroundColor="fg2" backgroundColor="infobarHead" font="Regular;39" noWrap="1" transparent="1" zPosition="2">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
                 <!-- recording icon -->
-		<widget position="723,701" size="33,33" source="session.RecordState" render="Pixmap" pixmap="v-infobars/recording2.png" alphatest="blend" zPosition="3">
+		<widget position="723,701" size="33,33" source="session.RecordState" render="Pixmap" pixmap="v-infobars/recording2.png" alphaTest="blend" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
-                <widget source="global.CurrentTime" render="Label" position="1485,633" size="120,54" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarHead" valign="top" halign="right" transparent="1" noWrap="1" zPosition="2">
+                <widget source="global.CurrentTime" render="Label" position="1485,633" size="120,54" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarHead" verticalAlignment="top" horizontalAlignment="right" transparent="1" noWrap="1" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-                <widget source="Service" render="Label" position="555,693" size="1050,53" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarHead" transparent="1" valign="top" halign="right" noWrap="1" zPosition="2">
+                <widget source="Service" render="Label" position="555,693" size="1050,53" font="Regular;39" foregroundColor="fg1" backgroundColor="infobarHead" transparent="1" verticalAlignment="top" horizontalAlignment="right" noWrap="1" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
                 <!-- current picon -->
-		<widget source="Service" render="Picon" position="1641,642" size="150,90" alphatest="blend" zPosition="2">
+		<widget source="Service" render="Picon" position="1641,642" size="150,90" alphaTest="blend" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
                 <!-- timeline background -->
                 <eLabel position="110,759" size="1701,57" backgroundColor="infobarBlack" transparent="0" zPosition="1" />
                 <!-- right arrows -->
-		<ePixmap pixmap="v-buttons/forward.png" position="1763,768" size="45,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/forward.png" position="1763,768" size="45,45" alphaTest="blend" zPosition="3" />
                 <!-- timeline times -->
 		<widget name="timeline_text" position="125,768" size="1671,45" TimelineFont="Regular;36" foregroundColor="fg1" backgroundColor="infobarBlack" transparent="0" itemHeight="45" zPosition="3" />
                 <!-- time line seperators -->
-		<widget name="timeline0" position="0,759" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline1" position="0,759" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline2" position="0,759" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline3" position="0,759" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline4" position="0,759" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline5" position="0,759" size="2,57" alphatest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
-		<widget name="timeline_now" position="0,759" size="20,228" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="4" />
+		<widget name="timeline0" position="0,759" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline1" position="0,759" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline2" position="0,759" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline3" position="0,759" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline4" position="0,759" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline5" position="0,759" size="2,57" alphaTest="blend" pixmap="epg/timeline-seperator.png" zPosition="5" />
+		<widget name="timeline_now" position="0,759" size="20,228" pixmap="epg/timeline-now.png" alphaTest="blend" zPosition="4" />
 	
 		<widget name="list"
                 position="110,819"
@@ -453,8 +453,8 @@
 
                 <widget name="bouquetlist" position="110,818" size="1701,171" font="Regular;36" itemHeight="60" foregroundColor="fg1" backgroundColor="epgeventbg" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" borderWidth="3" borderColor="black" scrollbarMode="showOnDemand" transparent="0" zPosition="10" />
                 <panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1727,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1640,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1727,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1640,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
 	
@@ -475,10 +475,10 @@
 	
 	<!-- epg - show bouquet on launch -->
 	<screen name="BouquetSelector" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="v-backgrounds/left-slim-bg.png" position="0,e-917" size="696,917" alphatest="blend" zPosition="-1" />
-		<widget source="Title" render="Label" position="60,215" size="510,57" font="Regular;39" foregroundColor="fg2" backgroundColor="messagebox-bg" valign="top" halign="left" transparent="1" zPosition="1"  />
+		<ePixmap pixmap="v-backgrounds/left-slim-bg.png" position="0,e-917" size="696,917" alphaTest="blend" zPosition="-1" />
+		<widget source="Title" render="Label" position="60,215" size="510,57" font="Regular;39" foregroundColor="fg2" backgroundColor="messagebox-bg" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1"  />
 		<widget name="menu" textOffset="60,12" position="0,282" size="696,818" font="Regular;33" foregroundColor="fg1" backgroundColor="messagebox-bg" backgroundColorSelected="selected-gfx-bg" foregroundColorSelected="selected" selectionPixmap="v-selectbars/selectbar-42-455-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" scrollbarMode="showNever" itemHeight="63" enableWrapAround="1" transparent="1" />
-		<ePixmap pixmap="v-backgrounds/bouquet-gradient.png" position="0,e-42" size="662,42" alphatest="blend" zPosition="10" />
+		<ePixmap pixmap="v-backgrounds/bouquet-gradient.png" position="0,e-42" size="662,42" alphaTest="blend" zPosition="10" />
 	</screen>
 
 	<!-- EpgSelection -->
@@ -487,23 +487,23 @@
 	<screen name="EPGSelection" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="v-template2-pig" />
 		<widget name="list" position="129,216" size="1193,720" EventFontSingle="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-text-bg" enableWrapAround="1" zPosition="4" scrollbarMode="showOnDemand" transparent="1" />
-		<widget source="Event" render="Label" position="1383,428" size="422,38" font="Regular;27" foregroundColor="fg1" backgroundColor="bg-mr" valign="top" halign="left" transparent="1" zPosition="4">
+		<widget source="Event" render="Label" position="1383,428" size="422,38" font="Regular;27" foregroundColor="fg1" backgroundColor="bg-mr" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="1383,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" valign="top" halign="left" transparent="1" zPosition="4">
+		<widget source="Event" render="Label" position="1383,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H.%M -</convert>
 		</widget>
-		<widget source="Event" render="Label" position="1466,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" valign="top" halign="left" transparent="1" zPosition="4">
+		<widget source="Event" render="Label" position="1466,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H.%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="1383,503" size="422,402" font="Regular;24" foregroundColor="fg1" backgroundColor="bg-mr" valign="top" halign="left" transparent="1" zPosition="4">
+		<widget source="Event" render="Label" position="1383,503" size="422,402" font="Regular;24" foregroundColor="fg1" backgroundColor="bg-mr" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(45)</applet>
 	</screen>
 	
@@ -513,30 +513,30 @@
 		<widget name="list" position="129,308" size="1193,672" EventFontMulti="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-text-bg" transparent="1" zPosition="4" scrollbarMode="showOnDemand" />
                 <widget name="bouquetlist" position="129,290" size="1193,660" font="Regular;33" itemHeight="66" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected"
                 backgroundColorSelected="selected-gfx-bg" transparent="1" borderWidth="2" borderColor="bg-mm" scrollbarMode="showNever" zPosition="5" />
-                <widget source="Event" render="Label" position="1383,428" size="422,38" font="Regular;27" foregroundColor="fg1" backgroundColor="bg-mr" valign="top" halign="left" transparent="1" zPosition="4">
+                <widget source="Event" render="Label" position="1383,428" size="422,38" font="Regular;27" foregroundColor="fg1" backgroundColor="bg-mr" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="1383,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" valign="top" halign="left" transparent="1" zPosition="4">
+		<widget source="Event" render="Label" position="1383,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H.%M -</convert>
 		</widget>
-		<widget source="Event" render="Label" position="1466,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" valign="top" halign="left" transparent="1" zPosition="4">
+		<widget source="Event" render="Label" position="1466,465" size="90,38" font="Regular;24" foregroundColor="fg2" backgroundColor="bg-mr" noWrap="1" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H.%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="1383,503" size="422,402" font="Regular;24" foregroundColor="fg1" backgroundColor="bg-mr" valign="top" halign="left" transparent="1" zPosition="4">
+		<widget source="Event" render="Label" position="1383,503" size="422,402" font="Regular;24" foregroundColor="fg1" backgroundColor="bg-mr" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="4">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<ePixmap pixmap="v-backgrounds/multi-epg.png" position="83,215" size="1259,75" alphatest="blend" zPosition="3" />
-		<widget name="now_button_sel"  pixmap="v-selectbars/selectbar-multiepg.png" position="129,215" zPosition="4" size="390,75" alphatest="blend" />
-		<widget name="next_button_sel" pixmap="v-selectbars/selectbar-multiepg.png" position="519,215" zPosition="4" size="390,75" alphatest="blend" />
-		<widget name="more_button_sel" pixmap="v-selectbars/selectbar-multiepg.png" position="909,215" zPosition="4" size="390,75" alphatest="blend" />
-		<widget name="now_text" text="NOW"  position="129,215" size="390,75" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark"  valign="center" halign="center" transparent="1"  zPosition="5"  />
-		<widget name="next_text" text="NEXT" position="519,215" size="390,75" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark"  valign="center" halign="center" transparent="1" zPosition="5" />
-		<widget name="more_text" text="MORE..." position="909,215" size="390,75" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" halign="center" transparent="1" zPosition="5" />
+		<ePixmap pixmap="v-backgrounds/multi-epg.png" position="83,215" size="1259,75" alphaTest="blend" zPosition="3" />
+		<widget name="now_button_sel"  pixmap="v-selectbars/selectbar-multiepg.png" position="129,215" zPosition="4" size="390,75" alphaTest="blend" />
+		<widget name="next_button_sel" pixmap="v-selectbars/selectbar-multiepg.png" position="519,215" zPosition="4" size="390,75" alphaTest="blend" />
+		<widget name="more_button_sel" pixmap="v-selectbars/selectbar-multiepg.png" position="909,215" zPosition="4" size="390,75" alphaTest="blend" />
+		<widget name="now_text" text="NOW"  position="129,215" size="390,75" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark"  verticalAlignment="center" horizontalAlignment="center" transparent="1"  zPosition="5"  />
+		<widget name="next_text" text="NEXT" position="519,215" size="390,75" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark"  verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="5" />
+		<widget name="more_text" text="MORE..." position="909,215" size="390,75" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="5" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<applet type="onLayoutFinish">from enigma import eListboxPythonMultiContent, gFont
 self["list"].l.setFont(0, gFont("Regular", 30))	
 self["list"].l.setFont(1, gFont("Regular", 30))	

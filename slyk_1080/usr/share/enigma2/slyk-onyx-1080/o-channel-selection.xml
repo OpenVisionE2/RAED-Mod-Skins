@@ -57,7 +57,7 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- picon -->
-		<widget source="Service" render="Picon" position="1500,38" size="150,90" alphatest="blend">
+		<widget source="Service" render="Picon" position="1500,38" size="150,90" alphaTest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- now duration -->
@@ -111,7 +111,7 @@
 	<screen name="SlimChannelSelection" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 	
         <eLabel position="0,0" size="1920,1080" backgroundColor="#25000000" transparent="0" zPosition="-1"/>
-        <ePixmap pixmap="o-backgrounds/h-divider.png" position="1454,290" size="467,3"  alphatest="blend"  />
+        <ePixmap pixmap="o-backgrounds/h-divider.png" position="1454,290" size="467,3"  alphaTest="blend"  />
 
 
        	<widget source="Title" render="Label" position="512,32" size="911,54" font="Bold;30" transparent="1" foregroundColor="white" backgroundColor="#25000000" />
@@ -181,7 +181,7 @@
                 />
 
                 <!-- picon -->
-		<widget source="Service" render="Picon" position="1500,38" size="150,90" alphatest="blend">
+		<widget source="Service" render="Picon" position="1500,38" size="150,90" alphaTest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		
@@ -220,7 +220,7 @@
 	<!-- alternative radio mode = no -->
 	<screen name="ChannelSelectionRadio" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1" />
-		<eLabel text="Radio Guide" position="15,675" size="450,291" halign="center" font="Regular;35" transparent="1" foregroundColor="white" backgroundColor="topleft" />
+		<eLabel text="Radio Guide" position="15,675" size="450,291" horizontalAlignment="center" font="Regular;35" transparent="1" foregroundColor="white" backgroundColor="topleft" />
 		<panel name="ListTemplate" />
 		<widget source="Title" render="Label" position="519,300" size="921,54" font="Bold;29" transparent="1" foregroundColor="white" backgroundColor="topmid" />
 		<panel name="h-separator-tr" />
@@ -234,7 +234,7 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- picon -->
-		<widget source="Service" render="Picon" position="1500,38" size="150,90" alphatest="blend">
+		<widget source="Service" render="Picon" position="1500,38" size="150,90" alphaTest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- now duration -->
@@ -291,8 +291,8 @@
 	<!-- prev / next button -->
 	<screen name="HistoryZapSelector" position="0,0" size="522,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<!-- <eLabel position="0,0" size="494,1080" backgroundColor="blackglass" transparent="0"  />    -->
-		<ePixmap pixmap="o-backgrounds/history-zap.png" position="0,0" size="522,1080" alphatest="blend" zPosition="-1" />
-		<widget source="Title" render="Label" position="0,0" size="485,240" font="Regular;48" foregroundColor="white" backgroundColor="blackglass" valign="center" halign="center" transparent="1" />
+		<ePixmap pixmap="o-backgrounds/history-zap.png" position="0,0" size="522,1080" alphaTest="blend" zPosition="-1" />
+		<widget source="Title" render="Label" position="0,0" size="485,240" font="Regular;48" foregroundColor="white" backgroundColor="blackglass" verticalAlignment="center" horizontalAlignment="center" transparent="1" />
 		<widget source="menu" render="Listbox" position="30,242" size="425,768" foregroundColor="white" backgroundColor="blackglass" foregroundColorSelected="white" backgroundColorSelected="blackglass" selectionPixmap="o-selectbars/history-zap.png" scrollbarMode="showNever" transparent="1">
 			<convert type="TemplatedMultiContent">{"template": [
 						MultiContentEntryText(pos = (15, 20), size = (230, 42), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff), # Servicename

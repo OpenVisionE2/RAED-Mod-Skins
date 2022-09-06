@@ -99,7 +99,7 @@
 				"itemHeight": 54
 				}</convert>
 		</widget>
-		<eLabel text="Press SELECT" position="152,993" size="1350,48" font="Regular;39" foregroundColor="skyblue" backgroundColor="bgdarkblue" valign="top" halign="left" transparent="1" />
+		<eLabel text="Press SELECT" position="152,993" size="1350,48" font="Regular;39" foregroundColor="skyblue" backgroundColor="bgdarkblue" verticalAlignment="top" horizontalAlignment="left" transparent="1" />
 	</screen>
 	
 	<screen name="Setup-Default">
@@ -107,10 +107,10 @@
 		<panel name="settings" />
 		<panel name="t3-panel-bg" />
 		<panel name="setup-panel-bars" />
-		<widget name="config" textOffset="15,0" position="center,503" size="1360,432" font="Regular;39" secondfont="Regular;39" backgroundColor="skylightrow" selectionPixmap="2018-selectbars/menu-bar-54.png" backgroundPixmap="2018-selectbars/blank.png" itemHeight="54" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="1" />
-		<eLabel text="Use" position="152,993" size="75,48" font="Regular;39" foregroundColor="skyblue" backgroundColor="bgdarkblue" valign="top" halign="left" transparent="1" zPosition="1" />
-		<ePixmap pixmap="myicons/prev-next.png" position="227,1004" size="60,30" alphatest="blend" transparent="1" />
-		<eLabel text="to change settings and press GREEN to save changes" position="296,993" size="900,48" font="Regular;39" foregroundColor="skyblue" backgroundColor="bgdarkblue" valign="center" halign="left" transparent="1" zPosition="1" />
+		<widget name="config" textOffset="15,0" position="center,503" size="1360,432" font="Regular;39" valueFont="Regular;39" backgroundColor="skylightrow" selectionPixmap="2018-selectbars/menu-bar-54.png" backgroundPixmap="2018-selectbars/blank.png" itemHeight="54" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="1" />
+		<eLabel text="Use" position="152,993" size="75,48" font="Regular;39" foregroundColor="skyblue" backgroundColor="bgdarkblue" verticalAlignment="top" horizontalAlignment="left" transparent="1" zPosition="1" />
+		<ePixmap pixmap="myicons/prev-next.png" position="227,1004" size="60,30" alphaTest="blend" transparent="1" />
+		<eLabel text="to change settings and press GREEN to save changes" position="296,993" size="900,48" font="Regular;39" foregroundColor="skyblue" backgroundColor="bgdarkblue" verticalAlignment="center" horizontalAlignment="left" transparent="1" zPosition="1" />
 		<panel name="New-Buttons-T1" />
 	</screen>
 	
@@ -119,7 +119,7 @@
 		<panel name="settings" />
 		<panel name="t3-panel-bg" />
 		<panel name="setup-panel-bars" />
-		<widget name="config" textOffset="15,0" position="center,503" size="1360,432" font="Regular;39" secondfont="Regular;39" backgroundColor="skylightrow" selectionPixmap="2018-selectbars/menu-bar-54.png" backgroundPixmap="2018-selectbars/blank.png" itemHeight="54" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="1" />
+		<widget name="config" textOffset="15,0" position="center,503" size="1360,432" font="Regular;39" valueFont="Regular;39" backgroundColor="skylightrow" selectionPixmap="2018-selectbars/menu-bar-54.png" backgroundPixmap="2018-selectbars/blank.png" itemHeight="54" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="1" />
 		<panel name="New-Buttons-T1" />
 	</screen>
 	
@@ -212,7 +212,7 @@
 	
 	<screen name="VFD_INISetup" position="0,0" size="1920,1080" backgroundColor="backgroundmid" flags="wfNoBorder" zPosition="4">
 		<panel name="Setup-Center" />
-		<widget name="information" position="90,179" size="1200,176" font="Regular;39" foregroundColor="white" backgroundColor="backgroundtop" valign="top" transparent="1" zPosition="1" />
+		<widget name="information" position="90,179" size="1200,176" font="Regular;39" foregroundColor="white" backgroundColor="backgroundtop" verticalAlignment="top" transparent="1" zPosition="1" />
 	</screen>
 	
 	<screen name="OpenWebifConfig" title="OpenWebif Configuration" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="backgroundmid">

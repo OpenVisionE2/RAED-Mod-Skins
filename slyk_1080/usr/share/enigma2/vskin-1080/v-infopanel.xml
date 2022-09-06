@@ -3,9 +3,9 @@
 	<!-- Info Panel Menus -->
 	<screen name="Infopanel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template1-des-pig" />
-		<ePixmap pixmap="v-backgrounds/main-menu-bg.png" position="150,377" size="828,704" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="v-backgrounds/main-menu-bg.png" position="150,377" size="828,704" alphaTest="blend" zPosition="1" />
 		<widget name="Mlist" position="200,428" size="726,653" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-484.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2" />
-		<ePixmap pixmap="v-backgrounds/menu-gradient.png" position="0,e-53" size="1920,53" alphatest="blend" zPosition="10" />
+		<ePixmap pixmap="v-backgrounds/menu-gradient.png" position="0,e-53" size="1920,53" alphaTest="blend" zPosition="10" />
 	</screen>
 	
 	<!-- ##MountManager## -->
@@ -23,7 +23,7 @@
 				"itemHeight": 128
 				}</convert>
 		</widget>
-		<widget name="lab1" position="129,216" size="1193,767" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm" valign="center" halign="center" transparent="1" zPosition="2" />
+		<widget name="lab1" position="129,216" size="1193,767" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 	
@@ -38,7 +38,7 @@
 	<screen name="CronTimers" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
 		<panel name="active-block" />
-		<widget source="list" render="Listbox" position="0,308" size="1314,672" foregroundColor="fg1" backgroundColor="bg-mm" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-849-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" valign="center" itemHeight="75" transparent="1">
+		<widget source="list" render="Listbox" position="0,308" size="1314,672" foregroundColor="fg1" backgroundColor="bg-mm" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-849-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" verticalAlignment="center" itemHeight="75" transparent="1">
 			<convert type="TemplatedMultiContent">{"template": [
 				 MultiContentEntryText(pos = (129, 15), size = (1193, 45), font=0, text = 0),
 				],
@@ -53,7 +53,7 @@
 	<!-- /lib/python/Plugins/Extensions/Infopanel/ScriptRunner.py -->
 	<screen name="ScriptRunner" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="lab1" position="129,215" size="1193,75" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" valign="center" transparent="1" />
+		<widget name="lab1" position="129,215" size="1193,75" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" verticalAlignment="center" transparent="1" />
 		<widget name="list" textOffset="129,15" position="0,305" size="1361,675" font="Regular; 36" foregroundColor="fg1" backgroundColor="bg-mm" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-907-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="5" />
 		<panel name="New-Buttons-Bot" />
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(75)</applet>
@@ -63,16 +63,16 @@
 	<!-- /lib/python/Plugins/Extensions/Infopanel/SwapManager.py -->
 	<screen name="Swap" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="autostart_off" position="129,450" size="48,48" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend" />
-		<widget name="autostart_on" position="129,450" size="48,48" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend" />
-		<widget name="lab1" position="189,450" size="540,45" font="Regular;32" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
-		<widget name="lab2" position="129,525" size="225,45" font="Regular;32" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
-		<widget name="lab3" position="129,600" size="225,45" font="Regular;32" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
-		<widget name="lab4" position="129,675" size="225,45" font="Regular;32" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
-		<widget name="labplace" position="354,525" size="330,45" font="Regular;32" valign="center" foregroundColor="fg2" backgroundColor="bg-mm" transparent="1" />
-		<widget name="labsize" position="354,600" size="330,45" font="Regular;32" valign="center" foregroundColor="fg2" backgroundColor="bg-mm" transparent="1" />
-		<widget name="inactive" position="354,675" size="150,45" font="Regular;32" valign="center" halign="center" foregroundColor="fg1" backgroundColor="red" />
-		<widget name="active" position="354,675" size="150,45" font="Regular;32" valign="center" halign="center" foregroundColor="fg1" backgroundColor="green" />
+		<widget name="autostart_off" position="129,450" size="48,48" zPosition="1" pixmap="icons/lock_off.png" alphaTest="blend" />
+		<widget name="autostart_on" position="129,450" size="48,48" zPosition="2" pixmap="icons/lock_on.png" alphaTest="blend" />
+		<widget name="lab1" position="189,450" size="540,45" font="Regular;32" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
+		<widget name="lab2" position="129,525" size="225,45" font="Regular;32" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
+		<widget name="lab3" position="129,600" size="225,45" font="Regular;32" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
+		<widget name="lab4" position="129,675" size="225,45" font="Regular;32" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm" />
+		<widget name="labplace" position="354,525" size="330,45" font="Regular;32" verticalAlignment="center" foregroundColor="fg2" backgroundColor="bg-mm" transparent="1" />
+		<widget name="labsize" position="354,600" size="330,45" font="Regular;32" verticalAlignment="center" foregroundColor="fg2" backgroundColor="bg-mm" transparent="1" />
+		<widget name="inactive" position="354,675" size="150,45" font="Regular;32" verticalAlignment="center" horizontalAlignment="center" foregroundColor="fg1" backgroundColor="red" />
+		<widget name="active" position="354,675" size="150,45" font="Regular;32" verticalAlignment="center" horizontalAlignment="center" foregroundColor="fg1" backgroundColor="green" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 	
@@ -99,24 +99,24 @@
 				"itemHeight": 128
 				}</convert>
 		</widget>
-		<widget name="lab1" position="129,216" size="1193,767" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm" valign="center" halign="center" transparent="1" zPosition="2" />
+		<widget name="lab1" position="129,216" size="1193,767" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="2" />
 	</screen>
 	
 	<!-- ##RestartNetwork## -->
 	<!-- /lib/python/Plugins/Extensions/Infopanel/RestartNetwork.py -->
 	<screen name="RestartNetwork" position="center,center" size="750,150" title="Restart Network Adapter">
-		<widget name="label" position="15,45" size="750,75" font="Regular;30" foregroundColor="fg1" backgroundColor="messagebox-bg" valign="center" halign="center" transparent="1" />
+		<widget name="label" position="15,45" size="750,75" font="Regular;30" foregroundColor="fg1" backgroundColor="messagebox-bg" verticalAlignment="center" horizontalAlignment="center" transparent="1" />
 	</screen>
 	
 	<!-- ##SoftcamPanel## -->
 	<!-- /lib/python/Plugins/Extensions/Infopanel/SoftcamPanel.py -->
 	<screen name="SoftcamPanel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="config" textOffset="15,0" position="129,215" size="1185,150" font="Regular;36" secondfont="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-1280-square.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" enableWrapAround="1" transparent="1" scrollbarMode="showNever" zPosition="2" />
-		<ePixmap pixmap="v-backgrounds/softcam-block.png" position="129,426" size="578,105" alphatest="blend" zPosition="2" />
-		<ePixmap pixmap="v-backgrounds/softcam-block.png" position="737,426" size="578,105" alphatest="blend" zPosition="2" />
-		<widget name="actifcam" position="144,426" size="548,75" font="Regular;32" foregroundColor="fg1" backgroundColor="highlightBG" itemHeight="75" valign="center" halign="left" transparent="1" zPosition="3" />
-		<widget name="actifcam2" position="752,426" size="548,75" font="Regular;32" foregroundColor="fg1" backgroundColor="highlightBG" itemHeight="75" valign="center" halign="right" transparent="1" zPosition="3" />
+		<widget name="config" textOffset="15,0" position="129,215" size="1185,150" font="Regular;36" valueFont="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-1280-square.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" enableWrapAround="1" transparent="1" scrollbarMode="showNever" zPosition="2" />
+		<ePixmap pixmap="v-backgrounds/softcam-block.png" position="129,426" size="578,105" alphaTest="blend" zPosition="2" />
+		<ePixmap pixmap="v-backgrounds/softcam-block.png" position="737,426" size="578,105" alphaTest="blend" zPosition="2" />
+		<widget name="actifcam" position="144,426" size="548,75" font="Regular;32" foregroundColor="fg1" backgroundColor="highlightBG" itemHeight="75" verticalAlignment="center" horizontalAlignment="left" transparent="1" zPosition="3" />
+		<widget name="actifcam2" position="752,426" size="548,75" font="Regular;32" foregroundColor="fg1" backgroundColor="highlightBG" itemHeight="75" verticalAlignment="center" horizontalAlignment="right" transparent="1" zPosition="3" />
 		<widget name="ecminfo" position="144,551" size="1277,408" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm" transparent="1" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
 	</screen>

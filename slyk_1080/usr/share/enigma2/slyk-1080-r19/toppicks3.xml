@@ -23,14 +23,14 @@
 		<ePixmap pixmap="toppicks/screens2/toppicks10.jpg" position="1021,1011" size="246,327" backgroundColor="backgroundmid" transparent="0" zPosition="2" />
 		<ePixmap pixmap="toppicks/screens2/toppicks11.jpg" position="1304,1011" size="246,327" backgroundColor="backgroundmid" transparent="0" zPosition="2" />
 		<ePixmap pixmap="toppicks/screens2/toppicks12.jpg" position="1587,1011" size="246,327" backgroundColor="backgroundmid" transparent="0" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
 	</screen>
 	
 	<screen name="BouquetSelector" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="backgroundmid" title="Main Menu">
@@ -50,14 +50,14 @@
 		<ePixmap pixmap="toppicks/screens2/toppicks10.jpg" position="1021,1011" size="246,327" backgroundColor="backgroundmid" transparent="0" zPosition="2" />
 		<ePixmap pixmap="toppicks/screens2/toppicks11.jpg" position="1304,1011" size="246,327" backgroundColor="backgroundmid" transparent="0" zPosition="2" />
 		<ePixmap pixmap="toppicks/screens2/toppicks12.jpg" position="1587,1011" size="246,327" backgroundColor="backgroundmid" transparent="0" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,636" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
-		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,987" size="246,6" alphatest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,636" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="738,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1021,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1304,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
+		<ePixmap pixmap="2018-backgrounds/toppicksshadow.png" position="1587,987" size="246,6" alphaTest="blend" transparent="1" zPosition="2" />
 	</screen>
 </skin>
 

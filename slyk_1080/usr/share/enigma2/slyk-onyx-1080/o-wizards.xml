@@ -1,11 +1,11 @@
 
 <skin>
 	<screen name="RemoteControlTemplate">
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="1601,120" size="191,747" alphatest="blend" zPosition="10" />
-		<widget name="arrowdown" pixmap="arrowdown.png" position="-150,-225" zPosition="11" size="56,105" alphatest="blend" />
-		<widget name="arrowup" pixmap="arrowup.png" position="-150,-225" zPosition="11" size="56,105" alphatest="blend" />
-		<widget name="arrowup2" pixmap="arrowup.png" position="-150,-225" zPosition="11" size="56,105" alphatest="blend" />
-		<widget name="arrowdown2" pixmap="arrowdown.png" position="-150,-225" zPosition="11" size="56,105" alphatest="blend" />
+		<widget name="rc" pixmaps="rc.png,rcold.png" position="1601,120" size="191,747" alphaTest="blend" zPosition="10" />
+		<widget name="arrowdown" pixmap="arrowdown.png" position="-150,-225" zPosition="11" size="56,105" alphaTest="blend" />
+		<widget name="arrowup" pixmap="arrowup.png" position="-150,-225" zPosition="11" size="56,105" alphaTest="blend" />
+		<widget name="arrowup2" pixmap="arrowup.png" position="-150,-225" zPosition="11" size="56,105" alphaTest="blend" />
+		<widget name="arrowdown2" pixmap="arrowdown.png" position="-150,-225" zPosition="11" size="56,105" alphaTest="blend" />
 	</screen>
 	
 	<screen name="WizardTemplate">
@@ -13,7 +13,7 @@
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
 		<widget name="text" position="527,32" size="942,234" font="Regular;29" foregroundColor="white" backgroundColor="topmid" transparent="1" />
-		<widget name="config" textOffset="15,0" position="527,321" size="942,645" font="Regular;32" secondfont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
+		<widget name="config" textOffset="15,0" position="527,321" size="942,645" font="Regular;32" valueFont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
 		<widget source="list" render="Listbox" position="527,321" size="942,645" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
 			<convert type="TemplatedMultiContent">{"template": [
                                 MultiContentEntryText(pos = (15, 15), size = (912, 42), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -22,7 +22,7 @@
 				}</convert>
 		</widget>
 		<panel name="New-Buttons" />
-		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphaTest="blend" zPosition="2" />
 		<panel name="RemoteControlTemplate" />
 	</screen>
 	
@@ -31,7 +31,7 @@
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
 		<widget name="list" textOffset="15,17" position="527,321" size="942,648" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" font="Regular;35" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
-		<widget name="long_key" position="1470,894" size="450,83" font="Regular;35" halign="center" valign="center" foregroundColor="white" backgroundColor="botright" transparent="1" />
+		<widget name="long_key" position="1470,894" size="450,83" font="Regular;35" horizontalAlignment="center" verticalAlignment="center" foregroundColor="white" backgroundColor="botright" transparent="1" />
 		<panel name="RemoteControlTemplate" />
 	</screen>
 	
@@ -74,8 +74,8 @@
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
 		<widget name="text" position="527,32" size="942,231" font="Regular;29" foregroundColor="white" backgroundColor="topmid" transparent="1" />
-		<widget name="config" textOffset="15,0" position="527,321" size="942,645" font="Regular;32" secondfont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" valign="center" scrollbarMode="showNever" transparent="1" />
-		<widget source="languages" render="Listbox" position="527,321" size="942,645" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" valign="center" scrollbarMode="showNever" transparent="1">
+		<widget name="config" textOffset="15,0" position="527,321" size="942,645" font="Regular;32" valueFont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" verticalAlignment="center" scrollbarMode="showNever" transparent="1" />
+		<widget source="languages" render="Listbox" position="527,321" size="942,645" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" verticalAlignment="center" scrollbarMode="showNever" transparent="1">
 			<convert type="TemplatedMultiContent">{"template": [
                                	MultiContentEntryText(pos = (150,15), size = (762,42), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
 				MultiContentEntryPixmapAlphaTest(pos = (30,6), size = (90,60), png = 2), # index 2 is the pixmap
@@ -85,7 +85,7 @@
 				}</convert>
 		</widget>
 		<panel name="New-Buttons" />
-		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphaTest="blend" zPosition="2" />
 		<panel name="RemoteControlTemplate" />
 	</screen>
 </skin>

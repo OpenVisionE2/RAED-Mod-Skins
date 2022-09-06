@@ -1,7 +1,7 @@
 <skin>
       	<screen name="HistoryZapSelector" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="v-backgrounds/left-slim-bg.png" position="0,e-917" size="696,917" alphatest="blend" zPosition="-1" />
-		<widget source="Title" render="Label" position="60,215" size="510,57" valign="top" halign="left" font="Regular;39" zPosition="1" transparent="1" foregroundColor="fg2" backgroundColor="messagebox-bg" />
+		<ePixmap pixmap="v-backgrounds/left-slim-bg.png" position="0,e-917" size="696,917" alphaTest="blend" zPosition="-1" />
+		<widget source="Title" render="Label" position="60,215" size="510,57" verticalAlignment="top" horizontalAlignment="left" font="Regular;39" zPosition="1" transparent="1" foregroundColor="fg2" backgroundColor="messagebox-bg" />
 		<widget source="menu" render="Listbox" position="0,282" size="683,825" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-70-455-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" scrollbarMode="showNever" transparent="1">
 			<convert type="TemplatedMultiContent">{"template": [
 						MultiContentEntryText(pos = (30, 9), size = (15, 90), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1), # Current Service
@@ -14,7 +14,7 @@
 				 "itemHeight": 105
 				}</convert>
 		</widget>
-		<ePixmap pixmap="v-backgrounds/slim-gradient.png" position="0,e-63" size="662,63" alphatest="blend" zPosition="5" />
+		<ePixmap pixmap="v-backgrounds/slim-gradient.png" position="0,e-63" size="662,63" alphaTest="blend" zPosition="5" />
 	</screen>
 	
 	<!-- info panel SoftcamPanel Install-->
@@ -40,8 +40,8 @@
 	<!-- software update -->
 	<screen name="SoftwarePanel" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="SoftwarePanel">
 		<panel name="v-template2-pig" />
-		<widget name="packagetext" position="1383,428" size="300,45" font="Regular;36" valign="center" halign="left" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" zPosition="2" />
-		<widget name="packagenr" position="1683,428" size="75,45" font="Regular;36" valign="center" halign="left" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" zPosition="2" />
+		<widget name="packagetext" position="1383,428" size="300,45" font="Regular;36" verticalAlignment="center" horizontalAlignment="left" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" zPosition="2" />
+		<widget name="packagenr" position="1683,428" size="75,45" font="Regular;36" verticalAlignment="center" horizontalAlignment="left" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" zPosition="2" />
 		<widget source="list" render="Listbox" position="0,215" size="1314,756" foregroundColor="fg1" backgroundColor="bg-mm" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-849-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" transparent="1" zPosition="5">
 			<convert type="TemplatedMultiContent">{"template": [
 						MultiContentEntryText(pos = (204, 2), size = (1050, 42), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0,  color = 0x00ffffff, color_sel = 0x00ffffff), # index 0 is the name
@@ -54,15 +54,15 @@
 				"scrollbarMode": "showOnDemand"
 				}</convert>
 		</widget>
-		<eLabel text="Feed Status:" position="1383,503" size="300,45" font="Regular;36" valign="center" halign="left" foregroundColor="fg1" backgroundColor="bg-mm" transparent="1" zPosition="2" />
-		<widget name="a_off" position="1676,503" size="36,48" pixmap="v-icons/feed-error.png" alphatest="blend" zPosition="2" />
-		<widget name="a_red" position="1676,503" size=" 36,48" pixmap="v-icons/feed-red.png" alphatest="blend" zPosition="2" />
-		<widget name="a_yellow" position="1676,503" size="36,48" pixmap="v-icons/feed-yellow.png" alphatest="blend" zPosition="2" />
-		<widget name="a_green" position="1676,503" size="36,48" pixmap="v-icons/feed-green.png" alphatest="blend" zPosition="2" />
-		<ePixmap pixmap="v-buttons/key_red.png" position="129,1002" size="45,45" alphatest="blend" zPosition="2" />
-		<widget name="key_red" position="174,1002" size="263,45" font="Regular;33" halign="left" valign="center" transparent="1" noWrap="1" foregroundColor="fg3" backgroundColor="button-bot" zPosition="2" />
-		<widget name="key_green_pic" pixmap="v-buttons/key_green.png" position="429,1002" size="45,45" alphatest="blend" zPosition="2" />
-		<widget name="key_green" position="474,1002" size="263,45" font="Regular;33" halign="left" valign="center" transparent="1" noWrap="1" foregroundColor="fg3" backgroundColor="button-bot" zPosition="2" />
+		<eLabel text="Feed Status:" position="1383,503" size="300,45" font="Regular;36" verticalAlignment="center" horizontalAlignment="left" foregroundColor="fg1" backgroundColor="bg-mm" transparent="1" zPosition="2" />
+		<widget name="a_off" position="1676,503" size="36,48" pixmap="v-icons/feed-error.png" alphaTest="blend" zPosition="2" />
+		<widget name="a_red" position="1676,503" size=" 36,48" pixmap="v-icons/feed-red.png" alphaTest="blend" zPosition="2" />
+		<widget name="a_yellow" position="1676,503" size="36,48" pixmap="v-icons/feed-yellow.png" alphaTest="blend" zPosition="2" />
+		<widget name="a_green" position="1676,503" size="36,48" pixmap="v-icons/feed-green.png" alphaTest="blend" zPosition="2" />
+		<ePixmap pixmap="v-buttons/key_red.png" position="129,1002" size="45,45" alphaTest="blend" zPosition="2" />
+		<widget name="key_red" position="174,1002" size="263,45" font="Regular;33" horizontalAlignment="left" verticalAlignment="center" transparent="1" noWrap="1" foregroundColor="fg3" backgroundColor="button-bot" zPosition="2" />
+		<widget name="key_green_pic" pixmap="v-buttons/key_green.png" position="429,1002" size="45,45" alphaTest="blend" zPosition="2" />
+		<widget name="key_green" position="474,1002" size="263,45" font="Regular;33" horizontalAlignment="left" verticalAlignment="center" transparent="1" noWrap="1" foregroundColor="fg3" backgroundColor="button-bot" zPosition="2" />
 	</screen>
 	
 	<!-- software management - install extensions -->
@@ -100,7 +100,7 @@
 				"itemHeight": 84
 				}</convert>
 		</widget>
-	        <widget source="status" render="Label" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="left" transparent="1" zPosition="2" />
+	        <widget source="status" render="Label" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="left" transparent="1" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 	
@@ -118,7 +118,7 @@
 				"itemHeight": 84
 				}</convert>
 		</widget>
-                <widget source="status" render="Label" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="left" transparent="1" zPosition="2" />
+                <widget source="status" render="Label" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="left" transparent="1" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 	

@@ -68,7 +68,7 @@
         <panel name="template1" />
         <panel name="h-separator-tr" />
         <panel name="title2" />
-        <ePixmap pixmap="o-backgrounds/setup-30-bg.png" alphatest="blend" position="527,344" size="942,660" zPosition="1" />
+        <ePixmap pixmap="o-backgrounds/setup-30-bg.png" alphaTest="blend" position="527,344" size="942,660" zPosition="1" />
         <widget name="list" textOffset="15,0" position="527,345" size="942,660" foregroundColor="white" backgroundColor="mid" font="Regular;30" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-30.png" itemHeight="45" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
         <panel name="New-Buttons" />
     </screen>
@@ -126,10 +126,10 @@
 				}</convert>
         </widget>
         <widget name="list" position="0,0" size="900,525" font="Regular;30" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-600-70.png" itemHeight="105" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
-        <ePixmap pixmap="buttons/key_red.png" position="0,e-45" size="38,38" alphatest="blend" />
-        <widget source="key_red" render="Label" position="45,e-48" size="375,38" font="Regular;30" foregroundColor="white" backgroundColor="messageboxbg" valign="center" noWrap="1" transparent="1" />
-        <ePixmap pixmap="buttons/key_yellow.png" position="450,e-45" size="38,38" alphatest="blend" zPosition="2" />
-        <widget source="key_yellow" render="Label" position="495,e-48" size="375,38" font="Regular;30" foregroundColor="white" backgroundColor="messageboxbg" valign="center" noWrap="1" transparent="1" />
+        <ePixmap pixmap="buttons/key_red.png" position="0,e-45" size="38,38" alphaTest="blend" />
+        <widget source="key_red" render="Label" position="45,e-48" size="375,38" font="Regular;30" foregroundColor="white" backgroundColor="messageboxbg" verticalAlignment="center" noWrap="1" transparent="1" />
+        <ePixmap pixmap="buttons/key_yellow.png" position="450,e-45" size="38,38" alphaTest="blend" zPosition="2" />
+        <widget source="key_yellow" render="Label" position="495,e-48" size="375,38" font="Regular;30" foregroundColor="white" backgroundColor="messageboxbg" verticalAlignment="center" noWrap="1" transparent="1" />
     </screen>
     
     <!-- CronTimer -->

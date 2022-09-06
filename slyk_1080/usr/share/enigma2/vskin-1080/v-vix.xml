@@ -6,12 +6,12 @@
 	
 	<screen name="VIXBackupManager" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="left" valign="top" transparent="1" />
-		<widget name="list" textOffset="15,3" position="129,345" size="1193,630"  font="Regular;33" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-42-1280-square.png" valign="center" enableWrapAround="1" itemHeight="63" scrollbarMode="showNever" transparent="1" zPosition="2" />
+		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="left" verticalAlignment="top" transparent="1" />
+		<widget name="list" textOffset="15,3" position="129,345" size="1193,630"  font="Regular;33" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-42-1280-square.png" verticalAlignment="center" enableWrapAround="1" itemHeight="63" scrollbarMode="showNever" transparent="1" zPosition="2" />
 		<widget name="backupstatus" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" />
-		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphatest="blend" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" />
+		<ePixmap pixmap="v-buttons/key_info.png" position="1658,1002" size="57,45" alphaTest="blend" />
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(63)</applet>
 	</screen>
 	
@@ -33,7 +33,7 @@
 	
 	<screen name="VIXIPKInstaller" position="0,0" size="1920,1080" title="IPK Installer" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="top" halign="left" transparent="1" />
+		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="top" horizontalAlignment="left" transparent="1" />
 		<widget name="list" textOffset="15,3" position="129,345" size="1193,630" font="Regular;33" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-30-1280-square.png" itemHeight="45" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(45)</applet>
@@ -41,18 +41,18 @@
 	
 	<screen name="VIXImageManager" position="0,0" size="1920,1080" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="left" valign="top" transparent="1" />
-		<widget name="list" textOffset="15,3" position="129,345" size="1193,630" font="Regular;33" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-42-1280-square.png" itemHeight="63" valign="center" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2" />
+		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="left" verticalAlignment="top" transparent="1" />
+		<widget name="list" textOffset="15,3" position="129,345" size="1193,630" font="Regular;33" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-42-1280-square.png" itemHeight="63" verticalAlignment="center" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2" />
 		<widget name="backupstatus" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(63)</applet>
 	</screen>
 	
 	<screen name="ImageManagerDownload" position="0,0" size="1920,1080" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="left" valign="top" transparent="1" zPosition="1" />
-		<widget name="list" textOffset="15,3" position="129,345" size="1193,630" font="Regular;33" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-42-1280-square.png" itemHeight="63" valign="center" enableWrapAround="1"  scrollbarMode="showNever" transparent="1" zPosition="2" />
+		<widget name="lab1" position="129,215" size="1185,113" font="Regular;38" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="left" verticalAlignment="top" transparent="1" zPosition="1" />
+		<widget name="list" textOffset="15,3" position="129,345" size="1193,630" font="Regular;33" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-42-1280-square.png" itemHeight="63" verticalAlignment="center" enableWrapAround="1"  scrollbarMode="showNever" transparent="1" zPosition="2" />
 		<widget name="backupstatus" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" />
   		<panel name="New-Buttons-Bot" />
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(63)</applet>
@@ -60,23 +60,23 @@
 	
 	<screen name="VIXSoftcamManager" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Softcam Setup">
 		<panel name="v-template2-pig" />
-		<widget name="lab1" position="129,215" size="255,45" font="Regular; 33" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="right" transparent="1" zPosition="2"/>
+		<widget name="lab1" position="129,215" size="255,45" font="Regular; 33" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="right" transparent="1" zPosition="2"/>
 		<widget name="list" position="407,215" size="360,150" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" transparent="1" scrollbarMode="showOnDemand" zPosition="2"/>
-		<widget name="lab2" position="129,365" size="255,45" font="Regular; 33" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="right" transparent="1" zPosition="2" />
-		<widget name="activecam" position="407,366" size="360,150" font="Regular; 30" foregroundColor="fg1" backgroundColor="bg-mm-dark" halign="left" transparent="1" noWrap="1" zPosition="2"/>
+		<widget name="lab2" position="129,365" size="255,45" font="Regular; 33" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="right" transparent="1" zPosition="2" />
+		<widget name="activecam" position="407,366" size="360,150" font="Regular; 30" foregroundColor="fg1" backgroundColor="bg-mm-dark" horizontalAlignment="left" transparent="1" noWrap="1" zPosition="2"/>
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" />
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(45)</applet>
 	</screen>
 	
 	<screen name="VIXStartCam" position="center,center" size="726,225" title="Starting Softcam">
-		<widget name="connect" position="303,0" size="120,120" zPosition="2" pixmaps="/usr/share/enigma2/vskin-1080/spinner/wait1.png,/usr/share/enigma2/vskin-1080/spinner/wait2.png,/usr/share/enigma2/vskin-1080/spinner/wait3.png,/usr/share/enigma2/vskin-1080/spinner/wait4.png,/usr/share/enigma2/vskin-1080/spinner/wait5.png,/usr/share/enigma2/vskin-1080/spinner/wait6.png,/usr/share/enigma2/vskin-1080/spinner/wait7.png,/usr/share/enigma2/vskin-1080/spinner/wait8.png" transparent="1" alphatest="blend" />
-		<widget name="lab1" position="15,135" halign="center" size="690,90" font="Regular;32" foregroundColor="fg1" backgroundColor="messagebox-bg" valign="top" transparent="1"  zPosition="1"  />
+		<widget name="connect" position="303,0" size="120,120" zPosition="2" pixmaps="/usr/share/enigma2/vskin-1080/spinner/wait1.png,/usr/share/enigma2/vskin-1080/spinner/wait2.png,/usr/share/enigma2/vskin-1080/spinner/wait3.png,/usr/share/enigma2/vskin-1080/spinner/wait4.png,/usr/share/enigma2/vskin-1080/spinner/wait5.png,/usr/share/enigma2/vskin-1080/spinner/wait6.png,/usr/share/enigma2/vskin-1080/spinner/wait7.png,/usr/share/enigma2/vskin-1080/spinner/wait8.png" transparent="1" alphaTest="blend" />
+		<widget name="lab1" position="15,135" horizontalAlignment="center" size="690,90" font="Regular;32" foregroundColor="fg1" backgroundColor="messagebox-bg" verticalAlignment="top" transparent="1"  zPosition="1"  />
 	</screen>
 	
 	<screen name="VIXStopCam" position="center,center" size="726,225" title="Starting Softcam">
-		<widget name="connect" position="303,15" size="120,120" zPosition="2" pixmaps="/usr/share/enigma2/vskin-1080/spinner/wait1.png,/usr/share/enigma2/vskin-1080/spinner/wait2.png,/usr/share/enigma2/vskin-1080/spinner/wait3.png,/usr/share/enigma2/vskin-1080/spinner/wait4.png,/usr/share/enigma2/vskin-1080/spinner/wait5.png,/usr/share/enigma2/vskin-1080/spinner/wait6.png,/usr/share/enigma2/vskin-1080/spinner/wait7.png,/usr/share/enigma2/vskin-1080/spinner/wait8.png" transparent="1" alphatest="blend" />
-		<widget name="lab1" position="15,135" halign="center" size="690,90" font="Regular;32" foregroundColor="fg1" backgroundColor="messagebox-bg" valign="top" transparent="1"  zPosition="1"  />
+		<widget name="connect" position="303,15" size="120,120" zPosition="2" pixmaps="/usr/share/enigma2/vskin-1080/spinner/wait1.png,/usr/share/enigma2/vskin-1080/spinner/wait2.png,/usr/share/enigma2/vskin-1080/spinner/wait3.png,/usr/share/enigma2/vskin-1080/spinner/wait4.png,/usr/share/enigma2/vskin-1080/spinner/wait5.png,/usr/share/enigma2/vskin-1080/spinner/wait6.png,/usr/share/enigma2/vskin-1080/spinner/wait7.png,/usr/share/enigma2/vskin-1080/spinner/wait8.png" transparent="1" alphaTest="blend" />
+		<widget name="lab1" position="15,135" horizontalAlignment="center" size="690,90" font="Regular;32" foregroundColor="fg1" backgroundColor="messagebox-bg" verticalAlignment="top" transparent="1"  zPosition="1"  />
 	</screen>
 	
 	<screen name="VIXSoftcamLog" position="center,center" size="840,600">

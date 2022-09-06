@@ -18,7 +18,7 @@
                         </convert>
 		</widget>
 	
-	        <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphatest="blend" zPosition="2" />
+	        <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphaTest="blend" zPosition="2" />
 	       	<panel name="whatson-top" />
        		<panel name="whatson-right" />
 		<!--<panel name="New-Buttons" /> -->
@@ -31,7 +31,7 @@
 		<panel name="title2" />
 		<panel name="config" />
 		<panel name="New-Buttons" />
-                <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphatest="blend" zPosition="2" />
+                <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphaTest="blend" zPosition="2" />
 	</screen>
 	
 	<!-- settings screens -->

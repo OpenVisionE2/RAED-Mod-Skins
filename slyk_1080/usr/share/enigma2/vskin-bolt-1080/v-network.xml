@@ -35,67 +35,67 @@
 	<!-- system - network - device setup - Adapter setup -->
 	<screen name="AdapterSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="config" textOffset="15,0" position="129,215" size="1185,270" font="Regular;32" secondfont="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-30-1280-square.png" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2" />
-		<widget source="introduction" render="Label" position="129,500" size="1185,45" font="Regular;32" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" halign="center" transparent="0" />
-		<widget source="DNS1text" render="Label" position="129,560" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget source="DNS1" render="Label" position="729,560" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" halign="right" transparent="1" />
-		<widget source="DNS2text" render="Label" position="129,605" size="585,45" font="Regular;32" valign="center" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="DNS2" render="Label" position="729,605" size="585,45" font="Regular;32" valign="center" halign="right" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<ePixmap pixmap="div-h.png" position="129,681" zPosition="1" size="1185,3" alphatest="blend" />
-		<widget source="IPtext" render="Label" position="129,695" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget source="IP" render="Label" position="729,695" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" halign="right" transparent="1" />
-		<widget source="Netmasktext" render="Label" position="129,740" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget source="Mask" render="Label" position="729,740" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" halign="right" transparent="1" />
-		<widget source="Gatewaytext" render="Label" position="129,785" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget source="Gateway" render="Label" position="729,785" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" halign="right" transparent="1" />
-		<widget source="Adaptertext" render="Label" position="129,830" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget source="Adapter" render="Label" position="729,830" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" halign="right" transparent="1" />
-		<ePixmap pixmap="div-h.png" position="129,900" zPosition="1" size="1185,3" alphatest="blend" />
-		<widget source="introduction2" render="Label" position="129,914" size="1185,45" font="Regular;32" foregroundColor="fg2" backgroundColor="bg-mm-dark" halign="center" valign="center" transparent="1" />
+		<widget name="config" textOffset="15,0" position="129,215" size="1185,270" font="Regular;32" valueFont="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-30-1280-square.png" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2" />
+		<widget source="introduction" render="Label" position="129,500" size="1185,45" font="Regular;32" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" horizontalAlignment="center" transparent="0" />
+		<widget source="DNS1text" render="Label" position="129,560" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget source="DNS1" render="Label" position="729,560" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" horizontalAlignment="right" transparent="1" />
+		<widget source="DNS2text" render="Label" position="129,605" size="585,45" font="Regular;32" verticalAlignment="center" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="DNS2" render="Label" position="729,605" size="585,45" font="Regular;32" verticalAlignment="center" horizontalAlignment="right" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<ePixmap pixmap="div-h.png" position="129,681" zPosition="1" size="1185,3" alphaTest="blend" />
+		<widget source="IPtext" render="Label" position="129,695" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget source="IP" render="Label" position="729,695" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" horizontalAlignment="right" transparent="1" />
+		<widget source="Netmasktext" render="Label" position="129,740" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget source="Mask" render="Label" position="729,740" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" horizontalAlignment="right" transparent="1" />
+		<widget source="Gatewaytext" render="Label" position="129,785" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget source="Gateway" render="Label" position="729,785" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" horizontalAlignment="right" transparent="1" />
+		<widget source="Adaptertext" render="Label" position="129,830" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget source="Adapter" render="Label" position="729,830" size="585,45" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" horizontalAlignment="right" transparent="1" />
+		<ePixmap pixmap="div-h.png" position="129,900" zPosition="1" size="1185,3" alphaTest="blend" />
+		<widget source="introduction2" render="Label" position="129,914" size="1185,45" font="Regular;32" foregroundColor="fg2" backgroundColor="bg-mm-dark" horizontalAlignment="center" verticalAlignment="center" transparent="1" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 	
 	<!-- system - network - device setup -->
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template1-des-pig" />
-		<ePixmap pixmap="v-backgrounds/main-menu-bg.png" position="150,377" size="828,704" alphatest="blend" />
+		<ePixmap pixmap="v-backgrounds/main-menu-bg.png" position="150,377" size="828,704" alphaTest="blend" />
 		<widget name="menulist" textOffset="138,12" position="162,428" size="804,653" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-536-lr.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="2" />
 		<panel name="description" />
-		<widget source="IFtext" render="Label" position="300,360" size="135,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-mm" valign="center" halign="left" noWrap="1" transparent="1" />
-		<widget source="IF" render="Label" position="437,360" size="285,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-mm" valign="center" halign="left" noWrap="1" transparent="1" />
-		<widget source="Statustext" render="Label" position="825,360" size="90,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-mm" valign="center" halign="left" noWrap="1" transparent="1" />
-		<widget name="statuspic" position="915,371" size="23,24" pixmaps="buttons/button_green.png,buttons/button_red.png" alphatest="blend" />
+		<widget source="IFtext" render="Label" position="300,360" size="135,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="left" noWrap="1" transparent="1" />
+		<widget source="IF" render="Label" position="437,360" size="285,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="left" noWrap="1" transparent="1" />
+		<widget source="Statustext" render="Label" position="825,360" size="90,45" font="Regular;33" foregroundColor="fg2" backgroundColor="bg-mm" verticalAlignment="center" horizontalAlignment="left" noWrap="1" transparent="1" />
+		<widget name="statuspic" position="915,371" size="23,24" pixmaps="buttons/button_green.png,buttons/button_red.png" alphaTest="blend" />
 	</screen>
 	
 	<!-- system - network - device setup - network test -->
 	<screen name="NetworkAdapterTest" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Network test...">
 		<panel name="v-template2-pig" />
-		<widget name="Adaptertext" position="129,284" size="300,57" valign="center" halign="left" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget name="Adapter" position="459,284" size="405,57" valign="center" halign="left" font="Regular;32" transparent="1" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
-		<widget name="AdapterInfo_OK" position="774,290" size="57,47" pixmap="icons/lock_on.png" alphatest="blend" />
-		<widget name="AdapterInfo_Text" position="864,284" size="180,57" halign="left" valign="center" font="Regular;26" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
-		<ePixmap pixmap="div-h.png" position="129,374" size="1185,3" alphatest="blend" />
-		<widget name="Networktext" position="129,407" size="300,57" valign="center" halign="left" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
-		<widget name="Network" position="459,407" size="360,57" valign="center" halign="left" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
-		<widget name="NetworkInfo_Check" position="774,413" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend" />
-		<widget name="NetworkInfo_Text" position="864,407" size="180,57" halign="left" valign="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
-		<ePixmap pixmap="div-h.png" position="129,497" size="1185,3" alphatest="blend" />
-		<widget name="Dhcptext" position="129,530" size="300,57" valign="center" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
-		<widget name="Dhcp" position="459,530" size="360,57" valign="center" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
-		<widget name="DhcpInfo_Check" position="774,536" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend" />
-		<widget name="DhcpInfo_Text" position="864,530" size="180,57" halign="left" valign="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
-		<ePixmap pixmap="div-h.png" position="129,620" size="1185,3" alphatest="blend" />
-		<widget name="IPtext" position="129,653" size="300,57" valign="center" halign="left" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
-		<widget name="IP" position="459,653" size="360,57" valign="center" halign="left" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
-		<widget name="IPInfo_Check" position="774,659" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend" />
-		<widget name="IPInfo_Text" position="864,653" size="180,57" halign="left" valign="center" font="Regular;27" transparent="1" foregroundColors="fg1,fg2,fg3" backgroundColor="bg-mm-dark" />
-		<ePixmap pixmap="div-h.png" position="129,743" size="1185,3" alphatest="blend" />
-		<widget name="DNStext" position="129,776" size="300,57" valign="center" halign="left" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
-		<widget name="DNS" position="459,776" size="360,57" valign="center" halign="left" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
-		<widget name="DNSInfo_Check" position="774,782" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend" />
-		<widget name="DNSInfo_Text" position="864,776" size="180,57" halign="left" valign="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
-		<ePixmap pixmap="div-h.png" position="129,866" size="1185,3" alphatest="blend" />
-		<widget name="EditSettings_Text" position="864,899" size="180,57" halign="left" valign="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
+		<widget name="Adaptertext" position="129,284" size="300,57" verticalAlignment="center" horizontalAlignment="left" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget name="Adapter" position="459,284" size="405,57" verticalAlignment="center" horizontalAlignment="left" font="Regular;32" transparent="1" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
+		<widget name="AdapterInfo_OK" position="774,290" size="57,47" pixmap="icons/lock_on.png" alphaTest="blend" />
+		<widget name="AdapterInfo_Text" position="864,284" size="180,57" horizontalAlignment="left" verticalAlignment="center" font="Regular;26" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
+		<ePixmap pixmap="div-h.png" position="129,374" size="1185,3" alphaTest="blend" />
+		<widget name="Networktext" position="129,407" size="300,57" verticalAlignment="center" horizontalAlignment="left" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
+		<widget name="Network" position="459,407" size="360,57" verticalAlignment="center" horizontalAlignment="left" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
+		<widget name="NetworkInfo_Check" position="774,413" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphaTest="blend" />
+		<widget name="NetworkInfo_Text" position="864,407" size="180,57" horizontalAlignment="left" verticalAlignment="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
+		<ePixmap pixmap="div-h.png" position="129,497" size="1185,3" alphaTest="blend" />
+		<widget name="Dhcptext" position="129,530" size="300,57" verticalAlignment="center" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
+		<widget name="Dhcp" position="459,530" size="360,57" verticalAlignment="center" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
+		<widget name="DhcpInfo_Check" position="774,536" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphaTest="blend" />
+		<widget name="DhcpInfo_Text" position="864,530" size="180,57" horizontalAlignment="left" verticalAlignment="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
+		<ePixmap pixmap="div-h.png" position="129,620" size="1185,3" alphaTest="blend" />
+		<widget name="IPtext" position="129,653" size="300,57" verticalAlignment="center" horizontalAlignment="left" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
+		<widget name="IP" position="459,653" size="360,57" verticalAlignment="center" horizontalAlignment="left" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
+		<widget name="IPInfo_Check" position="774,659" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphaTest="blend" />
+		<widget name="IPInfo_Text" position="864,653" size="180,57" horizontalAlignment="left" verticalAlignment="center" font="Regular;27" transparent="1" foregroundColors="fg1,fg2,fg3" backgroundColor="bg-mm-dark" />
+		<ePixmap pixmap="div-h.png" position="129,743" size="1185,3" alphaTest="blend" />
+		<widget name="DNStext" position="129,776" size="300,57" verticalAlignment="center" horizontalAlignment="left" transparent="1" font="Regular;32" foregroundColors="fg1,fg1" backgroundColor="bg-mm-dark" />
+		<widget name="DNS" position="459,776" size="360,57" verticalAlignment="center" horizontalAlignment="left" transparent="1" font="Regular;32" foregroundColors="fg3,red,green" backgroundColor="bg-mm-dark" />
+		<widget name="DNSInfo_Check" position="774,782" size="57,47" pixmaps="icons/lock_on.png,icons/lock_error.png" alphaTest="blend" />
+		<widget name="DNSInfo_Text" position="864,776" size="180,57" horizontalAlignment="left" verticalAlignment="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
+		<ePixmap pixmap="div-h.png" position="129,866" size="1185,3" alphaTest="blend" />
+		<widget name="EditSettings_Text" position="864,899" size="180,57" horizontalAlignment="left" verticalAlignment="center" font="Regular;27" transparent="1" foregroundColors="fg3,fg2,fg1" backgroundColor="bg-mm-dark" />
 		<widget name="InfoText" position="1383,428" size="417,653" font="Regular;27" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
@@ -103,7 +103,7 @@
 	<!-- system - network - mounts setup  -->
 	<screen name="NetworkMountsMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Network Mounts Menu">
 		<panel name="v-template1-des-pig" />
-		<ePixmap pixmap="v-backgrounds/main-menu-bg.png" position="150,377" size="828,704" alphatest="blend" />
+		<ePixmap pixmap="v-backgrounds/main-menu-bg.png" position="150,377" size="828,704" alphaTest="blend" />
 		<widget name="menulist" textOffset="138,12" position="162,428" size="804,653" font="Regular;42" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-536-lr.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" scrollbarMode="showNever" enableWrapAround="1" transparent="1" zPosition="2" />
 		<panel name="introduction" />
 	</screen>
@@ -145,26 +145,26 @@
 	
 	<screen name="NetworkInadyn" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="autostart" position="129,215" size="300,60" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labdisabled" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" valign="center" halign="center" transparent="0" />
-		<widget name="labactive" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" valign="center" halign="center" transparent="0" />
-		<widget name="status" position="729,215" size="300,60" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labstop" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" valign="center" halign="center" zPosition="1" />
-		<widget name="labrun" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" valign="center" halign="center" zPosition="2" />
-		<widget name="time" position="129,359" size="345,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labtime" position="489,359" size="150,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" />
-		<widget name="username" position="129,434" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labuser" position="369,434" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" />
-		<widget name="password" position="129,509" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labpass" position="369,509" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" />
-		<widget name="alias" position="129,584" size="338,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labalias" position="369,584" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" />
-		<widget name="sinactive" position="129,659" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" zPosition="1" />
-		<widget name="sactive" position="129,659" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" zPosition="2" />
-		<widget name="system" position="189,659" size="150,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labsys" position="369,659" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" />
+		<widget name="autostart" position="129,215" size="300,60" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labdisabled" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" verticalAlignment="center" horizontalAlignment="center" transparent="0" />
+		<widget name="labactive" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" verticalAlignment="center" horizontalAlignment="center" transparent="0" />
+		<widget name="status" position="729,215" size="300,60" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labstop" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" verticalAlignment="center" horizontalAlignment="center" zPosition="1" />
+		<widget name="labrun" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" verticalAlignment="center" horizontalAlignment="center" zPosition="2" />
+		<widget name="time" position="129,359" size="345,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labtime" position="489,359" size="150,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="username" position="129,434" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labuser" position="369,434" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="password" position="129,509" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labpass" position="369,509" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="alias" position="129,584" size="338,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labalias" position="369,584" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="sinactive" position="129,659" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" zPosition="1" />
+		<widget name="sactive" position="129,659" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" zPosition="2" />
+		<widget name="system" position="189,659" size="150,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labsys" position="369,659" size="675,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" />
 	</screen>
 	
 	<screen name="NetworkInadynSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -174,36 +174,36 @@
 	
 	<screen name="NetworkuShare" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="autostart" position="129,215" size="300,60" font="Regular;36" valign="center" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget name="labdisabled" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" valign="center" halign="center" transparent="0" zPosition="2" />
-		<widget name="labactive" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" valign="center" halign="center" transparent="0" zPosition="2" />
-		<widget name="status" position="729,215" size="300,60" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labstop" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" valign="center" halign="center" zPosition="1" />
-		<widget name="labrun" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" valign="center" halign="center" zPosition="2" />
-		<widget name="username" position="129,339" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labuser" position="354,339" size="465,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" />
-		<widget name="iface" position="129,395" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labiface" position="354,395" size="465,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" />
-		<widget name="port" position="129,455" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labport" position="354,455" size="465,45" font="Regular;30" backgroundColor="highlightBG" valign="center" />
-		<widget name="telnetport" position="129,515" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labtelnetport" position="354,515" size="465,45" font="Regular;30" backgroundColor="highlightBG" valign="center" />
-		<widget name="sharedir" position="129,575" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="labsharedir" position="354,575" size="465,135" font="Regular;30" valign="top" backgroundColor="highlightBG" />
-		<widget name="web" position="129,725" size="270,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="webinactive" position="459,725" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" />
-		<widget name="webactive" position="459,725" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" />
-		<widget name="telnet" position="129,785" size="270,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="telnetinactive" position="459,785" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" />
-		<widget name="telnetactive" position="459,785" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" />
-		<widget name="xbox" position="129,845" size="300,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="xboxinactive" position="459,845" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" />
-		<widget name="xboxactive" position="459,845" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" />
-		<widget name="dlna" position="129,905" size="300,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" valign="center" transparent="1" />
-		<widget name="dlnainactive" position="459,905" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" />
-		<widget name="dlnaactive" position="459,905" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" />
+		<widget name="autostart" position="129,215" size="300,60" font="Regular;36" verticalAlignment="center" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget name="labdisabled" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" verticalAlignment="center" horizontalAlignment="center" transparent="0" zPosition="2" />
+		<widget name="labactive" position="399,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" verticalAlignment="center" horizontalAlignment="center" transparent="0" zPosition="2" />
+		<widget name="status" position="729,215" size="300,60" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labstop" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="red" verticalAlignment="center" horizontalAlignment="center" zPosition="1" />
+		<widget name="labrun" position="1089,215" size="180,60" font="Regular;36" foregroundColor="fg1" backgroundColor="green" verticalAlignment="center" horizontalAlignment="center" zPosition="2" />
+		<widget name="username" position="129,339" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labuser" position="354,339" size="465,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="iface" position="129,395" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labiface" position="354,395" size="465,45" font="Regular;30" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="port" position="129,455" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labport" position="354,455" size="465,45" font="Regular;30" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="telnetport" position="129,515" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labtelnetport" position="354,515" size="465,45" font="Regular;30" backgroundColor="highlightBG" verticalAlignment="center" />
+		<widget name="sharedir" position="129,575" size="225,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="labsharedir" position="354,575" size="465,135" font="Regular;30" verticalAlignment="top" backgroundColor="highlightBG" />
+		<widget name="web" position="129,725" size="270,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="webinactive" position="459,725" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" />
+		<widget name="webactive" position="459,725" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" />
+		<widget name="telnet" position="129,785" size="270,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="telnetinactive" position="459,785" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" />
+		<widget name="telnetactive" position="459,785" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" />
+		<widget name="xbox" position="129,845" size="300,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="xboxinactive" position="459,845" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" />
+		<widget name="xboxactive" position="459,845" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" />
+		<widget name="dlna" position="129,905" size="300,45" font="Regular;30" foregroundColor="fg1" backgroundColor="bg-mm-dark" verticalAlignment="center" transparent="1" />
+		<widget name="dlnainactive" position="459,905" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" />
+		<widget name="dlnaactive" position="459,905" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
 	</screen>
 	
 	<screen name="NetworkuShareSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -213,39 +213,39 @@
 	
 	<screen name="uShareSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="checkList" position="129,215" size="1193,720" font="Regular;32" secondfont="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" backgroundColorSelected="selected" foregroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-1280-square.png" scrollbarMode="showOnDemand" itemHeight="75" enableWrapAround="1" transparent="1" zPosition="2" />
+		<widget name="checkList" position="129,215" size="1193,720" font="Regular;32" valueFont="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" backgroundColorSelected="selected" foregroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-1280-square.png" scrollbarMode="showOnDemand" itemHeight="75" enableWrapAround="1" transparent="1" zPosition="2" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 	
 	<screen name="NetworkMiniDLNA" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget name="autostart" position="129,215" size="300,60" font="Regular;36" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="labdisabled" position="399,215" size="180,60" font="Regular;36" valign="center" halign="center" transparent="0" foregroundColor="fg1" backgroundColor="red" zPosition="2" />
-		<widget name="labactive" position="399,215" size="180,60" font="Regular;36" valign="center" halign="center" transparent="0" foregroundColor="fg1" backgroundColor="green" zPosition="2" />
-		<widget name="status" position="729,215" size="300,60" font="Regular;36" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="labstop" position="1089,215" size="180,60" font="Regular;36" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labrun" position="1089,215" size="180,60" font="Regular;36" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-		<widget name="username" position="129,339" size="225,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="labuser" position="354,339" size="465,45" font="Regular;30" valign="center" backgroundColor="highlightBG" />
-		<widget name="iface" position="129,395" size="225,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="labiface" position="354,395" size="465,45" font="Regular;30" valign="center" backgroundColor="highlightBG" />
-		<widget name="port" position="129,455" size="225,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="labport" position="354,455" size="465,45" font="Regular;30" valign="center" backgroundColor="highlightBG" />
-		<widget name="serialno" position="129,515" size="225,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="labserialno" position="354,515" size="465,45" font="Regular;30" valign="center" backgroundColor="highlightBG" />
-		<widget name="sharedir" position="129,575" size="225,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="labsharedir" position="354,575" size="465,135" font="Regular;30" valign="top" backgroundColor="highlightBG" />
-		<widget name="inotify" position="129,725" size="270,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="inotifyinactive" position="459,725" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" />
-		<widget name="inotifyactive" position="459,725" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" />
-		<widget name="tivo" position="129,785" size="270,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="tivoinactive" position="459,785" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" />
-		<widget name="tivoactive" position="459,785" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" />
-		<widget name="dlna" position="129,845" size="300,45" font="Regular;30" valign="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
-		<widget name="dlnainactive" position="459,845" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphatest="blend" />
-		<widget name="dlnaactive" position="459,845" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphatest="blend" />
+		<widget name="autostart" position="129,215" size="300,60" font="Regular;36" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="labdisabled" position="399,215" size="180,60" font="Regular;36" verticalAlignment="center" horizontalAlignment="center" transparent="0" foregroundColor="fg1" backgroundColor="red" zPosition="2" />
+		<widget name="labactive" position="399,215" size="180,60" font="Regular;36" verticalAlignment="center" horizontalAlignment="center" transparent="0" foregroundColor="fg1" backgroundColor="green" zPosition="2" />
+		<widget name="status" position="729,215" size="300,60" font="Regular;36" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="labstop" position="1089,215" size="180,60" font="Regular;36" verticalAlignment="center" horizontalAlignment="center" backgroundColor="red" zPosition="1" />
+		<widget name="labrun" position="1089,215" size="180,60" font="Regular;36" verticalAlignment="center" horizontalAlignment="center" backgroundColor="green" zPosition="2" />
+		<widget name="username" position="129,339" size="225,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="labuser" position="354,339" size="465,45" font="Regular;30" verticalAlignment="center" backgroundColor="highlightBG" />
+		<widget name="iface" position="129,395" size="225,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="labiface" position="354,395" size="465,45" font="Regular;30" verticalAlignment="center" backgroundColor="highlightBG" />
+		<widget name="port" position="129,455" size="225,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="labport" position="354,455" size="465,45" font="Regular;30" verticalAlignment="center" backgroundColor="highlightBG" />
+		<widget name="serialno" position="129,515" size="225,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="labserialno" position="354,515" size="465,45" font="Regular;30" verticalAlignment="center" backgroundColor="highlightBG" />
+		<widget name="sharedir" position="129,575" size="225,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="labsharedir" position="354,575" size="465,135" font="Regular;30" verticalAlignment="top" backgroundColor="highlightBG" />
+		<widget name="inotify" position="129,725" size="270,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="inotifyinactive" position="459,725" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" />
+		<widget name="inotifyactive" position="459,725" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" />
+		<widget name="tivo" position="129,785" size="270,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="tivoinactive" position="459,785" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" />
+		<widget name="tivoactive" position="459,785" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" />
+		<widget name="dlna" position="129,845" size="300,45" font="Regular;30" verticalAlignment="center" transparent="1" foregroundColor="fg1" backgroundColor="bg-mm-dark" />
+		<widget name="dlnainactive" position="459,845" zPosition="1" pixmap="icons/lock_off.png" size="48,48" alphaTest="blend" />
+		<widget name="dlnaactive" position="459,845" zPosition="2" pixmap="icons/lock_on.png" size="48,48" alphaTest="blend" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_menu.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
 	</screen>
 	
 	<screen name="NetworkMiniDLNASetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -281,9 +281,9 @@
 	<!-- system - network - mounts setup - Mount Manager - MountPoints management-->
 	<screen name="AutoMountView" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget source="legend1" render="Label" position="129,215" size="195,75" font="Regular;27" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" halign="center" transparent="0" zPosition="1" />
-		<widget source="legend2" render="Label" position="354,215" size="735,75" font="Regular;27" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" halign="center" transparent="0" zPosition="1" />
-		<widget source="legend3" render="Label" position="1119,215" size="195,75" font="Regular;27" foregroundColor="fg1" backgroundColor="highlightBG" valign="center" halign="center" transparent="0" zPosition="1" />
+		<widget source="legend1" render="Label" position="129,215" size="195,75" font="Regular;27" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" horizontalAlignment="center" transparent="0" zPosition="1" />
+		<widget source="legend2" render="Label" position="354,215" size="735,75" font="Regular;27" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" horizontalAlignment="center" transparent="0" zPosition="1" />
+		<widget source="legend3" render="Label" position="1119,215" size="195,75" font="Regular;27" foregroundColor="fg1" backgroundColor="highlightBG" verticalAlignment="center" horizontalAlignment="center" transparent="0" zPosition="1" />
 		<widget source="config" render="Listbox" position="0,320" size="1314,600" foregroundColor="fg1" backgroundColor="bg-mm-dark" foregroundColorSelected="selected" backgroundColorSelected="selected-gfx-bg" selectionPixmap="v-selectbars/selectbar-876-r.png" backgroundPixmap="v-selectbars/selectbar-bg.png" itemHeight="75" enableWrapAround="1" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">{"template": [
                                                         MultiContentEntryPixmapAlphaBlend(pos = (189, 2), size = (72, 72), png = 0), # index 0 is the isMounted pixmap
@@ -299,7 +299,7 @@
 		</widget>
 		<panel name="introduction" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_ok.png" position="1745,1002" size="57,45" alphatest="blend" />
+		<ePixmap pixmap="v-buttons/key_ok.png" position="1745,1002" size="57,45" alphaTest="blend" />
 	</screen>
 	
 	<!-- system - network - mounts setup - Mount Manager - user management-->
@@ -315,7 +315,7 @@
 					}</convert>
 		</widget>
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_ok.png" position="1745,1002" size="57,45" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_ok.png" position="1745,1002" size="57,45" alphaTest="blend" zPosition="3" />
 		<panel name="introduction" />
 	</screen>
 	
@@ -345,7 +345,7 @@
 		</widget>
 		<widget source="infotext" render="Label" position="1383,428" size="417,653" font="Regular;36" foregroundColor="fg1" backgroundColor="bg-mr" transparent="1" />
 		<panel name="New-Buttons-Bot" />
-		<ePixmap pixmap="v-buttons/key_ok.png" position="1745,1002" size="57,45" transparent="1" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="v-buttons/key_ok.png" position="1745,1002" size="57,45" transparent="1" alphaTest="blend" zPosition="3" />
 	</screen>
 	
 	<!-- system - network - mounts setup - network browser - expert -->
@@ -359,23 +359,23 @@
 	<!-- see SystemNetworkInfo - information -->
 	<screen name="WlanStatus" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="v-template2-pig" />
-		<widget source="LabelBSSID" render="Label" position="129,284" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="BSSID" render="Label" position="369,284" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="LabelESSID" render="Label" position="129,344" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="ESSID" render="Label" position="369,344" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="LabelQuality" render="Label" position="129,404" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="quality" render="Label" position="369,404" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="LabelSignal" render="Label" position="129,464" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="signal" render="Label" position="369,464" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="LabelBitrate" render="Label" position="129,524" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="bitrate" render="Label" position="369,524" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="LabelEnc" render="Label" position="129,584" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="enc" render="Label" position="369,584" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<ePixmap position="129,839" size="1185,3" pixmap="div-h.png" alphatest="blend" />
-		<widget source="IFtext" render="Label" position="129,854" size="180,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="IF" render="Label" position="369,854" size="563,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget source="Statustext" render="Label" position="129,900" size="173,45" valign="center" halign="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
-		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="369,911" zPosition="10" size="23,24" alphatest="blend" />
+		<widget source="LabelBSSID" render="Label" position="129,284" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="BSSID" render="Label" position="369,284" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="LabelESSID" render="Label" position="129,344" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="ESSID" render="Label" position="369,344" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="LabelQuality" render="Label" position="129,404" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="quality" render="Label" position="369,404" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="LabelSignal" render="Label" position="129,464" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="signal" render="Label" position="369,464" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="LabelBitrate" render="Label" position="129,524" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="bitrate" render="Label" position="369,524" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="LabelEnc" render="Label" position="129,584" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="enc" render="Label" position="369,584" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<ePixmap position="129,839" size="1185,3" pixmap="div-h.png" alphaTest="blend" />
+		<widget source="IFtext" render="Label" position="129,854" size="180,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="IF" render="Label" position="369,854" size="563,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget source="Statustext" render="Label" position="129,900" size="173,45" verticalAlignment="center" horizontalAlignment="left" zPosition="10" font="Regular;32" foregroundColor="fg1" backgroundColor="bg-mm-dark" transparent="1" />
+		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="369,911" zPosition="10" size="23,24" alphaTest="blend" />
 		<panel name="New-Buttons-Bot" />
 	</screen>
 </skin>

@@ -4,7 +4,7 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphaTest="blend" zPosition="2" />
 		<panel name="whatson-top" />
 		<panel name="whatson-right" />
 		<widget name="menu" textOffset="15,15" position="527,321" size="954,645" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" font="Regular;35" transparent="1" enableWrapAround="1" scrollbarMode="showNever" />
@@ -14,9 +14,9 @@
 	<!-- movie planner eventview -->
 	<screen name="EventViewSimple" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
 		<eLabel position="0,732" size="1920,348" backgroundColor="blackglass" transparent="0" zPosition="-2" />
-		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar1.png" alphatest="blend" zPosition="-1" />
+		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar1.png" alphaTest="blend" zPosition="-1" />
 		<!-- record icon -->
-		<widget render="Pixmap" pixmap="o-icons/record.png" source="session.RecordState" position="945,717" size="30,30" alphatest="blend" zPosition="6">
+		<widget render="Pixmap" pixmap="o-icons/record.png" source="session.RecordState" position="945,717" size="30,30" alphaTest="blend" zPosition="6">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- picons / xpicons - see picons.xml -->
@@ -24,11 +24,11 @@
 		<panel name="date" />
 		<panel name="infobar-icons" />
 		<!-- progress bar -->
-		<ePixmap position="999,1038" size="327,6" pixmap="o-infobars/220-progress-bg.png" alphatest="blend" zPosition="1" />
+		<ePixmap position="999,1038" size="327,6" pixmap="o-infobars/220-progress-bg.png" alphaTest="blend" zPosition="1" />
 		<widget source="Event" render="Progress" position="998,1037" size="330,9" pixmap="o-infobars/220-progress.png" transparent="1" zPosition="2">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<ePixmap position="998,1037" size="330,9" pixmap="o-infobars/220-progress-border.png" alphatest="blend" zPosition="3" />
+		<ePixmap position="998,1037" size="330,9" pixmap="o-infobars/220-progress-border.png" alphaTest="blend" zPosition="3" />
 		<widget source="Service" render="Label" position="527,750" size="450,45" font="Bold;35" foregroundColor="white" backgroundColor="blackglass" transparent="1">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
@@ -54,9 +54,9 @@
 	
 	<screen name="EventView" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
 		<eLabel position="0,732" size="1920,348" backgroundColor="blackglass" transparent="0" zPosition="-2" />
-		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar1.png" alphatest="blend" zPosition="-1" />
+		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar1.png" alphaTest="blend" zPosition="-1" />
 		<!-- record icon -->
-		<widget render="Pixmap" pixmap="o-icons/record.png" source="session.RecordState" position="945,717" size="30,30" alphatest="blend" zPosition="6">
+		<widget render="Pixmap" pixmap="o-icons/record.png" source="session.RecordState" position="945,717" size="30,30" alphaTest="blend" zPosition="6">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- picons / xpicons - see picons.xml -->
@@ -70,7 +70,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- started xx mins ago -->
-		<widget source="Event" render="Label" position="1044,750" size="360,75" font="Regular;35" halign="right" foregroundColor="white" backgroundColor="blackglass" transparent="1">
+		<widget source="Event" render="Label" position="1044,750" size="360,75" font="Regular;35" horizontalAlignment="right" foregroundColor="white" backgroundColor="blackglass" transparent="1">
 			<convert type="EventTime">Elapsed</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
@@ -78,11 +78,11 @@
 			<panel name="channel-icons" />
 		</panel>
 		<!-- progress bar -->
-		<ePixmap position="1493,855" size="384,6" pixmap="o-infobars/256-progress-bg.png" alphatest="blend" zPosition="1" />
+		<ePixmap position="1493,855" size="384,6" pixmap="o-infobars/256-progress-bg.png" alphaTest="blend" zPosition="1" />
 		<widget source="Event" render="Progress" position="1491,854" size="387,9" pixmap="o-infobars/258-progress.png" transparent="1" zPosition="2">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<ePixmap position="1491,854" size="387,9" pixmap="o-infobars/258-progress-border.png" alphatest="blend" zPosition="3" />
+		<ePixmap position="1491,854" size="387,9" pixmap="o-infobars/258-progress-border.png" alphaTest="blend" zPosition="3" />
 		<!-- programme duration -->
 		<eLabel text="Duration:" position="1491,935" size="135,39" foregroundColor="white" backgroundColor="blackglass" font="Regular;30" transparent="1" />
 		<widget source="Event" render="Label" position="1626,935" size="252,39" foregroundColor="white" backgroundColor="blackglass" font="Regular;30" transparent="1">
@@ -90,9 +90,9 @@
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
 		<panel name="New-Buttons" />
-		<ePixmap pixmap="o-backgrounds/v-divider.png" position="809 ,1005" size="3,75" alphatest="blend" zPosition="5" />
-		<ePixmap pixmap="o-backgrounds/v-divider.png" position="1128,1005" size="3,75" alphatest="blend" zPosition="5" />
-		<ePixmap pixmap="o-backgrounds/v-divider.png" position="1767,1005" size="3,75" alphatest="blend" zPosition="5" />
+		<ePixmap pixmap="o-backgrounds/v-divider.png" position="809 ,1005" size="3,75" alphaTest="blend" zPosition="5" />
+		<ePixmap pixmap="o-backgrounds/v-divider.png" position="1128,1005" size="3,75" alphaTest="blend" zPosition="5" />
+		<ePixmap pixmap="o-backgrounds/v-divider.png" position="1767,1005" size="3,75" alphaTest="blend" zPosition="5" />
 		<panel name="MenuButton" />
 	</screen>
 </skin>

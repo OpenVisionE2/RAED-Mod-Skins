@@ -18,50 +18,50 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<ePixmap pixmap="o-backgrounds/2box.png" alphatest="blend" position="525,62" size="947,168" zPosition="1" />
-		<eLabel text="SNR:" position="705,65" size="90,54" font="Regular;32" valign="center" halign="right" foregroundColor="white" backgroundColor="mid" transparent="1" />
-		<ePixmap position="807,89" size="387,6" pixmap="o-progressbars/258-progress-bg.png" alphatest="blend" zPosition="1" />
-		<ePixmap position="806,87" size="390,9" pixmap="o-progressbars/260-progress-border.png" alphatest="blend" zPosition="4" />
-		<widget source="Frontend" render="Progress" position="806,87" size="390,9" pixmap="o-progressbars/260-progress.png" transparent="1" alphatest="blend" zPosition="3">
+		<ePixmap pixmap="o-backgrounds/2box.png" alphaTest="blend" position="525,62" size="947,168" zPosition="1" />
+		<eLabel text="SNR:" position="705,65" size="90,54" font="Regular;32" verticalAlignment="center" horizontalAlignment="right" foregroundColor="white" backgroundColor="mid" transparent="1" />
+		<ePixmap position="807,89" size="387,6" pixmap="o-progressbars/258-progress-bg.png" alphaTest="blend" zPosition="1" />
+		<ePixmap position="806,87" size="390,9" pixmap="o-progressbars/260-progress-border.png" alphaTest="blend" zPosition="4" />
+		<widget source="Frontend" render="Progress" position="806,87" size="390,9" pixmap="o-progressbars/260-progress.png" transparent="1" alphaTest="blend" zPosition="3">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="1218,65" size="98,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" valign="center" transparent="1">
+		<widget source="Frontend" render="Label" position="1218,65" size="98,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" verticalAlignment="center" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel text="AGC:" position="705,119" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" valign="center" halign="right" transparent="1" />
-		<ePixmap position="807,143" size="387,6" pixmap="o-progressbars/258-progress-bg.png" alphatest="blend" zPosition="1" />
-		<ePixmap position="806,141" size="390,9" pixmap="o-progressbars/260-progress-border.png" alphatest="blend" zPosition="4" />
-		<widget source="Frontend" render="Progress" position="806,141" size="390,9" pixmap="o-progressbars/260-progress.png" transparent="1" alphatest="blend" zPosition="3">
+		<eLabel text="AGC:" position="705,119" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" verticalAlignment="center" horizontalAlignment="right" transparent="1" />
+		<ePixmap position="807,143" size="387,6" pixmap="o-progressbars/258-progress-bg.png" alphaTest="blend" zPosition="1" />
+		<ePixmap position="806,141" size="390,9" pixmap="o-progressbars/260-progress-border.png" alphaTest="blend" zPosition="4" />
+		<widget source="Frontend" render="Progress" position="806,141" size="390,9" pixmap="o-progressbars/260-progress.png" transparent="1" alphaTest="blend" zPosition="3">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="1218,119" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" valign="center" transparent="1">
+		<widget source="Frontend" render="Label" position="1218,119" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" verticalAlignment="center" transparent="1">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<eLabel text="BER:" position="705,173" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" valign="center" halign="right" transparent="1" />
-		<ePixmap position="807,197" size="387,6" pixmap="o-progressbars/258-progress-bg.png" alphatest="blend" zPosition="1" />
-		<ePixmap position="806,195" size="390,9" pixmap="o-progressbars/260-progress-border.png" alphatest="blend" zPosition="4" />
-		<widget source="Frontend" render="Progress" position="806,195" size="390,9" pixmap="o-progressbars/260-progress.png" transparent="1" alphatest="blend" zPosition="3">
+		<eLabel text="BER:" position="705,173" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" verticalAlignment="center" horizontalAlignment="right" transparent="1" />
+		<ePixmap position="807,197" size="387,6" pixmap="o-progressbars/258-progress-bg.png" alphaTest="blend" zPosition="1" />
+		<ePixmap position="806,195" size="390,9" pixmap="o-progressbars/260-progress-border.png" alphaTest="blend" zPosition="4" />
+		<widget source="Frontend" render="Progress" position="806,195" size="390,9" pixmap="o-progressbars/260-progress.png" transparent="1" alphaTest="blend" zPosition="3">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="1218,173" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" valign="center" transparent="1">
+		<widget source="Frontend" render="Label" position="1218,173" size="90,54" font="Regular;32" foregroundColor="white" backgroundColor="mid" verticalAlignment="center" transparent="1">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<ePixmap pixmap="o-backgrounds/sidebar2.png" alphatest="blend" position="1515,324" size="329,168" zPosition="1" />
-		<eLabel text="SNR dB:" position="1530,326" size="233,83" font="Regular;32" foregroundColor="white" backgroundColor="midright" valign="center" transparent="1" />
-		<widget source="Frontend" render="Label" position="1673,326" size="150,83" font="Regular;35" foregroundColor="white" backgroundColor="midright" valign="center" transparent="1">
+		<ePixmap pixmap="o-backgrounds/sidebar2.png" alphaTest="blend" position="1515,324" size="329,168" zPosition="1" />
+		<eLabel text="SNR dB:" position="1530,326" size="233,83" font="Regular;32" foregroundColor="white" backgroundColor="midright" verticalAlignment="center" transparent="1" />
+		<widget source="Frontend" render="Label" position="1673,326" size="150,83" font="Regular;35" foregroundColor="white" backgroundColor="midright" verticalAlignment="center" transparent="1">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-		<eLabel name="lock" text="Lock:" position="1530,408" size="233,83" font="Regular;32" foregroundColor="white" backgroundColor="midright" valign="center" transparent="1" />
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="1673,429" zPosition="1" size="38,36" alphatest="blend">
+		<eLabel name="lock" text="Lock:" position="1530,408" size="233,83" font="Regular;32" foregroundColor="white" backgroundColor="midright" verticalAlignment="center" transparent="1" />
+		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="1673,429" zPosition="1" size="38,36" alphaTest="blend">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="1673,429" zPosition="1" size="38,36" alphatest="blend">
+		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="1673,429" zPosition="1" size="38,36" alphaTest="blend">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
 		<panel name="config2" />
-		<widget source="introduction" render="Label" position="1518,491" size="372,83" font="Regular;27" foregroundColor="colour2" backgroundColor="midright" valign="center" transparent="1" />
+		<widget source="introduction" render="Label" position="1518,491" size="372,83" font="Regular;27" foregroundColor="colour2" backgroundColor="midright" verticalAlignment="center" transparent="1" />
 		<panel name="OKButton" />
 		<panel name="New-Buttons" />
 	</screen>
@@ -72,13 +72,13 @@
 	</screen>
 	
 	<screen name="VideoEnhancementPreview" position="center,e-255" size="840,255" title="VideoEnhancementPreview" backgroundColor="messageboxbg">
-		<ePixmap pixmap="buttons/red.png" position="0,0" size="210,60" alphatest="blend" />
-		<ePixmap pixmap="buttons/green.png" position="210,0" size="210,60" alphatest="blend" />
-		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
-		<widget source="key_green" render="Label" position="210,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
+		<ePixmap pixmap="buttons/red.png" position="0,0" size="210,60" alphaTest="blend" />
+		<ePixmap pixmap="buttons/green.png" position="210,0" size="210,60" alphaTest="blend" />
+		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="210,60" font="Regular;30" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" transparent="1" />
+		<widget source="key_green" render="Label" position="210,0" zPosition="1" size="210,60" font="Regular;30" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" transparent="1" />
 		<widget name="config" position="8,75" size="825,120" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="div-h.png" alphatest="blend" position="0,195" zPosition="1" size="840,3" />
-		<widget source="introduction" render="Label" position="0,210" size="825,38" zPosition="10" font="Regular;32" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
+		<ePixmap pixmap="div-h.png" alphaTest="blend" position="0,195" zPosition="1" size="840,3" />
+		<widget source="introduction" render="Label" position="0,210" size="825,38" zPosition="10" font="Regular;32" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#25062748" transparent="1" />
 	</screen>
 	
 	<!-- software management -->
@@ -86,7 +86,7 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<widget source="menu" render="Listbox" position="527,321" size="954,645" font="Regular;32" secondfont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
+		<widget source="menu" render="Listbox" position="527,321" size="954,645" font="Regular;32" valueFont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" enableWrapAround="1" scrollbarMode="showNever" transparent="1">
 			<convert type="TemplatedMultiContent">{"template": [	
                                                 MultiContentEntryText(pos = (15,0), size = (626,72), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the MenuText
                                                 ],
@@ -96,7 +96,7 @@
 			}</convert>
 		</widget>
 		<!-- description -->
-		<widget source="menu" render="Listbox" position="1518,321" size="372,510" foregroundColor="colour2" backgroundColor="midright" transparent="1" scrollbarMode="showNever" selectionDisabled="1">
+		<widget source="menu" render="Listbox" position="1518,321" size="372,510" foregroundColor="colour2" backgroundColor="midright" transparent="1" scrollbarMode="showNever" selection="1">
 			<convert type="TemplatedMultiContent">{"template": [
                                                 MultiContentEntryText(pos = (0,0),size = (372,510),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP, text = 2),# index 2 is the Description,
 				                ],
@@ -151,7 +151,7 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<widget source="list" render="Listbox" position="527,330" size="942,630" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-60.png" backgroundPixmap="o-selectbars/blank.png" enableWrapAround="1" scrollbarMode="showNever" itemHeight="90" transparent="1" selectionDisabled="1">
+		<widget source="list" render="Listbox" position="527,330" size="942,630" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-60.png" backgroundPixmap="o-selectbars/blank.png" enableWrapAround="1" scrollbarMode="showNever" itemHeight="90" transparent="1" selection="1">
 			<convert type="TemplatedMultiContent">{"template": [
 				MultiContentEntryText(pos = (15, 6), size = (825, 42), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0,  color = 0x00ffffff, color_sel = 0x00ffffff), # index 0 is the name
 				MultiContentEntryText(pos = (15, 44), size = (825, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1, color = 0x00ffffff, color_sel = 0x00ffffff), # index 1 is the state
@@ -192,7 +192,7 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<ePixmap pixmap="o-backgrounds/setup-30-bg.png" alphatest="blend" position="527,344" size="942,630" zPosition="1" />
+		<ePixmap pixmap="o-backgrounds/setup-30-bg.png" alphaTest="blend" position="527,344" size="942,630" zPosition="1" />
 		<widget name="list" position="527,345" size="942,630" font="Regular;32" foregroundColor="white" backgroundColor="mid" foregroundColorSelected="white" backgroundColorSelected="bg-selected-text" scrollbarMode="showOnDemand" enableWrapAround="1" itemHeight="45" transparent="1" zPosition="2" />
 		<widget source="introduction" render="Label" position="1518,341" size="372,510" font="Regular;27" foregroundColor="colour2" backgroundColor="midright" transparent="1" />
 		<panel name="New-Buttons" />
@@ -204,7 +204,7 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<widget name="filelist" textOffset="15,15" position="527,321" size="954,645" font="Regular;32" secondfont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
+		<widget name="filelist" textOffset="15,15" position="527,321" size="954,645" font="Regular;32" valueFont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
 		<panel name="New-Buttons" />
 		<widget source="summary_description" render="Label" position="527,32" size="942,39" font="Bold;30" foregroundColor="white" backgroundColor="topmid" noWrap="1" transparent="1" />
 	</screen>
@@ -215,8 +215,8 @@
 	<screen name="BackupSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
-		<widget source="title_text" render="Label" position="15,675" size="450,291" halign="center" font="Regular;35" transparent="1" foregroundColor="white" backgroundColor="topleft" />
-		<ePixmap pixmap="o-backgrounds/setup-30-bg.png" alphatest="blend" position="525,329" size="942,630" zPosition="1" />
+		<widget source="title_text" render="Label" position="15,675" size="450,291" horizontalAlignment="center" font="Regular;35" transparent="1" foregroundColor="white" backgroundColor="topleft" />
+		<ePixmap pixmap="o-backgrounds/setup-30-bg.png" alphaTest="blend" position="525,329" size="942,630" zPosition="1" />
 		<widget name="checkList" position="527,330" size="942,630" font="Regular;30" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-30.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="45" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
 		<widget source="summary_description" render="Label" position="527,32" size="942,39" font="Bold;30" foregroundColor="white" backgroundColor="topmid" noWrap="1" transparent="1" />
 		<panel name="New-Buttons" />
@@ -251,17 +251,17 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<widget name="filelist" textOffset="15,15" position="527,321" size="954,645" font="Regular;32" secondfont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
+		<widget name="filelist" textOffset="15,15" position="527,321" size="954,645" font="Regular;32" valueFont="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1" />
 		<panel name="New-Buttons" />
 	</screen>
 	
 	<!-- software management - advanced options - select upgrade source  - edit -->
 	<screen name="IPKGSource" position="center,center" size="1620,150">
 		<widget name="text" position="15,15" size="1590,45" font="Regular;35" foregroundColor="white" backgroundColor="messageboxbg" transparent="1" />
-		<ePixmap pixmap="buttons/key_red.png" position="15,108" size="38,38" alphatest="blend" zPosition="2" />
-		<widget source="key_red" render="Label" position="63,105" size="315,38" font="Regular;30" valign="center" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="button-bg" zPosition="3" />
-		<ePixmap pixmap="buttons/key_green.png" position="228,108" size="38,38" alphatest="blend" zPosition="2" />
-		<widget source="key_green" render="Label" position="276,105" size="315,38" font="Regular;30" valign="center" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="button-bg" zPosition="3" />
+		<ePixmap pixmap="buttons/key_red.png" position="15,108" size="38,38" alphaTest="blend" zPosition="2" />
+		<widget source="key_red" render="Label" position="63,105" size="315,38" font="Regular;30" verticalAlignment="center" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="button-bg" zPosition="3" />
+		<ePixmap pixmap="buttons/key_green.png" position="228,108" size="38,38" alphaTest="blend" zPosition="2" />
+		<widget source="key_green" render="Label" position="276,105" size="315,38" font="Regular;30" verticalAlignment="center" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="button-bg" zPosition="3" />
 	</screen>
 	
 	<!-- software manager - backup system settings - info button -->
@@ -269,7 +269,7 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<widget source="list" render="Listbox" position="527,330" size="942,630" font="Regular;30" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-30.png" backgroundPixmap="o-selectbars/blank.png" scrollbarMode="showNever" enableWrapAround="1" itemHeight="45" transparent="1" selectionDisabled="0">
+		<widget source="list" render="Listbox" position="527,330" size="942,630" font="Regular;30" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-30.png" backgroundPixmap="o-selectbars/blank.png" scrollbarMode="showNever" enableWrapAround="1" itemHeight="45" transparent="1" selection="0">
 			<convert type="TemplatedMultiContent">{"template": [
  						MultiContentEntryText(pos = (15, 0), size = (912, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ), # index 0 is the name
 						],
@@ -286,10 +286,10 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<widget name="statuspic" position="1395,330" size="72,72" alphatest="blend" />
+		<widget name="statuspic" position="1395,330" size="72,72" alphaTest="blend" />
 		<widget source="author" render="Label" position="525,360" size="960,45" font="Regular;35" foregroundColor="white" backgroundColor="mid" transparent="1" />
 		<widget name="detailtext" position="525,405" size="960,585" font="Regular;35" foregroundColor="white" backgroundColor="mid" transparent="1" />
-		<widget name="screenshot" position="1515,324" size="324,450" alphatest="blend" />
+		<widget name="screenshot" position="1515,324" size="324,450" alphaTest="blend" />
 		<panel name="New-Buttons" />
 	</screen>
 	
@@ -297,11 +297,11 @@
 	<!-- same as IPKG in general -->
 	<screen name="UpdatePlugin" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
 		<eLabel position="0,732" size="1920,348" backgroundColor="blackglass" transparent="0" zPosition="-2" />
-		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar1.png" alphatest="blend" zPosition="-1" />
+		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar1.png" alphaTest="blend" zPosition="-1" />
 		<panel name="date" />
 		<widget name="activityslider" position="516,771" size="900,9" pixmap="o-infobars/600-progress.png" borderWidth="2" borderColor="#80ffffff" zPosition="3" />
-		<widget source="package" render="Label" position="485,810" size="962,45" font="Regular;30" foregroundColor="white" backgroundColor="blackglass" valign="center" halign="center" noWrap="1" transparent="1" />
-		<widget source="status" render="Label" position="485,891" size="962,45" font="Regular;30" foregroundColor="white" backgroundColor="blackglass" valign="center" halign="center" noWrap="1" transparent="1" />
+		<widget source="package" render="Label" position="485,810" size="962,45" font="Regular;30" foregroundColor="white" backgroundColor="blackglass" verticalAlignment="center" horizontalAlignment="center" noWrap="1" transparent="1" />
+		<widget source="status" render="Label" position="485,891" size="962,45" font="Regular;30" foregroundColor="white" backgroundColor="blackglass" verticalAlignment="center" horizontalAlignment="center" noWrap="1" transparent="1" />
 		<widget name="slider" position="516,966" size="900,9" pixmap="o-infobars/600-progress.png" borderWidth="2" borderColor="#80ffffff" zPosition="3" />
 		<widget name="feedStatusMSG" render="Label" position="1491,750" size="387,135" font="Regular;30" foregroundColor="white" backgroundColor="blackglass" transparent="1" />
 	</screen>
@@ -309,16 +309,16 @@
 	<!-- crossepg -->
 	<screen name="downloader-template">
 		<eLabel position="0,732" size="1920,348" backgroundColor="blackglass" transparent="0" zPosition="-2" />
-		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar-blank.png" alphatest="blend" zPosition="-1" />
+		<ePixmap position="0,705" size="1920,375" pixmap="o-infobars/infobar-blank.png" alphaTest="blend" zPosition="-1" />
 		<panel name="date" />
-		<widget name="action" position="center,777" size="1920,45" font="Regular;35" foregroundColor="white" backgroundColor="blackglass" halign="center" noWrap="1" transparent="1" />
+		<widget name="action" position="center,777" size="1920,45" font="Regular;35" foregroundColor="white" backgroundColor="blackglass" horizontalAlignment="center" noWrap="1" transparent="1" />
 		<!-- progress background -->
-		<ePixmap position="309,915" size="1302,6" pixmap="o-infobars/progress-bg.png" alphatest="blend" zPosition="1" />
+		<ePixmap position="309,915" size="1302,6" pixmap="o-infobars/progress-bg.png" alphaTest="blend" zPosition="1" />
 		<!--progress border -->
-		<ePixmap position="308,914" size="1305,9" pixmap="o-infobars/progress-border.png" alphatest="blend" zPosition="4" />
+		<ePixmap position="308,914" size="1305,9" pixmap="o-infobars/progress-border.png" alphaTest="blend" zPosition="4" />
 		<!-- progress bar-->
-		<widget name="progress" position="308,914" size="1305,9" pixmap="o-infobars/progress.png" transparent="1" alphatest="blend" zPosition="3" />
-		<widget name="status" position="center,945" size="1920,131" font="Regular;35" foregroundColor="white" backgroundColor="blackglass" halign="center" noWrap="1" transparent="1" />
+		<widget name="progress" position="308,914" size="1305,9" pixmap="o-infobars/progress.png" transparent="1" alphaTest="blend" zPosition="3" />
+		<widget name="status" position="center,945" size="1920,131" font="Regular;35" foregroundColor="white" backgroundColor="blackglass" horizontalAlignment="center" noWrap="1" transparent="1" />
 	</screen>
 	
 	<screen name="CrossEPG_About" position="0,0" size="1920,1080" title="Console" flags="wfNoBorder" backgroundColor="mid">
@@ -390,7 +390,7 @@
 			
 				}</convert>
 		</widget>
-		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphaTest="blend" zPosition="2" />
 		<panel name="whatson-top" />
 		<panel name="whatson-right" />
 	</screen>
@@ -437,7 +437,7 @@
 				"scrollbarMode": "showNever"
 			}</convert>
 		</widget>
-		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphaTest="blend" zPosition="2" />
 		<panel name="whatson-top" />
 		<panel name="whatson-right" />
 		<panel name="New-Buttons" />
@@ -458,7 +458,7 @@
 		<panel name="template1" />
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
-		<ePixmap pixmap="o-backgrounds/setup-48-bg.png" alphatest="blend" position="527,329" size="942,645" zPosition="1" />
+		<ePixmap pixmap="o-backgrounds/setup-48-bg.png" alphaTest="blend" position="527,329" size="942,645" zPosition="1" />
 		<widget source="list" render="Listbox" position="527,321" size="954,645" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-636-48.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="72" font="Regular;35" transparent="1" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">{"template": [	
                                              MultiContentEntryText(pos = (15,0), size = (924,72), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color = 0x00ffffff, color_sel = 0x00ffffff)
@@ -538,17 +538,17 @@
 		<panel name="title2" />
 		<panel name="config" />
 		<panel name="New-Buttons" />
-		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphatest="blend" zPosition="2" />
-		<ePixmap pixmap="o-backgrounds/2box.png" alphatest="blend" position="525,62" size="947,168" zPosition="1" />
-		<widget name="min_free_kb" position="542,69" size="912,53" font="Regular;30" foregroundColor="white" backgroundColor="topmid" valign="center" transparent="1" zPosition="2" />
-		<widget name="memory" position="542,122" size="912,53" font="Regular;30" foregroundColor="white" backgroundColor="topmid" valign="center" transparent="1" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphaTest="blend" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/2box.png" alphaTest="blend" position="525,62" size="947,168" zPosition="1" />
+		<widget name="min_free_kb" position="542,69" size="912,53" font="Regular;30" foregroundColor="white" backgroundColor="topmid" verticalAlignment="center" transparent="1" zPosition="2" />
+		<widget name="memory" position="542,122" size="912,53" font="Regular;30" foregroundColor="white" backgroundColor="topmid" verticalAlignment="center" transparent="1" zPosition="2" />
 		<widget name="slide" position="542,191" size="912,9" zPosition="2" borderWidth="2" backgroundColor="topmid" />
 	</screen>
 	
 	<screen name="CacheFlushAutoScreen" position="54,783" size="540,270" flags="wfNoBorder">
 		<eLabel position="0,0" size="540,270" backgroundColor="blackglass" transparent="0" zPosition="-1" />
-		<ePixmap pixmap="o-backgrounds/numberzap.png" position="0,0" size="540,270" alphatest="blend" zPosition="-1" />
-		<widget name="message_label" position="57,87" size="317,150" foregroundColor="white" backgroundColor="blackglass" transparent="1" font="Regular;45" borderWidth="0" halign="right" zPosition="1" />
+		<ePixmap pixmap="o-backgrounds/numberzap.png" position="0,0" size="540,270" alphaTest="blend" zPosition="-1" />
+		<widget name="message_label" position="57,87" size="317,150" foregroundColor="white" backgroundColor="blackglass" transparent="1" font="Regular;45" borderWidth="0" horizontalAlignment="right" zPosition="1" />
 	</screen>
 	
 	<screen name="CacheFlushInfoScreen" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" zPosition="4">
@@ -557,7 +557,7 @@
 		<widget name="lmemvalue" position="750,122" size="150,855" font="Regular;27" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2" />
 		<widget name="rmemtext" position="1050,122" size="210,855" font="Regular;27" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2" />
 		<widget name="rmemvalue" position="1275,122" size="150,855" font="Regular;27" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2" />
-		<ePixmap position="960,122" size="3,840" pixmap="div-v.png" alphatest="blend" />
+		<ePixmap position="960,122" size="3,840" pixmap="div-v.png" alphaTest="blend" />
 		<panel name="New-Buttons" />
 	</screen>
 	
@@ -569,11 +569,11 @@
 		<widget name="castlabel" position="896,393" size="942,402" font="Regular;30" foregroundColor="white" backgroundColor="mid" transparent="1" />
 		<widget name="menu" textOffset="15,3" position="896,402" size="942,450" font="Regular;32" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-30.png" backgroundPixmap="o-selectbars/blank.png" itemHeight="45" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2" />
 		<widget name="extralabel" position="896,32" size="960,806" font="Regular;27" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="3" />
-		<ePixmap pixmap="o-icons/imdb.png" alphatest="blend" position="527,390" size="305,456" zPosition="1" />
-		<widget name="poster" position="542,417" size="273,402" alphatest="blend" zPosition="2" />
-		<widget name="starsbg" position="1497,42" size="315,32" pixmap="icons/starsbar_empty.png" zPosition="0" transparent="1" alphatest="blend" />
-		<widget name="stars" position="1497,42" size="315,32" pixmap="icons/starsbar_filled.png" transparent="1" alphatest="blend" />
-		<ePixmap position="525,869" size="1307,6" pixmap="div-h.png" alphatest="blend" />
+		<ePixmap pixmap="o-icons/imdb.png" alphaTest="blend" position="527,390" size="305,456" zPosition="1" />
+		<widget name="poster" position="542,417" size="273,402" alphaTest="blend" zPosition="2" />
+		<widget name="starsbg" position="1497,42" size="315,32" pixmap="icons/starsbar_empty.png" zPosition="0" transparent="1" alphaTest="blend" />
+		<widget name="stars" position="1497,42" size="315,32" pixmap="icons/starsbar_filled.png" transparent="1" alphaTest="blend" />
+		<ePixmap position="525,869" size="1307,6" pixmap="div-h.png" alphaTest="blend" />
 		<widget name="statusbar" position="527,885" size="1277,90" font="Regular;24" backgroundColor="mid" foregroundColor="colour2" transparent="1" />
 		<panel name="New-Buttons" />
 		<panel name="MenuButton" />
@@ -590,7 +590,7 @@
 		<panel name="title2" />
 		<panel name="config" />
 		<panel name="New-Buttons" />
-		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75" alphaTest="blend" zPosition="2" />
 		<widget name="status" position="527,113" size="960,203" font="Regular;35" foregroundColor="white" backgroundColor="topmid" transparent="1" />
 		<widget name="statusbar" position="527,200" size="960,203" font="Regular;35" foregroundColor="white" backgroundColor="topmid" transparent="1" />
 		<panel name="InfoButton-pos1" />
@@ -611,7 +611,7 @@
 	
 	<screen name="filtersServicesSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid" title="Ignore services list">
 		<panel name="template1" />
-	    <ePixmap pixmap="o-backgrounds/setup-48-bg.png" alphatest="blend" position="527,329" size="942,645" zPosition="1" />
+	    <ePixmap pixmap="o-backgrounds/setup-48-bg.png" alphaTest="blend" position="527,329" size="942,645" zPosition="1" />
 
 	  <widget source="list" render="Listbox" position="527,330" size="942,648" font="Regular;35" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="bg-selected"
                 selectionPixmap="o-selectbars/select-628-48-full.png"  backgroundPixmap="o-selectbars/blank.png" itemHeight="72" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2">
@@ -654,16 +654,16 @@
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
 		<widget name="Video" position="525,315" zPosition="1" size="960,540" backgroundColor="transparent" />
-		<widget source="session.CurrentService" render="Label" position="525,870" size="960,45" zPosition="3" font="Regular;35" foregroundColor="white" backgroundColor="mid" halign="center" transparent="1" valign="center">
+		<widget source="session.CurrentService" render="Label" position="525,870" size="960,45" zPosition="3" font="Regular;35" foregroundColor="white" backgroundColor="mid" horizontalAlignment="center" transparent="1" verticalAlignment="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="525,915" size="960,45" zPosition="3" font="Regular;35" foregroundColor="white" backgroundColor="mid" transparent="1" valign="center">
+		<widget source="session.CurrentService" render="Label" position="525,915" size="960,45" zPosition="3" font="Regular;35" foregroundColor="white" backgroundColor="mid" transparent="1" verticalAlignment="center">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<widget name="SeekState" position="525,915" size="960,45" zPosition="3" font="Regular;35" foregroundColor="white" backgroundColor="mid" halign="right" transparent="1" valign="center" />
-		<widget name="Timeline" position="525,957" size="960,30" backgroundColor="#3ab7fe" pointer="position_arrow.png:5,8" alphatest="blend" foregroundColor="white" />
-		<ePixmap pixmap="icons/mp_buttons.png" position="891,1029" size="228,27" alphatest="blend" />
-		<ePixmap pixmap="o-backgrounds/sidebar-246.png" alphatest="blend" position="1515,324" size="324,369" zPosition="1" />
+		<widget name="SeekState" position="525,915" size="960,45" zPosition="3" font="Regular;35" foregroundColor="white" backgroundColor="mid" horizontalAlignment="right" transparent="1" verticalAlignment="center" />
+		<widget name="Timeline" position="525,957" size="960,30" backgroundColor="#3ab7fe" pointer="position_arrow.png:5,8" alphaTest="blend" foregroundColor="white" />
+		<ePixmap pixmap="icons/mp_buttons.png" position="891,1029" size="228,27" alphaTest="blend" />
+		<ePixmap pixmap="o-backgrounds/sidebar-246.png" alphaTest="blend" position="1515,324" size="324,369" zPosition="1" />
 		<widget source="cutlist" render="Listbox" position="1530,336" size="294,315" foregroundColor="white" backgroundColor="midright" transparent="1" zPosition="2" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">{"template": [
  						MultiContentEntryText(pos=(0,0), size=(210, 45), text = 1, backcolor = 0x00004184),
@@ -693,8 +693,8 @@
 		<panel name="h-separator-tr" />
 		<panel name="title2" />
 		<widget name="filelist" position="527,330" size="942,630" font="Regular;30" foregroundColor="white" backgroundColor="mid" foregroundColorSelected="white" backgroundColorSelected="bg-selected" selectionPixmap="o-selectbars/select-628-30.png" backgroundPixmap="o-selectbars/blank.png" scrollbarMode="showOnDemand" enableWrapAround="1" itemHeight="45" transparent="1" />
-		<widget name="thn" position="1515,324" size="324,320" alphatest="blend" transparent="1" />
-		<widget source="label" render="Label" position="1515,654" size="324,38" font="Regular;27" foregroundColor="white" backgroundColor="mid" transparent="1" valign="center" halign="center" noWrap="1" />
+		<widget name="thn" position="1515,324" size="324,320" alphaTest="blend" transparent="1" />
+		<widget source="label" render="Label" position="1515,654" size="324,38" font="Regular;27" foregroundColor="white" backgroundColor="mid" transparent="1" verticalAlignment="center" horizontalAlignment="center" noWrap="1" />
 		<panel name="New-Buttons" />
 		<panel name="MenuButton" />
 	</screen>
@@ -748,7 +748,7 @@
 	<screen name="EPGRefreshConfiguration" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="Setup-Default" />
 		<widget source="help" render="Label" position="1518,341" size="372,510" font="Regular;27" foregroundColor="colour2" backgroundColor="midright" transparent="1" />
-		<ePixmap pixmap="buttons/key_help.png" position="1793,990" size="38,38" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="buttons/key_help.png" position="1793,990" size="38,38" alphaTest="blend" zPosition="3" />
 		<panel name="InfoButton" />
 	</screen>
 	
@@ -784,7 +784,7 @@
                 <widget name="label2" position="1518,381" size="372,40" font="Regular;27" foregroundColor="colour2" backgroundColor="midright"   transparent="1" />
 
 		<panel name="New-Buttons" />
-                <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphatest="blend" zPosition="2" />
+                <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphaTest="blend" zPosition="2" />
  	        <panel name="whatson-top" />
 	</screen>
 	
@@ -798,7 +798,7 @@
 		</widget>
                 <widget name="info" position="1518,341" size="372,510" font="Regular;27" foregroundColor="colour2" backgroundColor="midright"   transparent="1" />
 		<panel name="New-Buttons" />
-                <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphatest="blend" zPosition="2" />
+                <ePixmap pixmap="o-backgrounds/menu-gradient.png" position="527,900" size="954,75"  alphaTest="blend" zPosition="2" />
  	        <panel name="whatson-top" />
 	</screen>
 
